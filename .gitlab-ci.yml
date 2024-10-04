@@ -6,7 +6,7 @@ flake8:
     image: registry.gitlab.com/pipeline-components/flake8:latest
     before_script:
         - pip install --upgrade pip
-        - pip install -r requirements.txt
+        - pip install -r requirements/prod.txt
     script:
         - flake8 --verbose .
     only:

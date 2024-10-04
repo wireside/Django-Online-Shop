@@ -4,7 +4,9 @@ env/
 venv/
 .idea
 .idea/
+*.pyc
 __pycache__/
+.env
 .vscode/*
 __pycache__
 db.sqlite3
