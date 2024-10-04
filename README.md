@@ -1,6 +1,12 @@
 # Lyceum
 ### Запуск проекта в dev-режиме
 - Установите и активируйте виртуальное окружение
+```
+python -m venv venv
+```
+```
+source venv/bin/activate
+```
 - Установите зависимости из файла requirements.txt
 ```
 pip install -r requirements.txt
