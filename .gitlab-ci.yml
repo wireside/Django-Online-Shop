@@ -4,6 +4,22 @@ stages:
 flake8:
     stage: linting
     image: registry.gitlab.com/pipeline-components/flake8:latest
-    script:
+    before_script:
+        - pip install --upgrade pip
         - pip install -r requirements.txt
+    script:
         - flake8 --verbose .
+    only:
+        - main
+
+black:
+    stage: linting
+    image: registry.gitlab.com/pipeline-components/black:latest
+    before_script:
+        - pip install --upgrade pip
+        - pip install -r requirements.txt
+    script:
+        - black -l 79 .
+        - black --check .
+    only:
+        - main
