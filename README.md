@@ -9,7 +9,7 @@ source venv/bin/activate
 ```
 - Установите зависимости из файла requirements.txt
 ```
-pip install -r requirements.txt
+pip install -r requirements/prod.txt
 ``` 
 - В папке с файлом manage.py выполните команду:
 ```
