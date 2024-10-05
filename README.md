@@ -1,6 +1,6 @@
 # Lyceum
-![Flake8](./last-commit.svg)
-![Black](./last-commit.svg)
+![Flake8](https://gitlab.com/gitlab-org/gitlab/badges/main/coverage.svg?job=pipeline&key_text=flake8&key_width=130)
+![Black](https://gitlab.com/gitlab-org/gitlab/badges/main/coverage.svg?job=pipeline&key_text=black&key_width=130)
 ### Запуск проекта в dev-режиме
 - Установите и активируйте виртуальное окружение
 ```
