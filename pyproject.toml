@@ -16,6 +16,3 @@ exclude = '''
   | dist
 )/
 '''
-
-[flake8]
-ignore = E203,W503
