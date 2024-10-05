@@ -1,13 +1,35 @@
 stages:
   - linting
 
+install-dependencies:
+    stage: .pre
+    image: python:3.12.4
+    script:
+        - python -m venv venv
+        - source venv/bin/activate
+        - pip install -r requirements/test.txt
+    artifacts:
+        paths:
+            - venv/
+
 flake8:
     stage: linting
     image: registry.gitlab.com/pipeline-components/flake8:latest
     before_script:
-        - pip install --upgrade pip
-        - pip install -r requirements/prod.txt
+        - python -m venv venv
+        - source venv/bin/activate
     script:
         - flake8 --verbose .
     only:
         - main
+
+black:
+    stage: lint
+    before-script:
+        - python -m venv venv
+        - source venv/bin/activate
+    script:
+        - black --check .
+    only:
+        - main
+
