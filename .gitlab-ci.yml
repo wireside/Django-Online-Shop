@@ -23,7 +23,7 @@ flake8:
     only:
         - main
 
-black:
+black-check:
     stage: test
     image: registry.gitlab.com/pipeline-components/black:latest
     script:
