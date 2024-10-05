@@ -25,6 +25,7 @@ flake8:
 
 black:
     stage: lint
+    image: registry.gitlab.com/pipeline-components/black:latest
     before-script:
         - python -m venv venv
         - source venv/bin/activate
