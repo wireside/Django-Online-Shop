@@ -37,7 +37,7 @@ black-check:
 Badge:
     stage: build
     image: python:3.12.4
-    before-script:
+    before_script:
         - pip install anybadge
     script:
         - anybadge -l "last Commit" -v "$(date '+%d.%m.%Y %H:%M')" -f last-commit.svg -c green
