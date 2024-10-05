@@ -11,6 +11,10 @@ source venv/bin/activate
 ```
 pip install -r requirements/prod.txt
 ``` 
+- Создайте файл .env и задайте переменные окружения
+```
+touch .env
+```
 - В папке с файлом manage.py выполните команду:
 ```
 python3 manage.py runserver
