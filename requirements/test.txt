@@ -1,8 +1,6 @@
 -r prod.txt
 pytest==8.3.3
-flake8
-black
-flake8-quotes
-flake8-alphabetize
-flake8-naming
-flake8-isort
+black==24.8.0
+flake8==7.1.1
+flake8-quotes==3.3.1
+pep8-naming==0.13.3

@@ -22,12 +22,8 @@ exclude = '''
 max-line-length = 79
 plugins = [
     "flake8-naming"
-    "flake8-isort"
     "flake8-quotes"
 ]
-
-[tool.isort]
-profile = black
 
 [tool.flake8-quotes]
 inline-quotes = "
