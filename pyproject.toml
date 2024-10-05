@@ -16,6 +16,6 @@ exclude = '''
   | dist
 )/
 '''
+
 [flake8]
-ignore = E203, W503
-quotes = double
+ignore = E203,W503
