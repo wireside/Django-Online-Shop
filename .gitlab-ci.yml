@@ -1,12 +1,5 @@
 stages:
   - linting
-  - build
-
-install-dependencies:
-    stage: .pre
-    image: python:3.12.4
-    script:
-        - pip install -r requirements/test.txt
 
 flake8:
     stage: linting
