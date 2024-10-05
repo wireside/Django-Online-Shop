@@ -24,7 +24,7 @@ flake8:
         - main
 
 black-check:
-    stage: test
+    stage: linting
     image: registry.gitlab.com/pipeline-components/black:latest
     script:
         - python -m venv venv
