@@ -1,6 +1,6 @@
 # Lyceum
-![Flake8](https://gitlab.com/gitlab-org/gitlab/badges/main/coverage.svg?job=pipeline&key_text=flake8&key_width=130)
-![Black](https://gitlab.com/gitlab-org/gitlab/badges/main/coverage.svg?job=pipeline&key_text=black&key_width=130)
+![Flake8](https://gitlab.com/gitlab-org/gitlab/badges/main/coverage.svg?job=pipeline&key_text=flake8&key_width=60)
+![Black](https://gitlab.com/gitlab-org/gitlab/badges/main/coverage.svg?job=pipeline&key_text=black&key_width=60)
 ### Запуск проекта в dev-режиме
 - Установите и активируйте виртуальное окружение
 ```
