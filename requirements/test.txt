@@ -4,4 +4,5 @@ flake8
 black
 flake8-quotes
 flake8-alphabetize
-pep8-naming
+flake8-naming
+flake8-isort

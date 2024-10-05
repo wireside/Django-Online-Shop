@@ -6,8 +6,6 @@ install-dependencies:
     stage: .pre
     image: python:3.12.4
     script:
-        - python -m venv venv
-        - source venv/bin/activate
         - pip install -r requirements/test.txt
     artifacts:
         paths:
@@ -17,8 +15,8 @@ flake8:
     stage: linting
     image: registry.gitlab.com/pipeline-components/flake8:latest
     before_script:
-        - python -m venv venv
-        - source venv/bin/activate
+        - pip install --upgrade pip
+        - pip install -r requirements/test.txt
     script:
         - flake8 --verbose .
     only:
@@ -28,8 +26,8 @@ black-check:
     stage: linting
     image: registry.gitlab.com/pipeline-components/black:latest
     script:
-        - python -m venv venv
-        - source venv/bin/activate
+        - pip install --upgrade pip
+        - pip install -r requirements/test.txt
         - black --check .
     only:
         - main
