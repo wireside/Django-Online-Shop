@@ -1,6 +1,6 @@
 # Lyceum
-![Flake8]
-![Black]
+![Flake8](./last-commit.svg)
+![Black](./last-commit.svg)
 ### Запуск проекта в dev-режиме
 - Установите и активируйте виртуальное окружение
 ```
