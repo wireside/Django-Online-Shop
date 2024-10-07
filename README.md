@@ -1,4 +1,6 @@
 # Lyceum
+![Flake8](https://gitlab.com/gitlab-org/gitlab/badges/main/coverage.svg?job=pipeline&key_text=flake8&key_width=60)
+![Black](https://gitlab.com/gitlab-org/gitlab/badges/main/coverage.svg?job=pipeline&key_text=black&key_width=60)
 ### Запуск проекта в dev-режиме
 - Установите и активируйте виртуальное окружение
 ```
@@ -11,6 +13,10 @@ source venv/bin/activate
 ```
 pip install -r requirements/prod.txt
 ``` 
+- Создайте файл .env и задайте переменные окружения
+```
+touch .env
+```
 - В папке с файлом manage.py выполните команду:
 ```
 python3 manage.py runserver
