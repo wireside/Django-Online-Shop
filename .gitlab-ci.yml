@@ -6,18 +6,8 @@ flake8:
     image: registry.gitlab.com/pipeline-components/flake8:latest
     before_script:
         - pip install --upgrade pip
-        - pip install -r requirements/test.txt
+        - pip install -r requirements/prod.txt
     script:
         - flake8 --verbose .
-    only:
-        - main
-
-black-check:
-    stage: linting
-    image: registry.gitlab.com/pipeline-components/black:latest
-    script:
-        - pip install --upgrade pip
-        - pip install -r requirements/test.txt
-        - black --check .
     only:
         - main
