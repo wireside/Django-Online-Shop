@@ -1,5 +1,5 @@
 # Lyceum
-![Flake8](https://gitlab.com/gitlab-org/gitlab/badges/main/coverage.svg?job=pipeline&key_text=flake8&key_width=60)
+![Flake8](https://gitlab.crja72.ru/django/2024/autumn/course/students/248227-bogdansalaeff-course-1187/badges/main/pipeline.svg)
 ![Black](https://gitlab.com/gitlab-org/gitlab/badges/main/coverage.svg?job=pipeline&key_text=black&key_width=60)
 ### Запуск проекта в dev-режиме
 - Установите и активируйте виртуальное окружение
