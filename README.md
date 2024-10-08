@@ -1,23 +1,31 @@
 # Lyceum
 ![pipeline](https://gitlab.crja72.ru/django/2024/autumn/course/students/248227-bogdansalaeff-course-1187/badges/main/pipeline.svg)
-![coverage](https://gitlab.crja72.ru/django/2024/autumn/course/students/248227-bogdansalaeff-course-1187/badges/main/coverage.svg?job=linting)
-### Запуск проекта в dev-режиме
-- Установите и активируйте виртуальное окружение
-```
-python -m venv venv
-```
-```
+## Установите и активируйте виртуальное окружение
+```bash
+python3 -m venv venv
 source venv/bin/activate
 ```
-- Установите зависимости из файла requirements.txt
-```
+## Установка зависимостей
+```bash
 pip install -r requirements/prod.txt
 ``` 
-- Создайте файл .env и задайте переменные окружения
+### Для разработки необходмио дополнительно установить зависмости из 
+`requirements/dev.txt`
+```bash
+pip install -r requirements/dev.txt
+``` 
+### Для запусков тестов зависимости перечислены в `requirements/test.txt`
+```bash
+pip install -r requirements/test.txt
+``` 
+## Настройка переменных окружения
+Скопируйте файл `config.env` в `.env`, если нужно, отредактируйте значения 
+переменных.
+```bash
+cp config.env .env
 ```
-touch .env
-```
-- В папке с файлом manage.py выполните команду:
-```
+## Запуск
+```bash
+cd lyceum
 python3 manage.py runserver
 ```
