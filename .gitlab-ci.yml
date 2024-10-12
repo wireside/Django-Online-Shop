@@ -4,12 +4,13 @@ stages:
 
 test:
     stage: Test
-    script:
-        - pip3 install -r requirements/test.txt
-        - python3 manage.py migrate
-        - python3 -m unittest discover -s lyceum/homepage
-        - python3 -m unittest discover -s lyceum/catalog
-        - python3 -m unittest discover -s lyceum/about
+    before_script:
+        - pip install -r requirements/test.txt
+        - python manage.py migrate
+    script:      
+        - python -m unittest discover -s lyceum/homepage
+        - python -m unittest discover -s lyceum/catalog
+        - python -m unittest discover -s lyceum/about
     only:
         - main
 
