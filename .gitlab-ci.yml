@@ -6,6 +6,8 @@ test:
     stage: Test
     image: python:3.11.1
     before_script:
+        - python3 -m venv venv
+        - source venv/bin/activate
         - pip install --upgrade pip
         - pip install -r requirements/test.txt
     script:
