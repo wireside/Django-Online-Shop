@@ -16,8 +16,18 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from homepage import views
+from . import settings
 
 urlpatterns = [
+    path("catalog/<int:pk>", views.index),
     path("admin/", admin.site.urls),
 ]
+
+
+if settings.DEBUG:
+    urlpatterns += [
+        path("__debug__/", include("debug_toolbar.urls"))
+    ]
+    

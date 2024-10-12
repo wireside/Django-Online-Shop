@@ -57,6 +57,15 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
+if DEBUG:
+    INSTALLED_APPS += ["debug_toolbar"]
+    MIDDLEWARE += ["debug_toolbar.middleware.DebugToolbarMiddleware"]
+
+
 ROOT_URLCONF = "lyceum.urls"
 
 TEMPLATES = [
