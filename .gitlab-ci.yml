@@ -9,7 +9,7 @@ test:
         - pip install --upgrade pip
         - pip install -r requirements/test.txt
     script:
-        - python manage.py migrate      
+        - python lyceum/manage.py migrate      
         - python -m unittest discover -s lyceum/homepage
         - python -m unittest discover -s lyceum/catalog
         - python -m unittest discover -s lyceum/about
