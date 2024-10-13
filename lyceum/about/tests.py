@@ -1,19 +1,11 @@
-import unittest
-
-from django.test import Client
+from django.test import TestCase
 from django.urls import reverse
 
 
-class HomepageURLTests(unittest.TestCase):
-    def setUp(self):
-        self.client = Client()
+class HomepageURLTests(TestCase):
 
     def test_about_url(self):
-        url = reverse("about")
+        url = reverse("description")
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "О проекте")
-
-
-if __name__ == "__main__":
-    unittest.main()
