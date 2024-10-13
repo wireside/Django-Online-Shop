@@ -2,7 +2,7 @@ from django.test import TestCase
 from django.urls import reverse
 
 
-class HomepageURLTests(TestCase):
+class CatalogURLTests(TestCase):
 
     def test_item_list_url(self):
         url = reverse("item_list")
