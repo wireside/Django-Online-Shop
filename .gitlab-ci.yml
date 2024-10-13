@@ -11,8 +11,9 @@ test:
         - pip install --upgrade pip
         - pip install -r requirements/test.txt
     script:
-        - python lyceum/manage.py migrate      
-        - python3 lyceum/manage.py test
+        - cd lyceum
+        - python3 manage.py migrate
+        - python3 manage.py test
     only:
         - main
 
