@@ -19,7 +19,7 @@ from dotenv import load_dotenv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-load_dotenv(dotenv_path=BASE_DIR / ".env")
+load_dotenv()
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -27,11 +27,10 @@ load_dotenv(dotenv_path=BASE_DIR / ".env")
 SECRET_KEY = os.getenv("DJANGO_SECRET", "not_so_secret")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG_ENV = os.getenv("DJANGO_DEBUG", "true").lower()
+DEBUG_ENV = os.getenv("DJANGO_DEBUG", "false").lower()
 DEBUG = DEBUG_ENV in ("true", "1", "t", "y", "yes")
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "*").split(",")
-
 
 # Application definition
 
@@ -56,6 +55,13 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+INTERNAL_IPS = []
+
+if DEBUG:
+    INSTALLED_APPS += ["debug_toolbar"]
+    MIDDLEWARE += ["debug_toolbar.middleware.DebugToolbarMiddleware"]
+    INTERNAL_IPS += ["127.0.0.1"]
 
 ROOT_URLCONF = "lyceum.urls"
 
