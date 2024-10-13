@@ -24,13 +24,14 @@ load_dotenv()
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("DJANGO_SECRET", "not_so_secret")
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "not_so_secret")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG_ENV = os.getenv("DJANGO_DEBUG", "false").lower()
 DEBUG = DEBUG_ENV in ("true", "1", "t", "y", "yes")
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "*").split(",")
+
 
 # Application definition
 
@@ -56,12 +57,14 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-INTERNAL_IPS = []
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
 
 if DEBUG:
     INSTALLED_APPS += ["debug_toolbar"]
     MIDDLEWARE += ["debug_toolbar.middleware.DebugToolbarMiddleware"]
-    INTERNAL_IPS += ["127.0.0.1"]
+
 
 ROOT_URLCONF = "lyceum.urls"
 
