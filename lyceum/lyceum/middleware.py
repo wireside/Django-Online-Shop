@@ -18,11 +18,11 @@ class ReverseRussianMiddleware:
         if not django.conf.settings.ALLOW_REVERSE:
             return False
 
-        cls.cnt = (cls.cnt + 1) % 10
-        if cls.cnt % 10 == 0:
-            cls.cnt = 0
-            return True
-        return False
+        cls.cnt += 1
+        if cls.cnt != 10:
+            return False
+        cls.cnt = 0
+        return True
 
     def __call__(self, request):
         if not self.check_need_reverse():
