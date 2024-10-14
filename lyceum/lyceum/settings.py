@@ -4,19 +4,27 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 
+load_dotenv()
+
+
+def load_bool(name, default):
+    env_value = os.getenv(name, str(default)).lower()
+    return env_value in ("true", "1", "t", "y", "yes")
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-load_dotenv()
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
+
+ALLOW_REVERSE = load_bool("DJANGO_ALLOW_REVERSE", False)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "not_so_secret")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG_ENV = os.getenv("DJANGO_DEBUG", "false").lower()
-DEBUG = DEBUG_ENV in ("true", "1", "t", "y", "yes")
+DEBUG = load_bool("DJANGO_DEBUG", False)
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "*").split(",")
 
@@ -43,6 +51,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "lyceum.middleware.ReverseRussianMiddleware",
 ]
 
 INTERNAL_IPS = [
