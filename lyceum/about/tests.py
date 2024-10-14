@@ -1,11 +1,9 @@
-from django.test import TestCase
-from django.urls import reverse
+from django.test import Client, TestCase
 
 
-class AboutURLTests(TestCase):
+class StaticURLTests(TestCase):
 
     def test_about_url(self):
-        url = reverse("description")
-        response = self.client.get(url)
+        response = Client().get("/about/")
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "О проекте")
