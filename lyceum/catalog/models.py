@@ -3,32 +3,11 @@ import django.core.validators
 import django.db
 import django.db.models
 
-
-def custom_validator(value):
-    if "превосходно" not in value and "роскошно" not in value:
-        raise django.core.exceptions.ValidationError(
-            "В тексте должно быть слово `превосходно`",
-        )
+import catalog.validators
+import core.models
 
 
-class AbstractModel(django.db.models.Model):
-    is_published = django.db.models.BooleanField(
-        "Опубликовано",
-        default=True,
-    )
-    name = django.db.models.TextField(
-        "Название",
-        help_text="max 150 символов",
-        validators=[
-            django.core.validators.MaxLengthValidator(150),
-        ],
-    )
-
-    class Meta:
-        abstract = True
-
-
-class Category(AbstractModel):
+class Category(core.models.AbstractModel):
     slug = django.db.models.SlugField(
         unique=True,
         verbose_name="Слаг",
@@ -54,7 +33,7 @@ class Category(AbstractModel):
         return self.name[:15]
 
 
-class Tag(AbstractModel):
+class Tag(core.models.AbstractModel):
     slug = django.db.models.SlugField(
         unique=True,
         verbose_name="Слаг",
@@ -74,7 +53,7 @@ class Tag(AbstractModel):
         return self.name[:30]
 
 
-class Item(AbstractModel):
+class Item(core.models.AbstractModel):
     category = django.db.models.ForeignKey(
         Category,
         on_delete=django.db.models.CASCADE,
@@ -92,7 +71,7 @@ class Item(AbstractModel):
         " содержащую в себе `превосходно`"
         " или `роскошно` ",
         validators=[
-            custom_validator,
+            catalog.validators.custom_validator,
         ],
         default="роскошно превосходно",
     )
