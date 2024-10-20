@@ -2,7 +2,6 @@ import re
 
 import django.conf
 
-
 WORDS_REGEX = re.compile(r"\w+|\W+")
 NOT_RUSSIAN_REGEX = re.compile(r"^[^а-яА-Я\s]+$")
 

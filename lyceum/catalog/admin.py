@@ -1,6 +1,6 @@
 import django.contrib.admin
 
-from . import models
+from catalog import models
 
 
 @django.contrib.admin.register(models.Item)
