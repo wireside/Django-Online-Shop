@@ -1,7 +1,7 @@
-import catalog.models
-
 import django.core.exceptions
 import django.test
+
+import catalog.models
 
 
 class StaticURLTests(django.test.TestCase):
