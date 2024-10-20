@@ -1,3 +1,6 @@
+import catalog.models
+
+import django.core.exceptions
 import django.test
 
 
@@ -45,5 +48,51 @@ class StaticURLTests(django.test.TestCase):
 
 
 class ModelsTests(django.test.TestCase):
-    def setUp(self):
-        pass
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+
+        cls.category = catalog.models.Category.objects.create(
+            is_published=True,
+            name="Тестовая категория",
+            slug="test-category-slug",
+            weight=100,
+        )
+        cls.tag = catalog.models.Tag.objects.create(
+            is_published=True,
+            name="Тествовый тег",
+            slug="test-tag-slug",
+        )
+
+    def test_custom_validator_create_without_needed_words(self):
+        item_count = catalog.models.Item.objects.count()
+        with self.assertRaises(django.core.exceptions.ValidationError):
+            self.item = catalog.models.Item(
+                name="Тестовый товар",
+                category=self.category,
+                text="Тестовое описание",
+            )
+            self.item.full_clean()
+            self.item.tags.add(ModelsTests.tag)
+            self.item.save()
+
+        self.assertEqual(
+            catalog.models.Item.objects.count(),
+            item_count,
+        )
+
+    def test_custom_validator_create_with_needed_words(self):
+        item_count = catalog.models.Item.objects.count()
+        self.item = catalog.models.Item(
+            name="Тестовый товар",
+            category=self.category,
+            text="тестовое превосходно описание",
+        )
+        self.item.full_clean()
+        self.item.save()
+        self.item.tags.add(ModelsTests.tag)
+
+        self.assertEqual(
+            catalog.models.Item.objects.count(),
+            item_count + 1,
+        )
