@@ -1,7 +1,7 @@
 import django.core.exceptions
 import django.test
 
-import catalog.models
+from . import models
 
 
 class StaticURLTests(django.test.TestCase):
@@ -52,22 +52,22 @@ class ModelsTests(django.test.TestCase):
     def setUpClass(cls):
         super().setUpClass()
 
-        cls.category = catalog.models.Category.objects.create(
+        cls.category = models.Category.objects.create(
             is_published=True,
             name="Тестовая категория",
             slug="test-category-slug",
             weight=100,
         )
-        cls.tag = catalog.models.Tag.objects.create(
+        cls.tag = models.Tag.objects.create(
             is_published=True,
             name="Тествовый тег",
             slug="test-tag-slug",
         )
 
     def test_custom_validator_create_without_needed_words(self):
-        item_count = catalog.models.Item.objects.count()
+        item_count = models.Item.objects.count()
         with self.assertRaises(django.core.exceptions.ValidationError):
-            self.item = catalog.models.Item(
+            self.item = models.Item(
                 name="Тестовый товар",
                 category=self.category,
                 text="Тестовое описание",
@@ -77,13 +77,13 @@ class ModelsTests(django.test.TestCase):
             self.item.save()
 
         self.assertEqual(
-            catalog.models.Item.objects.count(),
+            models.Item.objects.count(),
             item_count,
         )
 
     def test_custom_validator_create_with_needed_words(self):
-        item_count = catalog.models.Item.objects.count()
-        self.item = catalog.models.Item(
+        item_count = models.Item.objects.count()
+        self.item = models.Item(
             name="Тестовый товар",
             category=self.category,
             text="тестовое превосходно описание",
@@ -93,6 +93,6 @@ class ModelsTests(django.test.TestCase):
         self.item.tags.add(ModelsTests.tag)
 
         self.assertEqual(
-            catalog.models.Item.objects.count(),
+            models.Item.objects.count(),
             item_count + 1,
         )
