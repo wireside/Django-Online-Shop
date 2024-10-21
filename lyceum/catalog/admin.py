@@ -16,4 +16,3 @@ class ItemAdmin(django.contrib.admin.ModelAdmin):
     list_editable = (models.Item.is_published.field.name,)
     list_display_links = (models.Item.name.field.name,)
     filter_horizontal = (models.Item.tags.field.name,)
-
