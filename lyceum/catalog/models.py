@@ -8,78 +8,85 @@ import catalog.validators
 import core.models
 
 
-class Category(core.models.AbstractModel):
+class Category(core.models.BaseModel):
     slug = django.db.models.SlugField(
         unique=True,
         verbose_name="Слаг",
+        help_text="Максимум 200 символов",
         validators=[
             django.core.validators.MaxLengthValidator(200),
         ],
     )
-    weight = django.db.models.IntegerField(
+    weight = django.db.models.PositiveSmallIntegerField(
         default=100,
         verbose_name="Вес",
         help_text="Вес должен быть больше 0 и меньше 32768",
         validators=[
-            django.core.validators.MinValueValidator(1),
-            django.core.validators.MaxValueValidator(32768),
+            django.core.validators.MinValueValidator(
+                1,
+                message="Значение должно быть больше 0",
+            ),
+            django.core.validators.MaxValueValidator(
+                32767,
+                message="Значение должно быть меньше 32767",
+            ),
         ],
     )
 
     class Meta:
-        verbose_name = "Категория"
-        verbose_name_plural = "Категории"
+        ordering = (
+            "weight",
+            "id",
+        )
+        verbose_name = "категория"
+        verbose_name_plural = "категории"
 
     def __str__(self):
-        return self.name[:15]
+        return self.name
 
 
-class Tag(core.models.AbstractModel):
+class Tag(core.models.BaseModel):
     slug = django.db.models.SlugField(
         unique=True,
         verbose_name="Слаг",
-        help_text="Слаг содержит только латинские буквы,"
-        " символы тире или нижнего подчеркивания"
-        "и цифры",
+        help_text="Максимум 200 символов",
         validators=[
             django.core.validators.MaxLengthValidator(200),
         ],
     )
 
     class Meta:
-        verbose_name = "Тег"
-        verbose_name_plural = "Теги"
+        ordering = ("slug",)
+        verbose_name = "тег"
+        verbose_name_plural = "теги"
+        default_related_name = "tags"
 
     def __str__(self):
-        return self.name[:30]
+        return self.name
 
 
-class Item(core.models.AbstractModel):
+class Item(core.models.BaseModel):
     category = django.db.models.ForeignKey(
         Category,
         on_delete=django.db.models.CASCADE,
-        related_name="catalog_items",
-        verbose_name="Категория",
-        default=1,
+        verbose_name="категория",
+        help_text="Выберите категорию",
     )
-    tags = django.db.models.ManyToManyField(
-        Tag,
-        related_name="catalog_items",
-    )
+    tags = django.db.models.ManyToManyField(Tag)
     text = django.db.models.TextField(
-        verbose_name="Описание",
-        help_text="Описание должно содержать строку,"
-        " содержащую в себе `превосходно`"
-        " или `роскошно` ",
+        verbose_name="описание",
+        help_text=(
+            "Описание должно содержать слова 'превосходно' или 'роскошно'"
+        ),
         validators=[
             catalog.validators.custom_validator,
         ],
-        default="роскошно превосходно",
     )
 
     class Meta:
-        verbose_name = "Товар"
-        verbose_name_plural = "Товары"
+        verbose_name = "товар"
+        verbose_name_plural = "товары"
+        default_related_name = "items"
 
     def __str__(self):
         return self.name[:15]

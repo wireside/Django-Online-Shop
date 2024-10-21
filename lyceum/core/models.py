@@ -1,18 +1,24 @@
-import django.core.validators
+import re
+
+# import django.core.exceptions
 import django.db.models
 
+# import transliterate
 
-class AbstractModel(django.db.models.Model):
+
+ONLY_LETTERS_REGEX = re.compile(r"[^\w]")
+
+
+class BaseModel(django.db.models.Model):
     is_published = django.db.models.BooleanField(
-        "Опубликовано",
+        verbose_name="опубликовано",
         default=True,
     )
-    name = django.db.models.TextField(
-        "Название",
-        help_text="max 150 символов",
-        validators=[
-            django.core.validators.MaxLengthValidator(150),
-        ],
+    name = django.db.models.CharField(
+        verbose_name="название",
+        max_length=150,
+        help_text="Максимум 150 символов",
+        unique=True,
     )
 
     class Meta:
