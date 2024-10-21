@@ -10,7 +10,7 @@ import core.models
 class Category(core.models.BaseModel):
     slug = django.db.models.SlugField(
         unique=True,
-        verbose_name="Слаг",
+        verbose_name="cлаг",
         help_text="Максимум 200 символов",
         validators=[
             django.core.validators.MaxLengthValidator(200),
@@ -47,7 +47,7 @@ class Category(core.models.BaseModel):
 class Tag(core.models.BaseModel):
     slug = django.db.models.SlugField(
         unique=True,
-        verbose_name="Слаг",
+        verbose_name="cлаг",
         help_text="Максимум 200 символов",
         validators=[
             django.core.validators.MaxLengthValidator(200),
