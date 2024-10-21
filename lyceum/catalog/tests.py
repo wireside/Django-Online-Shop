@@ -76,7 +76,7 @@ class ModelsTests(django.test.TestCase):
             ("роскошно@",),
             ("!роскошно",),
             ("не роскошно",),
-        ]
+        ],
     )
     def test_item_validator(self, text):
         items_count = catalog.models.Item.objects.count()
@@ -103,7 +103,7 @@ class ModelsTests(django.test.TestCase):
             ("оскошно@",),
             ("!р оскошно",),
             ("qwertyроскошно",),
-        ]
+        ],
     )
     def test_item_negative_validator(self, text):
         items_count = catalog.models.Item.objects.count()
@@ -127,7 +127,7 @@ class ModelsTests(django.test.TestCase):
             (-100,),
             (0,),
             (64000,),
-        ]
+        ],
     )
     def test_category_negative_validator(self, weight):
         categories_count = catalog.models.Category.objects.count()
@@ -151,7 +151,7 @@ class ModelsTests(django.test.TestCase):
             (1,),
             (100,),
             (32000,),
-        ]
+        ],
     )
     def test_category_validator(self, weight):
         categories_count = catalog.models.Category.objects.count()
