@@ -78,7 +78,10 @@ class Item(core.models.BaseModel):
             "Описание должно содержать слова 'превосходно' или 'роскошно'"
         ),
         validators=[
-            catalog.validators.custom_validator,
+            catalog.validators.WordsValidator(
+                "роскошно",
+                "превосходно",
+            ),
         ],
     )
 

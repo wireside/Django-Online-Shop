@@ -1,7 +1,8 @@
 import django.core.exceptions
 import django.test
+import parameterized
 
-from catalog import models
+import catalog.models
 
 
 class StaticURLTests(django.test.TestCase):
@@ -48,51 +49,122 @@ class StaticURLTests(django.test.TestCase):
 
 
 class ModelsTests(django.test.TestCase):
-    @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
-
-        cls.category = models.Category.objects.create(
-            is_published=True,
-            name="Тестовая категория",
-            slug="test-category-slug",
-            weight=100,
+    def setUp(self):
+        self.category = catalog.models.Category.objects.create(
+            name="Test category",
+            slug="test-category",
         )
-        cls.tag = models.Tag.objects.create(
-            is_published=True,
-            name="Тествовый тег",
-            slug="test-tag-slug",
+        self.tag = catalog.models.Tag.objects.create(
+            name="Test tag",
+            slug="test-tag",
         )
 
-    def test_custom_validator_create_without_needed_words(self):
-        item_count = models.Item.objects.count()
-        with self.assertRaises(django.core.exceptions.ValidationError):
-            self.item = models.Item(
-                name="Тестовый товар",
-                category=self.category,
-                text="Тестовое описание",
-            )
-            self.item.full_clean()
-            self.item.tags.add(ModelsTests.tag)
-            self.item.save()
+        super(ModelsTests, self).setUp()
 
-        self.assertEqual(
-            models.Item.objects.count(),
-            item_count,
-        )
+    def tearDown(self):
+        catalog.models.Item.objects.all().delete()
+        catalog.models.Tag.objects.all().delete()
+        catalog.models.Category.objects.all().delete()
 
-    def test_custom_validator_create_with_needed_words(self):
-        item_count = models.Item.objects.count()
-        self.item = models.Item(
+        super(ModelsTests, self).tearDown()
+
+    @parameterized.parameterized.expand(
+        [
+            ("Превосходно",),
+            ("роскошно",),
+            ("роскошно!",),
+            ("роскошно@",),
+            ("!роскошно",),
+            ("не роскошно",),
+        ]
+    )
+    def test_item_validator(self, text):
+        items_count = catalog.models.Item.objects.count()
+
+        item = catalog.models.Item(
             name="Тестовый товар",
+            text=text,
             category=self.category,
-            text="тестовое превосходно описание",
         )
-        self.item.full_clean()
-        self.item.save()
-        self.item.tags.add(ModelsTests.tag)
+        item.full_clean()
+        item.save()
+        item.tags.add(self.tag)
 
         self.assertEqual(
-            models.Item.objects.count(),
-            item_count + 1,
+            catalog.models.Item.objects.count(),
+            items_count + 1,
+        )
+
+    @parameterized.parameterized.expand(
+        [
+            ("Прев!осходно",),
+            ("роскошный",),
+            ("роскошное!",),
+            ("оскошно@",),
+            ("!р оскошно",),
+            ("qwertyроскошно",),
+        ]
+    )
+    def test_item_negative_validator(self, text):
+        items_count = catalog.models.Item.objects.count()
+
+        with self.assertRaises(django.core.exceptions.ValidationError):
+            item = catalog.models.Item(
+                name="Тестовый товар",
+                text=text,
+                category=self.category,
+            )
+            item.full_clean()
+            item.save()
+
+        self.assertEqual(
+            catalog.models.Item.objects.count(),
+            items_count,
+        )
+
+    @parameterized.parameterized.expand(
+        [
+            (-100,),
+            (0,),
+            (64000,),
+        ]
+    )
+    def test_category_negative_validator(self, weight):
+        categories_count = catalog.models.Category.objects.count()
+
+        with self.assertRaises(django.core.exceptions.ValidationError):
+            test_category = catalog.models.Category(
+                name="Тестовая категория",
+                weight=weight,
+                slug="test-cat",
+            )
+            test_category.full_clean()
+            test_category.save()
+
+        self.assertEqual(
+            catalog.models.Category.objects.count(),
+            categories_count,
+        )
+
+    @parameterized.parameterized.expand(
+        [
+            (1,),
+            (100,),
+            (32000,),
+        ]
+    )
+    def test_category_validator(self, weight):
+        categories_count = catalog.models.Category.objects.count()
+
+        test_category = catalog.models.Category(
+            name="Тестовая категория",
+            weight=weight,
+            slug=f"test-category{weight}",
+        )
+        test_category.full_clean()
+        test_category.save()
+
+        self.assertEqual(
+            catalog.models.Category.objects.count(),
+            categories_count + 1,
         )
