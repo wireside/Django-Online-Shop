@@ -4,7 +4,6 @@ import django.db
 import django.db.models
 
 import catalog.validators
-
 import core.models
 
 
