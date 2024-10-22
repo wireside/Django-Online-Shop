@@ -64,7 +64,16 @@ class Tag(core.models.BaseModel):
         return self.name
 
 
-class Item(core.models.BaseModel):
+class Item(django.db.models.Model):
+    is_published = django.db.models.BooleanField(
+        verbose_name="опубликовано",
+        default=True,
+    )
+    name = django.db.models.CharField(
+        verbose_name="название",
+        max_length=150,
+        help_text="Максимум 150 символов",
+    )
     category = django.db.models.ForeignKey(
         Category,
         on_delete=django.db.models.CASCADE,

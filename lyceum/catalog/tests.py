@@ -157,7 +157,7 @@ class ModelsTests(django.test.TestCase):
         categories_count = catalog.models.Category.objects.count()
 
         test_category = catalog.models.Category(
-            name="Тестовая категория",
+            name="Тестовая",
             weight=weight,
             slug=f"test-category{weight}",
         )
@@ -167,4 +167,54 @@ class ModelsTests(django.test.TestCase):
         self.assertEqual(
             catalog.models.Category.objects.count(),
             categories_count + 1,
+        )
+
+    def test_canonical_category_name_negative(self):
+        categories_count = catalog.models.Category.objects.count()
+
+        with self.assertRaises(django.core.exceptions.ValidationError):
+            test_category_1 = catalog.models.Category(
+                name="одинаковое имя",
+                slug="qwerty1235cat",
+                weight=100,
+            )
+            test_category_1.full_clean()
+            test_category_1.save()
+
+            test_category_2 = catalog.models.Category(
+                name="Одинаковое имя",
+                slug="983507test-cat",
+                weight=100,
+            )
+            test_category_2.full_clean()
+            test_category_2.save()
+
+        self.assertEqual(
+            catalog.models.Category.objects.count(),
+            categories_count + 1,
+        )
+
+    def test_canonical_tag_name_negative(self):
+        tags_count = catalog.models.Tag.objects.count()
+
+        with self.assertRaises(django.core.exceptions.ValidationError):
+            test_tag_1 = catalog.models.Tag(
+                name="одинаковое имя",
+                slug="qwerty1235tagg111tag",
+            )
+
+            test_tag_2 = catalog.models.Tag(
+                name="oдинAковое имя",
+                slug="983507test-tagggg",
+            )
+
+            test_tag_1.full_clean()
+            test_tag_1.save()
+
+            test_tag_2.full_clean()
+            test_tag_2.save()
+
+        self.assertEqual(
+            catalog.models.Tag.objects.count(),
+            tags_count + 1,
         )
