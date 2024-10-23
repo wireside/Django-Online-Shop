@@ -18,7 +18,7 @@ class Category(core.models.BaseModel):
     )
     weight = django.db.models.PositiveSmallIntegerField(
         default=100,
-        verbose_name="Вес",
+        verbose_name="вес",
         help_text="Вес должен быть больше 0 и меньше 32768",
         validators=[
             django.core.validators.MinValueValidator(
@@ -41,7 +41,7 @@ class Category(core.models.BaseModel):
         verbose_name_plural = "категории"
 
     def __str__(self):
-        return self.name
+        return self.name[:15]
 
 
 class Tag(core.models.BaseModel):
@@ -61,7 +61,7 @@ class Tag(core.models.BaseModel):
         default_related_name = "tags"
 
     def __str__(self):
-        return self.name
+        return self.name[:30]
 
 
 class Item(django.db.models.Model):
