@@ -1,6 +1,5 @@
 # Lyceum
 ![pipeline](https://gitlab.crja72.ru/django/2024/autumn/course/students/248227-bogdansalaeff-course-1187/badges/main/pipeline.svg)
-![Иллюстрация к проекту](ER.jpg)
 ## Установите и активируйте виртуальное окружение
 ```bash
 python3 -m venv venv
@@ -50,3 +49,5 @@ python3 manage.py runserver
 cd lyceum
 python3 manage.py test
 ```
+# Структура базы данных приложения catalog
+![Иллюстрация к проекту](ER.jpg)
