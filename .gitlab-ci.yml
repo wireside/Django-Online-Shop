@@ -20,10 +20,6 @@ test:
 flake8:
     stage: Linting
     image: registry.gitlab.com/pipeline-components/flake8:latest
-    before_script:
-        - pip install --upgrade pip
-        - pip install -r requirements/prod.txt
-        - pip install -r requirements/test.txt
     script:
         - flake8 --verbose .
     only:
@@ -32,10 +28,6 @@ flake8:
 black:
     stage: Linting
     image: registry.gitlab.com/pipeline-components/black:latest
-    before_script:
-        - pip install --upgrade pip
-        - pip install -r requirements/prod.txt
-        - pip install -r requirements/test.txt
     script:
         - black --check --verbose -l 79 .
     only:
