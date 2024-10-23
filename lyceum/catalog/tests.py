@@ -1,3 +1,5 @@
+import http
+
 import django.core.exceptions
 import django.test
 import parameterized
@@ -9,7 +11,7 @@ class StaticURLTests(django.test.TestCase):
 
     def test_item_list_url(self):
         response = django.test.Client().get("/catalog/")
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, http.HTTPStatus.OK)
         self.assertContains(response, "Список элементов")
 
     @parameterized.parameterized.expand(
@@ -21,7 +23,7 @@ class StaticURLTests(django.test.TestCase):
     )
     def test_item_detail_url(self, item_id):
         response = django.test.Client().get(f"/catalog/{item_id}/")
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, http.HTTPStatus.OK)
         self.assertContains(response, "Подробно элемент")
 
     @parameterized.parameterized.expand(
@@ -33,7 +35,7 @@ class StaticURLTests(django.test.TestCase):
     )
     def test_item_detail_invalid_id_url(self, item_id):
         response = django.test.Client().get(f"/catalog/{item_id}/")
-        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.status_code, http.HTTPStatus.NOT_FOUND)
 
     @parameterized.parameterized.expand(
         [
@@ -44,7 +46,7 @@ class StaticURLTests(django.test.TestCase):
     )
     def test_positive_converter(self, item_id):
         response = django.test.Client().get(f"/catalog/converter/{item_id}/")
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, http.HTTPStatus.OK)
         self.assertContains(response, item_id.lstrip("0"))
 
     @parameterized.parameterized.expand(
@@ -56,7 +58,7 @@ class StaticURLTests(django.test.TestCase):
     )
     def test_positive_converter_negative_number(self, item_id):
         response = django.test.Client().get(f"/catalog/converter/{item_id}/")
-        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.status_code, http.HTTPStatus.NOT_FOUND)
 
     @parameterized.parameterized.expand(
         [
@@ -67,7 +69,7 @@ class StaticURLTests(django.test.TestCase):
     )
     def test_positive_converter_invalid_number(self, item_id):
         response = django.test.Client().get(f"/catalog/converter/{item_id}/")
-        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.status_code, http.HTTPStatus.NOT_FOUND)
 
     @parameterized.parameterized.expand(
         [
@@ -78,7 +80,7 @@ class StaticURLTests(django.test.TestCase):
     )
     def test_customer_converter(self, item_id):
         response = django.test.Client().get(f"/catalog/re/{item_id}/")
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, http.HTTPStatus.OK)
         self.assertContains(response, item_id)
 
     @parameterized.parameterized.expand(
@@ -90,7 +92,7 @@ class StaticURLTests(django.test.TestCase):
     )
     def test_customer_converter_negative_number(self, item_id):
         response = django.test.Client().get(f"/catalog/re/{item_id}/")
-        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.status_code, http.HTTPStatus.NOT_FOUND)
 
     @parameterized.parameterized.expand(
         [
@@ -101,7 +103,7 @@ class StaticURLTests(django.test.TestCase):
     )
     def test_customer_converter_invalid_number(self, item_id):
         response = django.test.Client().get(f"/catalog/re/{item_id}/")
-        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.status_code, http.HTTPStatus.NOT_FOUND)
 
 
 class ModelsTests(django.test.TestCase):
