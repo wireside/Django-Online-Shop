@@ -12,39 +12,95 @@ class StaticURLTests(django.test.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Список элементов")
 
-    def test_item_detail_url(self):
-        response = django.test.Client().get("/catalog/1/")
+    @parameterized.parameterized.expand(
+        [
+            (100,),
+            (0,),
+            (64000,),
+        ],
+    )
+    def test_item_detail_url(self, item_id):
+        response = django.test.Client().get(f"/catalog/{item_id}/")
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Подробно элемент")
 
-    def test_item_detail_invalid_id_url(self):
-        response = django.test.Client().get("/catalog/-123/")
+    @parameterized.parameterized.expand(
+        [
+            (-100,),
+            (-1,),
+            (-3125,),
+        ],
+    )
+    def test_item_detail_invalid_id_url(self, item_id):
+        response = django.test.Client().get(f"/catalog/{item_id}/")
         self.assertEqual(response.status_code, 404)
 
-    def test_positive_converter(self):
-        response = django.test.Client().get("/catalog/converter/001056/")
+    @parameterized.parameterized.expand(
+        [
+            ("001056",),
+            ("310031",),
+            ("064000",),
+        ],
+    )
+    def test_positive_converter(self, item_id):
+        response = django.test.Client().get(f"/catalog/converter/{item_id}/")
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "1056")
+        self.assertContains(response, item_id.lstrip("0"))
 
-    def test_positive_converter_negative_number(self):
-        response = django.test.Client().get("/catalog/converter/-01324531/")
+    @parameterized.parameterized.expand(
+        [
+            ("-001056",),
+            ("-310031",),
+            ("-064000",),
+        ],
+    )
+    def test_positive_converter_negative_number(self, item_id):
+        response = django.test.Client().get(f"/catalog/converter/{item_id}/")
         self.assertEqual(response.status_code, 404)
 
-    def test_positive_converter_invalid_number(self):
-        response = django.test.Client().get("/catalog/converter/013e24PI*531/")
+    @parameterized.parameterized.expand(
+        [
+            ("013e24PI*531",),
+            ("f(x)'=lim(x->0)a",),
+            ("O64O00",),
+        ],
+    )
+    def test_positive_converter_invalid_number(self, item_id):
+        response = django.test.Client().get(f"/catalog/converter/{item_id}/")
         self.assertEqual(response.status_code, 404)
 
-    def test_customer_converter(self):
-        response = django.test.Client().get("/catalog/re/0022301/")
+    @parameterized.parameterized.expand(
+        [
+            ("001056",),
+            ("310031",),
+            ("064000",),
+        ],
+    )
+    def test_customer_converter(self, item_id):
+        response = django.test.Client().get(f"/catalog/re/{item_id}/")
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "0022301")
+        self.assertContains(response, item_id)
 
-    def test_customer_converter_negative_number(self):
-        response = django.test.Client().get("/catalog/re/-301/")
+    @parameterized.parameterized.expand(
+        [
+            ("-001",),
+            ("-310031",),
+            ("-064000",),
+        ],
+    )
+    def test_customer_converter_negative_number(self, item_id):
+        response = django.test.Client().get(f"/catalog/re/{item_id}/")
         self.assertEqual(response.status_code, 404)
 
-    def test_customer_converter_invalid_number(self):
-        response = django.test.Client().get("/catalog/re/30oneTwoOne_one1/")
+    @parameterized.parameterized.expand(
+        [
+            ("2PI + 2PIk",),
+            ("3nO031",),
+            ("one",),
+        ],
+    )
+    def test_customer_converter_invalid_number(self, item_id):
+        response = django.test.Client().get(f"/catalog/re/{item_id}/")
         self.assertEqual(response.status_code, 404)
 
 
