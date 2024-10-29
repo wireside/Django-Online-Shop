@@ -2,6 +2,8 @@ import re
 
 import django.core.exceptions
 import django.db.models
+
+import sorl.thumbnail
 import transliterate
 
 
@@ -58,6 +60,37 @@ class BaseModel(django.db.models.Model):
             raise django.core.exceptions.ValidationError(
                 "Уже есть такой же элемент",
             )
+
+    class Meta:
+        abstract = True
+
+
+class ImageBaseModel(django.db.models.Model):
+    image = django.db.models.ImageField(
+        "изображение",
+        upload_to="catalog/",
+        default=None,
+    )
+
+    def get_image_300x300(self):
+        return sorl.thumbnail.get_thumbnail(
+            self.image,
+            "300x300",
+            crop="center",
+            quality=51,
+        )
+
+    @property
+    def get_image_50x50(self):
+        return sorl.thumbnail.get_thumbnail(
+            self.image,
+            "50x50",
+            crop="center",
+            quality=51,
+        )
+
+    def __str__(self):
+        return self.item.name
 
     class Meta:
         abstract = True

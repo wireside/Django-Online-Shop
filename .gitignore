@@ -12,6 +12,7 @@ venv.bak/
 __pycache__/
 *.py[cod]
 *$py.class
+lyceum/media/
 
 # Django stuff:
 *.log

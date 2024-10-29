@@ -2,6 +2,7 @@ import django.core.exceptions
 import django.core.validators
 import django.db
 import django.db.models
+from django.utils.safestring import mark_safe
 
 import catalog.validators
 import core.models
@@ -101,3 +102,40 @@ class Item(django.db.models.Model):
 
     def __str__(self):
         return self.name[:15]
+
+    def image_tmb(self):
+        if self.main_image.image:
+            return mark_safe(
+                f"<img src='{self.main_image.get_image_50x50.url}'>"
+            )
+        return "Нет изображения"
+
+    image_tmb.short_description = "превью"
+    image_tmb.allow_tags = True
+
+
+class MainImage(core.models.ImageBaseModel):
+    item = django.db.models.OneToOneField(
+        Item,
+        on_delete=django.db.models.CASCADE,
+        related_name="main_image",
+    )
+
+    def __str__(self):
+        return self.item.name
+
+    class Meta:
+        verbose_name = "главное изображение"
+        verbose_name_plural = "главные изображения"
+
+
+class Image(core.models.ImageBaseModel):
+    item = django.db.models.ForeignKey(
+        Item,
+        on_delete=django.db.models.CASCADE,
+        related_name="images",
+    )
+
+    class Meta:
+        verbose_name = "фото"
+        verbose_name_plural = "фото"
