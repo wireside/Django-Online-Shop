@@ -62,7 +62,7 @@ ROOT_URLCONF = "lyceum.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -117,6 +117,13 @@ USE_TZ = True
 
 
 STATIC_URL = "static/"
+STATICFILES_DIRS = [
+    BASE_DIR / "static_dev",
+]
+STATIC_ROOT = "static"
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = "media"
 
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"

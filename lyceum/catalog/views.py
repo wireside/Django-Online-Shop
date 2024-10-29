@@ -1,8 +1,11 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
-def item_list(response):
-    return HttpResponse("<body>Список элементов</body>")
+def item_list(request):
+    template = "catalog/item_list.html"
+    context = {}
+    return render(request, template, context)
 
 
 def item_detail(response, pk):

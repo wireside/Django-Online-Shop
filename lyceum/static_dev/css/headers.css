@@ -1,0 +1,22 @@
+body {
+  padding: 0;
+  margin: 0;
+  padding-top: 40px;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.header-logo-label {
+  margin-left: 20px;
+}

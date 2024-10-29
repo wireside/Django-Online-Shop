@@ -1,11 +1,13 @@
 from http import HTTPStatus
 
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
-# Create your views here.
-def home(response):
-    return HttpResponse("<body>Главная</body>")
+def home(request):
+    template = "homepage/main.html"
+    context = {}
+    return render(request, template, context)
 
 
 def coffee(response):
