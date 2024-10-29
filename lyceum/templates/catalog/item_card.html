@@ -1,4 +1,23 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block title %}
+	Подробно о товаре
+{% endblock %}
 {% block content %}
-
+  <div class="container">
+    <div class="card mb-3 shadow-lg">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="{% static 'img/cats.jpg' %}" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Подробно элемент</h5>
+            <p class="card-text">Общее описание товара Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at corporis doloremque doloribus dolorum, excepturi facere fugit, iure laboriosam magni natus neque nihil, quia vero voluptatum. Delectus labore quam rerum!</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}
