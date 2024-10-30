@@ -9,9 +9,7 @@ def item_list(request):
 
 
 def item_detail(request, pk):
-    template = "catalog/item_card.html"
-    context = {}
-    return render(request, template, context)
+    return HttpResponse("<body>Подробно элемент</body>")
 
 
 def item_positive_converter(response, pk):
