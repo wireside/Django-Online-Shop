@@ -1,5 +1,4 @@
 import ckeditor.fields
-
 import django.core.exceptions
 import django.core.validators
 import django.db
@@ -108,7 +107,7 @@ class Item(django.db.models.Model):
     def image_tmb(self):
         if self.main_image.image:
             return mark_safe(
-                f"<img src='{self.main_image.get_image_50x50.url}'>"
+                f"<img src='{self.main_image.get_image_50x50.url}'>",
             )
         return "Нет изображения"
 

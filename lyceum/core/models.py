@@ -2,7 +2,6 @@ import re
 
 import django.core.exceptions
 import django.db.models
-
 import sorl.thumbnail
 import transliterate
 

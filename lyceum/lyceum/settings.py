@@ -166,5 +166,5 @@ CKEDITOR_CONFIGS = {
             ["Link", "Unlink"],
             ["RemoveFormat", "Source"],
         ],
-    }
+    },
 }

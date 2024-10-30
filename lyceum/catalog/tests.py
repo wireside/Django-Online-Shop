@@ -27,7 +27,7 @@ class StaticURLTests(django.test.TestCase):
             reverse(
                 "catalog:item_detail",
                 args=[item_id],
-            )
+            ),
         )
         self.assertEqual(response.status_code, http.HTTPStatus.OK)
         self.assertContains(response, "Подробно элемент")
@@ -45,7 +45,7 @@ class StaticURLTests(django.test.TestCase):
                 reverse(
                     "catalog:item_detail",
                     args=[item_id],
-                )
+                ),
             )
 
         response = django.test.Client().get(f"/catalog/{item_id}/")
