@@ -10,11 +10,12 @@ source venv/bin/activate
 git clone git@gitlab.crja72.ru:django/2024/autumn/course/students/248227-bogdansalaeff-course-1187.git Lyceum
 cd Lyceum
 ```
-## Включение перевода
+## Включение переводов
 ```bash
 cd lyceum
 python3 manage.py compilemessages
 ```
+Необходимо наличие GNU gettext tools 0.15 или выше
 ## Установка зависимостей
 ```bash
 pip3 install -r requirements/prod.txt
