@@ -1,3 +1,4 @@
+{% load i18n %}
 <header>
     <nav class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom me-auto container-xl fixed-top bg-light shadow-sm navbar-expand-lg">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
@@ -11,17 +12,17 @@
           {% with request.resolver_match.view_name as view_name %}
           <li class="nav-item">
             <a class="nav-link {% if view_name == 'homepage:home' %}active disabled{% endif %}" href="{% url 'homepage:home' %}">
-              На главную
+              {% translate "Main" %}
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link {% if view_name == 'catalog:item_list' %}active disabled{% else %} {% if view_name == 'catalog:item_detail' %}active{% endif %} {% endif %}" href="{% url 'catalog:item_list' %}">
-              Каталог
+              {% translate "Catalog" %}
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link {% if view_name == 'about:description' %}active disabled{% endif %}" href="{% url 'about:description' %}">
-              О проекте
+              {% translate "About" %}
             </a>
           </li>
           {% endwith %}

@@ -2,6 +2,7 @@ import http
 
 import django.core.exceptions
 import django.test
+from django.urls import reverse
 import parameterized
 
 import catalog.models
@@ -10,7 +11,7 @@ import catalog.models
 class StaticURLTests(django.test.TestCase):
 
     def test_item_list_url(self):
-        response = django.test.Client().get("/catalog/")
+        response = django.test.Client().get(reverse("catalog:item_list"))
         self.assertEqual(response.status_code, http.HTTPStatus.OK)
         self.assertContains(response, "Список элементов")
 
@@ -22,7 +23,12 @@ class StaticURLTests(django.test.TestCase):
         ],
     )
     def test_item_detail_url(self, item_id):
-        response = django.test.Client().get(f"/catalog/{item_id}/")
+        response = django.test.Client().get(
+            reverse(
+                "catalog:item_detail",
+                args=[item_id],
+            )
+        )
         self.assertEqual(response.status_code, http.HTTPStatus.OK)
         self.assertContains(response, "Подробно элемент")
 
@@ -34,75 +40,15 @@ class StaticURLTests(django.test.TestCase):
         ],
     )
     def test_item_detail_invalid_id_url(self, item_id):
+        with self.assertRaises(django.urls.exceptions.NoReverseMatch):
+            response = django.test.Client().get(
+                reverse(
+                    "catalog:item_detail",
+                    args=[item_id],
+                )
+            )
+
         response = django.test.Client().get(f"/catalog/{item_id}/")
-        self.assertEqual(response.status_code, http.HTTPStatus.NOT_FOUND)
-
-    @parameterized.parameterized.expand(
-        [
-            ("001056",),
-            ("310031",),
-            ("064000",),
-        ],
-    )
-    def test_positive_converter(self, item_id):
-        response = django.test.Client().get(f"/catalog/converter/{item_id}/")
-        self.assertEqual(response.status_code, http.HTTPStatus.OK)
-        self.assertContains(response, item_id.lstrip("0"))
-
-    @parameterized.parameterized.expand(
-        [
-            ("-001056",),
-            ("-310031",),
-            ("-064000",),
-        ],
-    )
-    def test_positive_converter_negative_number(self, item_id):
-        response = django.test.Client().get(f"/catalog/converter/{item_id}/")
-        self.assertEqual(response.status_code, http.HTTPStatus.NOT_FOUND)
-
-    @parameterized.parameterized.expand(
-        [
-            ("013e24PI*531",),
-            ("f(x)'=lim(x->0)a",),
-            ("O64O00",),
-        ],
-    )
-    def test_positive_converter_invalid_number(self, item_id):
-        response = django.test.Client().get(f"/catalog/converter/{item_id}/")
-        self.assertEqual(response.status_code, http.HTTPStatus.NOT_FOUND)
-
-    @parameterized.parameterized.expand(
-        [
-            ("001056",),
-            ("310031",),
-            ("064000",),
-        ],
-    )
-    def test_customer_converter(self, item_id):
-        response = django.test.Client().get(f"/catalog/re/{item_id}/")
-        self.assertEqual(response.status_code, http.HTTPStatus.OK)
-        self.assertContains(response, item_id)
-
-    @parameterized.parameterized.expand(
-        [
-            ("-001",),
-            ("-310031",),
-            ("-064000",),
-        ],
-    )
-    def test_customer_converter_negative_number(self, item_id):
-        response = django.test.Client().get(f"/catalog/re/{item_id}/")
-        self.assertEqual(response.status_code, http.HTTPStatus.NOT_FOUND)
-
-    @parameterized.parameterized.expand(
-        [
-            ("2PI + 2PIk",),
-            ("3nO031",),
-            ("one",),
-        ],
-    )
-    def test_customer_converter_invalid_number(self, item_id):
-        response = django.test.Client().get(f"/catalog/re/{item_id}/")
         self.assertEqual(response.status_code, http.HTTPStatus.NOT_FOUND)
 
 

@@ -3,6 +3,7 @@ Django==4.2.16
 django_cleanup==9.0.0
 Pillow==11.0.0
 python-dotenv==1.0.1
+pythongettext==5.0
 sorl-thumbnail==12.11.0
 sqlparse==0.5.1
 transliterate==1.10.2
