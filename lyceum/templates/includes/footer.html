@@ -5,6 +5,16 @@
       <li class="nav-item"><a href="{% url 'catalog:item_list' %}" class="nav-link px-2 text-muted">Каталог</a></li>
       <li class="nav-item"><a href="{% url 'about:description' %}" class="nav-link px-2 text-muted">О проекте</a></li>
     </ul>
-    <p class="text-center text-muted">&copy; 2024 Проект Lyceum</p>
+    <p class="text-center text-muted">&copy; <span id="year">{% now "Y" %}</span> Проект Lyceum</p>
+    <script>
+      let dateStr = "{% now "Y-m-d" %}T{% now "H:i:s" %}Z";
+      let serverDate = Date.parse(dateStr);
+      let now = Date.now();
+      let diffTime = Math.abs(serverDate - now);
+      let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+      let date = new Date(diffDays < 1 ? now : serverDate);
+      $("#year").text(date.getFullYear());
+    </script>
   </div>
 </footer>
