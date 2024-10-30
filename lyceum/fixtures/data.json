@@ -22,6 +22,17 @@
   }
 },
 {
+  "model": "catalog.category",
+  "pk": 3,
+  "fields": {
+    "is_published": true,
+    "name": "электронная техника",
+    "canonical_name": null,
+    "slug": "fsafajifappler12",
+    "weight": 87
+  }
+},
+{
   "model": "catalog.tag",
   "pk": 1,
   "fields": {
@@ -69,6 +80,16 @@
     "name": "сертефецированный продовец",
     "canonical_name": null,
     "slug": "slu423234g23423_92eqwe"
+  }
+},
+{
+  "model": "catalog.tag",
+  "pk": 7,
+  "fields": {
+    "is_published": true,
+    "name": "apple",
+    "canonical_name": null,
+    "slug": "sdfsdfsdfsfsdf123333333333333333333"
   }
 },
 {
@@ -143,6 +164,81 @@
       5,
       3
     ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 9,
+  "fields": {
+    "is_published": true,
+    "name": "iPhone 16 Pro Max",
+    "category": 3,
+    "text": "Революционная производительность. Графика следующего поколения. Превосходно работает до 22 часов без подзарядки. ◊ Теперь в цвете космический черный.",
+    "tags": [
+      7,
+      6
+    ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 10,
+  "fields": {
+    "is_published": true,
+    "name": "Macbook",
+    "category": 3,
+    "text": "Невероятно тонкий, легкий и портативный дизайн. Раздвиньте границы того, что возможно на iPad, с помощью увеличенной 13-дюймовой модели. Превосходно подойдет под любые цели!",
+    "tags": [
+      7,
+      6,
+      5
+    ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 11,
+  "fields": {
+    "is_published": true,
+    "name": "Ipad",
+    "category": 3,
+    "text": "Превосходный дизайн и эргономика. Искусственный интеллект. Новый процессор и улучшенные камеры. Качественный дисплей и защита глаз. И это ещё далеко не всё! роскошно",
+    "tags": [
+      7,
+      6
+    ]
+  }
+},
+{
+  "model": "catalog.mainimage",
+  "pk": 5,
+  "fields": {
+    "image": "catalog/ipad_IRIwyxa.jpg",
+    "item": 11
+  }
+},
+{
+  "model": "catalog.mainimage",
+  "pk": 6,
+  "fields": {
+    "image": "catalog/macbook_Dpt47um.jpg",
+    "item": 10
+  }
+},
+{
+  "model": "catalog.mainimage",
+  "pk": 7,
+  "fields": {
+    "image": "catalog/iphone_1QSYQcR.jpg",
+    "item": 9
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 4,
+  "fields": {
+    "image": "catalog/ipad_8EbP54o.jpg",
+    "item": 11
   }
 }
 ]
