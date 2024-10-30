@@ -1,3 +1,5 @@
+import ckeditor.fields
+
 import django.core.exceptions
 import django.core.validators
 import django.db
@@ -82,7 +84,7 @@ class Item(django.db.models.Model):
         help_text="Выберите категорию",
     )
     tags = django.db.models.ManyToManyField(Tag)
-    text = django.db.models.TextField(
+    text = ckeditor.fields.RichTextField(
         verbose_name="описание",
         help_text=(
             "Описание должно содержать слова 'превосходно' или 'роскошно'"
