@@ -29,7 +29,7 @@ msgstr ""
 
 #: .\templates\includes\header.html:15
 msgid "Main"
-msgstr "На главную"
+msgstr "Главная"
 
 #: .\templates\includes\header.html:20
 msgid "Catalog"
