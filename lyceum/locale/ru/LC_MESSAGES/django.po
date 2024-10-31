@@ -21,11 +21,11 @@ msgstr ""
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 #: .\lyceum\settings.py:115
 msgid "English"
-msgstr ""
+msgstr "Английский"
 
 #: .\lyceum\settings.py:116
 msgid "Russian"
-msgstr ""
+msgstr "Русский"
 
 #: .\templates\includes\header.html:15
 msgid "Main"
