@@ -96,7 +96,7 @@
   "model": "catalog.item",
   "pk": 4,
   "fields": {
-    "is_published": true,
+    "is_published": false,
     "name": "Игрушка \"Лапка\"",
     "category": 1,
     "text": "тестовое описание роскошно",
@@ -109,7 +109,7 @@
   "model": "catalog.item",
   "pk": 5,
   "fields": {
-    "is_published": true,
+    "is_published": false,
     "name": "Квадрокоптер",
     "category": 1,
     "text": "тестовое описание роскошно",
@@ -124,7 +124,7 @@
   "model": "catalog.item",
   "pk": 6,
   "fields": {
-    "is_published": true,
+    "is_published": false,
     "name": "Джинсы широкие",
     "category": 2,
     "text": "превосходно подходят для мужчин и женщин",
@@ -139,7 +139,7 @@
   "model": "catalog.item",
   "pk": 7,
   "fields": {
-    "is_published": true,
+    "is_published": false,
     "name": "Платье Prada",
     "category": 2,
     "text": "роскошно е платье от именитого бренда Prada",
@@ -153,7 +153,7 @@
   "model": "catalog.item",
   "pk": 8,
   "fields": {
-    "is_published": true,
+    "is_published": false,
     "name": "Набор Lego",
     "category": 1,
     "text": "<p>Данный набор лего превосходно и весело скрасит ваши дни. Собирать Lego можно одному или всей семьей.</p>",
@@ -173,7 +173,7 @@
     "is_published": true,
     "name": "iPhone 16 Pro Max",
     "category": 3,
-    "text": "Революционная производительность. Графика следующего поколения. Превосходно работает до 22 часов без подзарядки. ◊ Теперь в цвете космический черный.",
+    "text": "<p>Революционная производительность. Графика следующего поколения. Превосходно работает до 22 часов без подзарядки. &loz; Теперь в цвете космический черный.</p>",
     "tags": [
       7,
       6
@@ -187,7 +187,7 @@
     "is_published": true,
     "name": "Macbook",
     "category": 3,
-    "text": "Невероятно тонкий, легкий и портативный дизайн. Раздвиньте границы того, что возможно на iPad, с помощью увеличенной 13-дюймовой модели. Превосходно подойдет под любые цели!",
+    "text": "<p>Невероятно тонкий, легкий и портативный дизайн. Раздвиньте границы того, что возможно на iPad, с помощью увеличенной 13-дюймовой модели. Превосходно подойдет под любые цели!</p>",
     "tags": [
       7,
       6,
@@ -202,7 +202,7 @@
     "is_published": true,
     "name": "Ipad",
     "category": 3,
-    "text": "Превосходный дизайн и эргономика. Искусственный интеллект. Новый процессор и улучшенные камеры. Качественный дисплей и защита глаз. И это ещё далеко не всё! роскошно",
+    "text": "<p>Превосходный дизайн и эргономика. Искусственный интеллект. Новый процессор и улучшенные камеры. Качественный дисплей и защита глаз. И это ещё далеко не всё! роскошно</p>",
     "tags": [
       7,
       6
@@ -211,34 +211,26 @@
 },
 {
   "model": "catalog.mainimage",
-  "pk": 5,
+  "pk": 1,
   "fields": {
-    "image": "catalog/ipad_IRIwyxa.jpg",
+    "image": "catalog/ipad_GqFE8iq.jpg",
     "item": 11
   }
 },
 {
   "model": "catalog.mainimage",
-  "pk": 6,
+  "pk": 2,
   "fields": {
-    "image": "catalog/macbook_Dpt47um.jpg",
+    "image": "catalog/macbook_aejmOto.jpg",
     "item": 10
   }
 },
 {
   "model": "catalog.mainimage",
-  "pk": 7,
+  "pk": 3,
   "fields": {
-    "image": "catalog/iphone_1QSYQcR.jpg",
+    "image": "catalog/iphone_p8MiKxX.jpg",
     "item": 9
-  }
-},
-{
-  "model": "catalog.image",
-  "pk": 4,
-  "fields": {
-    "image": "catalog/ipad_8EbP54o.jpg",
-    "item": 11
   }
 }
 ]
