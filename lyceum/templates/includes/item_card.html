@@ -1,9 +1,9 @@
 <div class="col-xl-3 col-lg-4 col-sm-10 col-12 card bg-light shadow">
-  <img src="..." alt="" class="card-img-top">
+  <img src="{% block card_image %}...{% endblock %}" alt="Нет картинки" class="card-img-top">
   <div class="card-body">
-    <h5 class="card-title">Название товара</h5>
+    <h5 class="card-title">{% block card_title %}Название товара{% endblock %}</h5>
     <p class="card-text">
-      Описание товара
+      {% block card_title %}Описание товара{% endblock %}
     </p>
     <a href="#" class="btn btn-primary shadow">Подробнее</a>
   </div>
