@@ -1,17 +1,24 @@
-from http import HTTPStatus
+import http
 
-from django.http import HttpResponse
-from django.shortcuts import render
+import django.http
+import django.shortcuts
+
+import catalog.models
 
 
 def home(request):
-    template = "homepage/main.html"
-    context = {}
-    return render(request, template, context)
+    items = catalog.models.Item.objects.filter(
+        is_on_main=True,
+        is_published=True,
+    ).order_by("name")
+    context = {
+        "items": items,
+    }
+    return django.shortcuts.render(request, "homepage/main.html", context)
 
 
 def coffee(response):
-    return HttpResponse(
+    return django.http.HttpResponse(
         "Я чайник",
-        status=HTTPStatus.IM_A_TEAPOT,
+        status=http.HTTPStatus.IM_A_TEAPOT,
     )

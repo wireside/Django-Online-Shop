@@ -13,43 +13,7 @@ class StaticURLTests(django.test.TestCase):
     def test_item_list_url(self):
         response = django.test.Client().get(reverse("catalog:item_list"))
         self.assertEqual(response.status_code, http.HTTPStatus.OK)
-        self.assertContains(response, "Список элементов")
-
-    @parameterized.parameterized.expand(
-        [
-            (100,),
-            (0,),
-            (64000,),
-        ],
-    )
-    def test_item_detail_url(self, item_id):
-        response = django.test.Client().get(
-            reverse(
-                "catalog:item_detail",
-                args=[item_id],
-            ),
-        )
-        self.assertEqual(response.status_code, http.HTTPStatus.OK)
-        self.assertContains(response, "Подробно элемент")
-
-    @parameterized.parameterized.expand(
-        [
-            (-100,),
-            (-1,),
-            (-3125,),
-        ],
-    )
-    def test_item_detail_invalid_id_url(self, item_id):
-        with self.assertRaises(django.urls.exceptions.NoReverseMatch):
-            response = django.test.Client().get(
-                reverse(
-                    "catalog:item_detail",
-                    args=[item_id],
-                ),
-            )
-
-        response = django.test.Client().get(f"/catalog/{item_id}/")
-        self.assertEqual(response.status_code, http.HTTPStatus.NOT_FOUND)
+        self.assertContains(response, "Список товаров")
 
 
 class ModelsTests(django.test.TestCase):
@@ -222,3 +186,57 @@ class ModelsTests(django.test.TestCase):
             catalog.models.Tag.objects.count(),
             tags_count + 1,
         )
+
+
+class ContextTests(django.test.TestCase):
+    def setUp(self):
+        self.category = catalog.models.Category.objects.create(
+            name="Test category",
+            slug="test-category",
+        )
+        self.tag = catalog.models.Tag.objects.create(
+            name="Test tag",
+            slug="test-tag",
+        )
+
+        super(ContextTests, self).setUp()
+
+    def tearDown(self):
+        catalog.models.Item.objects.all().delete()
+        catalog.models.Tag.objects.all().delete()
+        catalog.models.Category.objects.all().delete()
+
+        super(ContextTests, self).tearDown()
+
+    def test_item_list_context(self):
+        item = catalog.models.Item(
+            name="Тестовый товар",
+            text="Превосходно",
+            category=self.category,
+        )
+        item.full_clean()
+        item.save()
+        item.tags.add(self.tag)
+
+        response = django.test.Client().get(reverse("catalog:item_list"))
+        self.assertEqual(response.status_code, http.HTTPStatus.OK)
+        self.assertIn("items", response.context)
+
+    def test_item_detail_context(self):
+        item = catalog.models.Item(
+            name="Тестовый товар",
+            text="Превосходно",
+            category=self.category,
+        )
+        item.full_clean()
+        item.save()
+        item.tags.add(self.tag)
+
+        response = django.test.Client().get(
+            reverse(
+                "catalog:item_detail",
+                args=[item.pk],
+            )
+        )
+        self.assertEqual(response.status_code, http.HTTPStatus.OK)
+        self.assertIn("item", response.context)

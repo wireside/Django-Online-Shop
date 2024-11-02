@@ -2,13 +2,13 @@ body {
     padding-top: 50px;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 525px) {
     body {
         padding-top: 100px;
     }
 }
 
-@media (max-width: 355px) {
+@media (max-width: 388px) {
     body {
         padding-top: 160px;
     }

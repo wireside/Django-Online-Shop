@@ -5,50 +5,15 @@
 {% endblock %}
 
 {% block content %}
-  <section class="container d-flex align-items-center flex-wrap flex-column mb-xl-5">
+  <section class="container mb-xl-5">
     <h1 class="h1 text-center mb-5">
       Это страница со списком товаров!
     </h1>
-    <h2 class="h2 mb-5 mt-5">
-      Список элементов
+    <h2 class="h2 text-center mb-5 mt-5">
+      Список товаров
     </h2>
-    <div class="row justify-content-center centered-page-item gap-3 col-12 row-cols-lg-2">
-      <div class="col-xl-3 col-lg-4 col-sm-10 col-12 card bg-light shadow">
-        <img src="{% static 'img/iphone.jpg' %}" alt="" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">iPhone 16 Pro Max</h5>
-          <p class="card-text">
-            Революционная производительность. Графика следующего поколения.
-            Превосходно работает до 22 часов без подзарядки.
-            ◊ Теперь в цвете космический черный.
-          </p>
-          <a href="{% url 'catalog:item_detail' 1 %}" class="btn btn-primary shadow">Подробнее</a>
-        </div>
-      </div>
-      <div class="col-xl-3 col-lg-4 col-sm-10 col-12 card bg-light shadow">
-        <img src="{% static 'img/macbook.jpg' %}" alt="" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">MacBook Pro 16</h5>
-          <p class="card-text">
-            Невероятно тонкий, легкий и портативный дизайн.
-            Раздвиньте границы того, что возможно на iPad,
-            с помощью увеличенной 13-дюймовой модели.
-            Превосходно подойдет под любые цели!
-          </p>
-          <a href="{% url 'catalog:item_detail' 2 %}" class="btn btn-primary shadow">Подробнее</a>
-        </div>
-      </div>
-      <div class="col-xl-3 col-lg-4 col-sm-10 col-12 card bg-light shadow">
-        <img src="{% static 'img/ipad.jpg' %}" alt="" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">iPad Pro 13</h5>
-          <p class="card-text">
-            Превосходный дизайн и эргономика. Искусственный интеллект.
-            Новый процессор и улучшенные камеры. Качественный дисплей и защита глаз. И это ещё далеко не всё!
-          </p>
-          <a href="{% url 'catalog:item_detail' 3 %}" class="btn btn-primary shadow">Подробнее</a>
-        </div>
-      </div><div class="col-xl-0 col-lg-4 d-xl-none d-lg-block d-md-none"></div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+      {% include 'includes/item_card.html' %}
     </div>
   </section>
 {% endblock %}

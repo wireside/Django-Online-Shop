@@ -71,6 +71,10 @@ class Item(django.db.models.Model):
         verbose_name="опубликовано",
         default=True,
     )
+    is_on_main = django.db.models.BooleanField(
+        verbose_name="на главной странице",
+        default=False,
+    )
     name = django.db.models.CharField(
         verbose_name="название",
         max_length=150,
@@ -97,6 +101,7 @@ class Item(django.db.models.Model):
     )
 
     class Meta:
+        ordering = ("-is_published",)
         verbose_name = "товар"
         verbose_name_plural = "товары"
         default_related_name = "items"
