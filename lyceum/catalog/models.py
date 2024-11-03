@@ -5,6 +5,7 @@ import django.db
 import django.db.models
 from django.utils.safestring import mark_safe
 
+import catalog.managers
 import catalog.validators
 import core.models
 
@@ -99,6 +100,8 @@ class Item(django.db.models.Model):
             ),
         ],
     )
+
+    objects = catalog.managers.ItemManager()
 
     class Meta:
         ordering = ("-is_published",)

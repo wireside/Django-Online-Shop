@@ -7,12 +7,10 @@ import catalog.models
 
 
 def home(request):
-    items = catalog.models.Item.objects.filter(
-        is_on_main=True,
-        is_published=True,
-    ).order_by("name")
+    items = catalog.models.Item.objects.on_main()
     context = {
         "items": items,
+        "categories": None,
     }
     return django.shortcuts.render(request, "homepage/main.html", context)
 
