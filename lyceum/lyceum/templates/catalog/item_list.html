@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+	Каталог товаров
+{% endblock %}
+
+{% block content %}
+  <section class="container mb-xl-5">
+    <h1 class="h1 text-center mb-5">
+      Это страница со списком товаров!
+    </h1>
+    <h2 class="h2 text-center mb-5 mt-5">
+      Список товаров
+    </h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+      {% include 'includes/item_card.html' %}
+    </div>
+  </section>
+{% endblock %}
