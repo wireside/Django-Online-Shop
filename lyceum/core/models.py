@@ -79,6 +79,14 @@ class ImageBaseModel(django.db.models.Model):
             quality=51,
         )
 
+    def get_image_600x600(self):
+        return sorl.thumbnail.get_thumbnail(
+            self.image,
+            "600x600",
+            crop="center",
+            quality=90,
+        )
+
     @property
     def get_image_50x50(self):
         return sorl.thumbnail.get_thumbnail(

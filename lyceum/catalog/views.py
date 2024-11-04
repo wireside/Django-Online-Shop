@@ -4,13 +4,11 @@ import catalog.models
 
 
 def item_list(request):
-    items = catalog.models.Item.objects.filter(
-        is_published=True,
-    ).order_by(
-        "name",
-    )
+    items = catalog.models.Item.objects.published()
+    categories = catalog.models.Category.objects.all().only("name").order_by("-name")
     context = {
         "items": items,
+        "categories": categories,
     }
     return django.shortcuts.render(request, "catalog/item_list.html", context)
 
