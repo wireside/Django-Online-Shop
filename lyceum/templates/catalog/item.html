@@ -15,7 +15,7 @@
               </div>
               {% for image in item.images.all %}
               <div class="carousel-item">
-                <img src="{{ image.get_image_300x300.url }}" class="d-block w-100" data-bs-slide-to="{{ forloop.counter }}" alt="...">
+                <img src="{{ image.get_image_600x600.url }}" class="d-block w-100" data-bs-slide-to="{{ forloop.counter }}" alt="...">
               </div>
               {% endfor %}
             </div>

@@ -5,7 +5,9 @@ import catalog.models
 
 def item_list(request):
     items = catalog.models.Item.objects.published()
-    categories = catalog.models.Category.objects.all().only("name").order_by("-name")
+    categories = (
+        catalog.models.Category.objects.all().only("name").order_by("-name")
+    )
     context = {
         "items": items,
         "categories": categories,
