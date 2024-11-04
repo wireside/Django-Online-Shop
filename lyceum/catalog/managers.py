@@ -12,7 +12,5 @@ class ItemManager(models.Manager):
 
     def published(self):
         return (
-            super().get_queryset()
-            .filter(is_published=True)
-            .order_by("name")
+            super().get_queryset().filter(is_published=True).order_by("name")
         )
