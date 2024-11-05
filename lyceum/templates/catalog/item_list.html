@@ -6,16 +6,29 @@
 
 {% block content %}
   <section class="container mb-xl-5">
-    <h1 class="h1 text-center mb-5">
-      Это страница со списком товаров!
-    </h1>
-    <h2 class="h2 text-center mb-5 mt-5">
+    <h1 class="h1 text-center">
       Список товаров
-    </h2>
+    </h1>
       {% for category in categories %}
-        <h3 class="text-start text-capitalize mb-3 mt-5">{{ category.name }}</h3>
+        <h3 class="h3 text-start text-capitalize pt-5 mb-5 mt-5 border-top border-5 border-dark-subtle {% if forloop.first %}border-top-0{% endif %}">
+          {{ category.name }}
+        </h3>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">       
-          {% include 'includes/item_card.html' %}
+          {% for item in items %}
+            {% if item.category.name == category.name %}
+              {% include 'includes/item_card.html' %}
+            {% endif %}
+          {% empty %}
+            <p class="text-center">Список товаров пуст...</p>
+          {% endfor %}
+        </div>
+      {% empty %}
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+          {% for item in items %}
+            {% include 'includes/item_card.html' %}
+          {% empty %}
+            <p class="text-center">Список товаров пуст...</p>
+          {% endfor %}
         </div>
       {% endfor %}  
   </section>

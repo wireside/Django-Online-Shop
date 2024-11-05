@@ -68,6 +68,8 @@ class Tag(core.models.BaseModel):
 
 
 class Item(django.db.models.Model):
+    objects = catalog.managers.ItemManager()
+
     is_published = django.db.models.BooleanField(
         verbose_name="опубликовано",
         default=True,
@@ -100,8 +102,14 @@ class Item(django.db.models.Model):
             ),
         ],
     )
-
-    objects = catalog.managers.ItemManager()
+    updated = django.db.models.DateTimeField(
+        verbose_name="время изменения",
+        auto_now=True,
+    )
+    created = django.db.models.DateTimeField(
+        verbose_name="время создания",
+        auto_now_add=True,
+    )
 
     class Meta:
         ordering = ("-is_published",)

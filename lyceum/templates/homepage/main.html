@@ -11,7 +11,11 @@
 			Мы рекомендуем
 		</h2>
 		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 justify-content-xl-center">
-			{% include 'includes/item_card.html' %}
+			{% for item in items %}
+				{% include 'includes/item_card.html' %}
+			{% empty %}
+				<p class="text-center">Список товаров пуст...</p>
+			{% endfor %}
 		</div>
 		<a class="btn-dark btn align-self-center mt-4" href="{% url 'catalog:item_list' %}">
 			Перейти в каталог

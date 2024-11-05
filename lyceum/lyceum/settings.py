@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     "about.apps.AboutConfig",
     "homepage.apps.HomepageConfig",
     "catalog.apps.CatalogConfig",
+    "download.apps.DownloadConfig",
     "core.apps.CoreConfig",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -127,7 +128,7 @@ USE_L10N = True
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 STATIC_URL = "/static/"

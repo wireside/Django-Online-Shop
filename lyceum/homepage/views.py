@@ -10,7 +10,6 @@ def home(request):
     items = catalog.models.Item.objects.on_main()
     context = {
         "items": items,
-        "categories": None,
     }
     return django.shortcuts.render(request, "homepage/main.html", context)
 

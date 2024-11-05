@@ -58,3 +58,6 @@ MANIFEST
 # PyInstaller
 *.manifest
 *.spec
+
+# locale
+*.mo

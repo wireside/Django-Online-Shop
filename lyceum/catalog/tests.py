@@ -188,55 +188,98 @@ class ModelsTests(django.test.TestCase):
         )
 
 
-class ContextTests(django.test.TestCase):
-    def setUp(self):
-        self.category = catalog.models.Category.objects.create(
-            name="Test category",
-            slug="test-category",
-        )
-        self.tag = catalog.models.Tag.objects.create(
-            name="Test tag",
-            slug="test-tag",
-        )
+class CatalogItemsTests(django.test.TestCase):
+    fixtures = ["fixtures/data.json"]
 
-        super(ContextTests, self).setUp()
-
-    def tearDown(self):
-        catalog.models.Item.objects.all().delete()
-        catalog.models.Tag.objects.all().delete()
-        catalog.models.Category.objects.all().delete()
-
-        super(ContextTests, self).tearDown()
-
-    def test_item_list_context(self):
-        item = catalog.models.Item(
-            name="Тестовый товар",
-            text="Превосходно",
-            category=self.category,
-        )
-        item.full_clean()
-        item.save()
-        item.tags.add(self.tag)
-
+    def test_items_in_context(self):
         response = django.test.Client().get(reverse("catalog:item_list"))
-        self.assertEqual(response.status_code, http.HTTPStatus.OK)
         self.assertIn("items", response.context)
 
-    def test_item_detail_context(self):
-        item = catalog.models.Item(
-            name="Тестовый товар",
-            text="Превосходно",
-            category=self.category,
-        )
-        item.full_clean()
-        item.save()
-        item.tags.add(self.tag)
+    def test_items_size(self):
+        items_count = catalog.models.Item.objects.published().count()
+        response = django.test.Client().get(reverse("catalog:item_list"))
+        self.assertEqual(len(response.context["items"]), items_count)
 
+    def test_items_type(self):
+        response = django.test.Client().get(reverse("catalog:item_list"))
+        self.assertTrue(
+            all(
+                isinstance(
+                    item,
+                    catalog.models.Item,
+                )
+                for item in response.context["items"]
+            ),
+        )
+
+    def test_categories_in_context(self):
+        response = django.test.Client().get(reverse("catalog:item_list"))
+        self.assertIn("categories", response.context)
+
+    def test_categories_size(self):
+        categories_count = (
+            catalog.models.Category.objects.filter(
+                is_published=True,
+            )
+            .exclude(
+                items__exact=None,
+            )
+            .count()
+        )
+        response = django.test.Client().get(reverse("catalog:item_list"))
+        self.assertEqual(len(response.context["categories"]), categories_count)
+
+    def test_categories_type(self):
+        response = django.test.Client().get(reverse("catalog:item_list"))
+        self.assertTrue(
+            all(
+                isinstance(
+                    category,
+                    catalog.models.Category,
+                )
+                for category in response.context["categories"]
+            ),
+        )
+
+
+class DetailItemTests(django.test.TestCase):
+    fixtures = ["fixtures/data.json"]
+
+    @parameterized.parameterized.expand(
+        [
+            id
+            for id in catalog.models.Item.objects.published().values_list(
+                "id",
+                flat=True,
+            )
+        ],
+    )
+    def test_item_in_context(self, item_id):
         response = django.test.Client().get(
             reverse(
-                "catalog:item_detail",
-                args=[item.pk],
-            )
+                viewname="catalog:item_detail",
+                args=[item_id],
+            ),
         )
-        self.assertEqual(response.status_code, http.HTTPStatus.OK)
         self.assertIn("item", response.context)
+
+    @parameterized.parameterized.expand(
+        [
+            id
+            for id in catalog.models.Item.objects.published().values_list(
+                "id",
+                flat=True,
+            )
+        ],
+    )
+    def test_item_type(self, item_id):
+        response = django.test.Client().get(
+            reverse(
+                viewname="catalog:item_detail",
+                args=[item_id],
+            ),
+        )
+        self.assertIsInstance(
+            response.context["item"],
+            catalog.models.Item,
+        )
