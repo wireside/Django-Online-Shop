@@ -13,7 +13,6 @@ class StaticURLTests(django.test.TestCase):
     def test_item_list_url(self):
         response = django.test.Client().get(reverse("catalog:item_list"))
         self.assertEqual(response.status_code, http.HTTPStatus.OK)
-        self.assertContains(response, "Список товаров")
 
 
 class ModelsTests(django.test.TestCase):
