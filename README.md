@@ -35,6 +35,9 @@ pip3 install -r requirements/test.txt
 ```bash
 cp config.env .env
 ```
+Так же, если `AWS_QUERYSTRING_AUTH=True`, для запуска в продакшене
+ нужно иметь при себе идентификатор и ключ доступа
+ от сервисного аккаунта S3 хранилища Yandex.Cloud.
 ### Дополнительно необходимо выполнить мигрции базы данных
 ```bash
 cd lyceum
