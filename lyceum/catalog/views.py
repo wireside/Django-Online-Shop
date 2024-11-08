@@ -15,20 +15,7 @@ ITEMS_PER_PAGE = 5
 def item_list(request):
     items = catalog.models.Item.objects.published()
 
-    categories = (
-        catalog.models.Category.objects.filter(
-            is_published=True,
-        )
-        .exclude(
-            items__exact=None,
-        )
-        .only(
-            catalog.models.Category.name.field.name,
-        )
-        .order_by(
-            f"-{catalog.models.Category.name.field.name}",
-        )
-    )
+    categories = catalog.models.Category.objects.published()
 
     context = {
         "items": items,

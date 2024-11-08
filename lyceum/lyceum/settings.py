@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "corsheaders",
     "sorl.thumbnail",
     "ckeditor",
     "django_cleanup.apps.CleanupConfig",
@@ -45,6 +46,7 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.locale.LocaleMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -93,6 +95,25 @@ DATABASES = {
     },
 }
 
+AWS_S3_REGION_NAME = "ru-central1"
+AWS_S3_ENDPOINT_URL = "https://storage.yandexcloud.net"
+AWS_S3_ACCESS_KEY_ID = os.getenv("AWS_S3_ACCESS_KEY_ID")
+AWS_S3_SECRET_ACCESS_KEY = os.getenv("AWS_S3_SECRET_ACCESS_KEY")
+AWS_QUERYSTRING_AUTH = False
+
+if not DEBUG:
+    DEFAULT_FILE_STORAGE = "lyceum.s3_storage.MediaStorage"
+    STATICFILES_STORAGE = "lyceum.s3_storage.StaticStorage"
+    INSTALLED_APPS += ["storages"]
+
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+    "https://storage.yandexcloud.net",
+]
+if DEBUG:
+    CORS_ALLOW_ALL_ORIGINS = True
 
 AUTH_PASSWORD_VALIDATORS = [
     {

@@ -11,6 +11,8 @@ import core.models
 
 
 class Category(core.models.BaseModel):
+    objects = catalog.managers.CategoryManager()
+
     slug = django.db.models.SlugField(
         unique=True,
         verbose_name="слаг",
@@ -85,7 +87,8 @@ class Item(django.db.models.Model):
     )
     category = django.db.models.ForeignKey(
         Category,
-        on_delete=django.db.models.CASCADE,
+        null=True,
+        on_delete=django.db.models.SET_NULL,
         verbose_name="категория",
         help_text="Выберите категорию",
     )

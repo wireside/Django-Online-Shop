@@ -47,3 +47,22 @@ class ItemManager(django.db.models.Manager):
                 catalog.models.Item.name.field.name,
             )
         )
+
+
+class CategoryManager(django.db.models.Manager):
+    def published(self):
+        return (
+            self.get_queryset()
+            .filter(
+                is_published=True,
+            )
+            .exclude(
+                items__exact=None,
+            )
+            .only(
+                catalog.models.Category.name.field.name,
+            )
+            .order_by(
+                f"-{catalog.models.Category.name.field.name}",
+            )
+        )
