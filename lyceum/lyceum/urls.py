@@ -8,6 +8,7 @@ urlpatterns = [
     path("catalog/", include("catalog.urls")),
     path("about/", include("about.urls")),
     path("download/", include("download.urls")),
+    path("feedback/", include("feedback.urls")),
     path("ckeditor/", include("ckeditor_uploader.urls")),
     path("admin/", admin.site.urls),
 ]

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+	Обратная связь
+{% endblock %}
+{% block content %}
+  <section>
+    <div class="container">
+      <form action="post">
+        <ul>
+          {{ form.as_ul }}
+          <li class="button">
+            <button type="submit" class="btn btn-outline-primary">Отправить</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </section>
+{% endblock %}
