@@ -19,6 +19,8 @@ ALLOW_REVERSE = load_bool("DJANGO_ALLOW_REVERSE", True)
 
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "not_so_secret")
 
+MAIL = os.getenv("DJANGO_MAIL")
+
 DEBUG = load_bool("DJANGO_DEBUG", False)
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "*").split(",")
@@ -160,8 +162,13 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = "static"
 
+
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
+
+
+EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+EMAIL_FILE_PATH = BASE_DIR / "send_mail"
 
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"

@@ -1,27 +1,74 @@
 import django.forms
 
-from feedback.models import Feedback
+import feedback.models
+import feedback.widgets
 
 
-class FeedbackForm(django.forms.ModelForm):
+class BootstrapForm(django.forms.ModelForm):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field in self.visible_fields():
+            field.field.widget.attrs["class"] = "form-control"
+            field.field.widget.attrs["placeholder"] = field.help_text
+
+
+class FeedbackAuthorForm(BootstrapForm):
     class Meta:
-        model = Feedback
-        fields = "__all__"
+        model = feedback.models.FeedbackAuthor
+        fields = (
+            feedback.models.FeedbackAuthor.name.field.name,
+            feedback.models.FeedbackAuthor.mail.field.name,
+        )
         labels = {
-            Feedback.name.field.name: "Имя",
-            Feedback.text.field.name: "Сообщение",
-            Feedback.mail.field.name: "Почта",
+            feedback.models.FeedbackAuthor.name.field.name: "Имя",
+            feedback.models.FeedbackAuthor.mail.field.name: (
+                "Электронная почта"
+            ),
         }
         help_texts = {
-            "name": "Введите ваше имя",
+            feedback.models.FeedbackAuthor.name.field.name: "Введите ваше имя",
+            feedback.models.FeedbackAuthor.mail.field.name: "mail@example.com",
         }
-        error_messages = {
-            "name": {
-                "max_length": "Имя слишком длинное",
-            },
+
+
+class FeedbackFileForm(BootstrapForm):
+    class Meta:
+        model = feedback.models.FeedbackFile
+        fields = {
+            feedback.models.FeedbackFile.file.field.name,
+        }
+        help_texts = {
+            feedback.models.FeedbackFile.file.field.name: (
+                "При необходимости прикрепите файлы"
+            ),
         }
         widgets = {
-            "name": django.forms.TextInput(attrs={"class": "form-control"}),
-            "text": django.forms.Textarea(attrs={"class": "form-control"}),
-            "mail": django.forms.EmailInput(attrs={"class": "form-control"}),
+            feedback.models.FeedbackFile.file.field.name: (
+                feedback.widgets.MultipleFileInput(
+                    attrs={
+                        "class": "form-control",
+                        "type": "file",
+                        "multiple": True,
+                    },
+                )
+            ),
+        }
+
+
+class FeedbackForm(BootstrapForm):
+    class Meta:
+        model = feedback.models.Feedback
+        exclude = (
+            feedback.models.Feedback.id.field.name,
+            feedback.models.Feedback.status.field.name,
+            feedback.models.Feedback.created_on.field.name,
+        )
+        fields = (feedback.models.Feedback.text.field.name,)
+        labels = {
+            feedback.models.Feedback.text.field.name: "Сообщение",
+        }
+        help_texts = {
+            feedback.models.Feedback.text.field.name: (
+                "Введите текст сообщения"
+            ),
         }

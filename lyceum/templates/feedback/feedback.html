@@ -1,17 +1,34 @@
 {% extends 'base.html' %}
+
 {% block title %}
 	Обратная связь
 {% endblock %}
+
 {% block content %}
   <section>
     <div class="container">
-      <form action="post">
-        <ul>
-          {{ form.as_ul }}
-          <li class="button">
-            <button type="submit" class="btn btn-outline-primary">Отправить</button>
-          </li>
-        </ul>
+      {% if messages %}
+      	<div class="text-bg-success p-2 mb-3 rounded-1">
+          <ul class="messages">
+            {% for message in messages %}
+            	<h2 {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </h2>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+      <h1 class="h1 mb-4">Фидбек</h1>
+      <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% with form=feedback_author %}
+        	{% include 'includes/form.html' %}
+        {% endwith %}
+        {% with form=feedback_form %}
+        	{% include 'includes/form.html' %}
+        {% endwith %}
+        {% with form=file_form %}
+        	{% include 'includes/form.html' %}
+        {% endwith %}
+        <button type="submit" class="btn btn-outline-primary">Отправить</button>
       </form>
     </div>
   </section>

@@ -22,6 +22,11 @@
           </a>
         </li>
         <li class="nav-item">
+          <a class="nav-link {% if view_name == 'feedback:feedback' %}active disabled{% endif %}" href="{% url 'feedback:feedback' %}">
+            {% translate "Feedback" %}
+          </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link {% if view_name == 'about:description' %}active disabled{% endif %}" href="{% url 'about:description' %}">
             {% translate "About" %}
           </a>
