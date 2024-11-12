@@ -32,8 +32,8 @@ class Feedback(django.db.models.Model):
     )
 
     class Meta:
-        verbose_name = "Сообщение"
-        verbose_name_plural = "Сообщения"
+        verbose_name = "Сообщение обратной связи"
+        verbose_name_plural = "Сообщения обратной связи"
 
     def __str__(self):
         return self.text[:50]
@@ -51,6 +51,9 @@ class FeedbackAuthor(django.db.models.Model):
     )
     mail = django.db.models.EmailField(verbose_name="электронная почта")
 
+    class Meta:
+        verbose_name = "Автор сообщения"
+
 
 class FeedbackFile(django.db.models.Model):
     def get_path(self, filename):
@@ -67,3 +70,7 @@ class FeedbackFile(django.db.models.Model):
         blank=True,
         storage=storage,
     )
+
+    class Meta:
+        verbose_name = "Файл"
+        verbose_name_plural = "Файлы"
