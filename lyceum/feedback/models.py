@@ -1,6 +1,7 @@
 import time
 
 import django.conf
+import django.contrib.auth.models
 import django.db.models
 
 from lyceum.s3_storage import MediaStorage
@@ -76,3 +77,29 @@ class FeedbackFile(django.db.models.Model):
     class Meta:
         verbose_name = "Файл"
         verbose_name_plural = "Файлы"
+
+
+class StatusLog(django.db.models.Model):
+    feedback = django.db.models.ForeignKey(
+        Feedback,
+        on_delete=django.db.models.CASCADE,
+        related_name="status_logs",
+    )
+    user = django.db.models.ForeignKey(
+        django.contrib.auth.models.User,
+        on_delete=django.db.models.CASCADE,
+        related_name="feedback_status_logs",
+    )
+    timestamp = django.db.models.DateTimeField(auto_now_add=True)
+    from_status = django.db.models.CharField(
+        max_length=16,
+        verbose_name="from",
+    )
+    to_status = django.db.models.CharField(
+        max_length=16,
+        verbose_name="to",
+    )
+
+    class Meta:
+        verbose_name = "Статус лог"
+        verbose_name_plural = "Статус логи"
