@@ -7,6 +7,8 @@ import django.urls
 import feedback.forms
 import feedback.models
 
+__all__ = ["index"]
+
 
 def index(request):
     feedback_author = feedback.forms.FeedbackAuthorForm(request.POST or None)

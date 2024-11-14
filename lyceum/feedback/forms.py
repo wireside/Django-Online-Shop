@@ -3,6 +3,13 @@ import django.forms
 import feedback.models
 import feedback.widgets
 
+__all__ = [
+    "BootstrapForm",
+    "FeedbackAuthorForm",
+    "FeedbackFileForm",
+    "FeedbackForm",
+]
+
 
 class BootstrapForm(django.forms.ModelForm):
     def __init__(self, *args, **kwargs):

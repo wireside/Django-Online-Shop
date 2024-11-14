@@ -8,6 +8,8 @@ import django.shortcuts
 
 import catalog.models
 
+__all__ = ["friday", "item_detail", "item_list", "new", "unverified"]
+
 
 ITEMS_PER_PAGE = 5
 

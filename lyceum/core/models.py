@@ -8,6 +8,8 @@ import transliterate
 
 from lyceum.s3_storage import MediaStorage
 
+__all__ = ["BaseModel", "ImageBaseModel"]
+
 
 storage = None
 

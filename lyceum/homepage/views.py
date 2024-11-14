@@ -1,11 +1,15 @@
 import http
 
+import django.db.models
 import django.http
 import django.shortcuts
 import django.urls
 
 import catalog.models
 import homepage.forms
+import users.models
+
+__all__ = ["coffee", "echo", "echo_submit", "home"]
 
 
 def home(request):
@@ -47,6 +51,20 @@ def echo_submit(request):
 
 
 def coffee(response):
+    if response.user.is_authenticated:
+        user = users.models.Profile.objects.get(id=response.user.id)
+        user.coffee_count = (
+            django.db.models.F(
+                users.models.Profile.coffee_count.field.name,
+            )
+            + 1
+        )
+        user.save(
+            update_fields=[
+                users.models.Profile.coffee_count.field.name,
+            ],
+        )
+
     return django.http.HttpResponse(
         "Я чайник",
         status=http.HTTPStatus.IM_A_TEAPOT,

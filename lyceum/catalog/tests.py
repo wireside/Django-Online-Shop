@@ -7,6 +7,13 @@ import parameterized
 
 import catalog.models
 
+__all__ = [
+    "CatalogItemsTests",
+    "DetailItemTests",
+    "ModelsTests",
+    "StaticURLTests",
+]
+
 
 class StaticURLTests(django.test.TestCase):
 

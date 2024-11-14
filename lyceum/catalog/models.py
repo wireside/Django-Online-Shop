@@ -9,6 +9,8 @@ import catalog.managers
 import catalog.validators
 import core.models
 
+__all__ = ["Category", "Image", "Item", "MainImage", "Tag"]
+
 
 class Category(core.models.BaseModel):
     objects = catalog.managers.CategoryManager()

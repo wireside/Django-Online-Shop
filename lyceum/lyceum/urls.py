@@ -3,6 +3,7 @@ from django.contrib import admin
 from django.urls import include, path, re_path
 from django.views import static
 
+
 urlpatterns = [
     path("", include("homepage.urls")),
     path("catalog/", include("catalog.urls")),
@@ -10,6 +11,8 @@ urlpatterns = [
     path("download/", include("download.urls")),
     path("feedback/", include("feedback.urls")),
     path("ckeditor/", include("ckeditor_uploader.urls")),
+    path("auth/", include("users.urls")),
+    path("auth/", include("django.contrib.auth.urls")),
     path("admin/", admin.site.urls),
 ]
 

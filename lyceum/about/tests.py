@@ -3,6 +3,8 @@ import http
 import django.test
 from django.urls import reverse
 
+__all__ = ["StaticURLTests"]
+
 
 class StaticURLTests(django.test.TestCase):
 

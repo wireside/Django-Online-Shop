@@ -2,6 +2,8 @@ import django.contrib.admin
 
 import catalog.models
 
+__all__ = ["Image", "ItemAdmin", "MainImage"]
+
 
 django.contrib.admin.site.register(catalog.models.Category)
 django.contrib.admin.site.register(catalog.models.Tag)

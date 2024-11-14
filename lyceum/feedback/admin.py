@@ -2,6 +2,8 @@ import django.contrib.admin
 
 import feedback.models
 
+__all__ = ["FeedbackAdmin", "FeedbackAuthor", "FeedbackFiles"]
+
 
 class FeedbackAuthor(django.contrib.admin.TabularInline):
     model = feedback.models.FeedbackAuthor

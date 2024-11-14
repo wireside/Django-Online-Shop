@@ -2,6 +2,9 @@ import re
 
 import django.conf
 
+__all__ = ["ReverseRussianMiddleware"]
+
+
 WORDS_REGEX = re.compile(r"\w+|\W+")
 NOT_RUSSIAN_REGEX = re.compile(r"^[^а-яА-Я\s]+$")
 
@@ -36,5 +39,5 @@ class ReverseRussianMiddleware:
             for word in words
         ]
 
-        response.content = "".join(transformed).encode()
+        response.content = "".join(transformed).encode("utf-16")
         return response

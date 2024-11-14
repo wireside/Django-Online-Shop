@@ -6,6 +6,8 @@ import django.urls
 import catalog.models
 import homepage.forms
 
+__all__ = ["HomepageEchoTests", "HomepageItemsTests", "StaticURLTests"]
+
 
 class StaticURLTests(django.test.TestCase):
 

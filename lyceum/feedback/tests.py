@@ -9,6 +9,8 @@ import django.urls
 import feedback.forms
 import feedback.models
 
+__all__ = ["FeedbackFormTest"]
+
 
 class FeedbackFormTest(django.test.TestCase):
     @classmethod

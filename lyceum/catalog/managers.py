@@ -2,6 +2,8 @@ import django.db.models
 
 import catalog.models
 
+__all__ = ["CategoryManager", "ItemManager"]
+
 
 class ItemManager(django.db.models.Manager):
     def on_main(self):
