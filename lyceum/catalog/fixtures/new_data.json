@@ -101,8 +101,8 @@
     "name": "Игрушка \"Лапка\"",
     "category": 1,
     "text": "тестовое описание роскошно",
-    "updated": "2024-11-04T20:13:30.896",
-    "created": "2024-11-04T20:13:30.890",
+    "updated": "2024-11-04T20:13:30.896Z",
+    "created": "2024-11-04T20:13:30.890Z",
     "tags": [
       1
     ]
@@ -117,8 +117,8 @@
     "name": "Квадрокоптер",
     "category": 1,
     "text": "<p>Складной мини-дрон с <strong>Wi-Fi HD FPV</strong> камерой дистанционного управления. С откидной ручкой, она маленькая и легко переносится. Имеет высокую функцию режима удержания для обеспечения стабильного полета. Превосходно работает на протяжении 30 минут полета</p>",
-    "updated": "2024-11-07T23:36:08.666",
-    "created": "2024-11-04T20:13:30.890",
+    "updated": "2024-11-15T20:23:09.781Z",
+    "created": "2024-11-04T20:13:30.890Z",
     "tags": [
       1,
       6,
@@ -136,8 +136,8 @@
     "name": "Джинсы широкие",
     "category": 2,
     "text": "превосходно подходят для мужчин и женщин",
-    "updated": "2024-11-04T20:13:30.896",
-    "created": "2024-11-04T20:13:30.890",
+    "updated": "2024-11-04T20:13:30.896Z",
+    "created": "2024-11-04T20:13:30.890Z",
     "tags": [
       4,
       5,
@@ -154,8 +154,8 @@
     "name": "Платье Prada",
     "category": 2,
     "text": "роскошно е платье от именитого бренда Prada",
-    "updated": "2024-11-04T20:13:30.896",
-    "created": "2024-11-04T20:13:30.890",
+    "updated": "2024-11-04T20:13:30.896Z",
+    "created": "2024-11-04T20:13:30.890Z",
     "tags": [
       6,
       3
@@ -171,8 +171,8 @@
     "name": "Набор Lego",
     "category": 1,
     "text": "<p>Данный набор лего превосходно и весело скрасит ваши дни. Собирать Lego можно одному или всей семьей.</p>",
-    "updated": "2024-11-07T23:35:04.353",
-    "created": "2024-11-04T20:13:30.890",
+    "updated": "2024-11-15T20:23:04.795Z",
+    "created": "2024-11-04T20:13:30.890Z",
     "tags": [
       1,
       6,
@@ -191,8 +191,8 @@
     "name": "iPhone 16 Pro Max",
     "category": 3,
     "text": "<p>Революционная производительность. Графика следующего поколения. Превосходно работает до 22 часов без подзарядки. &loz; Теперь в цвете космический черный.</p>",
-    "updated": "2024-11-07T23:34:41.488",
-    "created": "2024-11-04T20:13:30.890",
+    "updated": "2024-11-15T20:23:00.978Z",
+    "created": "2024-11-04T20:13:30.890Z",
     "tags": [
       7,
       6
@@ -208,8 +208,8 @@
     "name": "Macbook",
     "category": 3,
     "text": "<p>Невероятно тонкий, легкий и портативный дизайн. Раздвиньте границы того, что возможно на iPad, с помощью увеличенной 13-дюймовой модели. Превосходно подойдет под любые цели!</p>",
-    "updated": "2024-11-07T23:33:55.974",
-    "created": "2024-11-04T20:13:30.890",
+    "updated": "2024-11-15T20:22:56.313Z",
+    "created": "2024-11-04T20:13:30.890Z",
     "tags": [
       7,
       6,
@@ -226,8 +226,8 @@
     "name": "iPad",
     "category": 3,
     "text": "<p>Превосходный дизайн и эргономика. Искусственный интеллект. Новый процессор и улучшенные камеры. Качественный дисплей и защита глаз. И это ещё далеко не всё! роскошно</p>",
-    "updated": "2024-11-07T23:32:21.058",
-    "created": "2024-11-04T20:13:30.890",
+    "updated": "2024-11-15T20:22:51.972Z",
+    "created": "2024-11-04T20:13:30.890Z",
     "tags": [
       7,
       6
@@ -243,8 +243,8 @@
     "name": "Футболка Яндекс",
     "category": 2,
     "text": "<p>Футболки новой базовой коллекции <strong>Яндекса</strong>. Большой логотип заметен издалека, даже если надеть пиджак или ветровку. Доступны новые мягкие цвета: пыльно-голубой, оливковый и графит. <strong>92% хлопок</strong>. Превосходно подйдет для <strong>взрослых и детей</strong>.</p>",
-    "updated": "2024-11-07T23:08:51.701",
-    "created": "2024-11-04T20:13:30.890",
+    "updated": "2024-11-15T20:22:45.491Z",
+    "created": "2024-11-04T20:13:30.890Z",
     "tags": [
       1,
       6,
@@ -434,7 +434,7 @@
   "pk": 11,
   "fields": {
     "text": "Какая хорошая форма отправки фидбека",
-    "created_on": "2024-11-11T23:23:33.190",
+    "created_on": "2024-11-11T23:23:33.190Z",
     "status": "new"
   }
 },
@@ -443,7 +443,7 @@
   "pk": 15,
   "fields": {
     "text": "Текст крутого фидбека",
-    "created_on": "2024-11-11T23:32:36.536",
+    "created_on": "2024-11-11T23:32:36.536Z",
     "status": "ans"
   }
 },
@@ -452,7 +452,16 @@
   "pk": 16,
   "fields": {
     "text": "Test storage feedback text",
-    "created_on": "2024-11-11T23:36:31.995",
+    "created_on": "2024-11-11T23:36:31.995Z",
+    "status": "wip"
+  }
+},
+{
+  "model": "feedback.feedback",
+  "pk": 17,
+  "fields": {
+    "text": "Фидбек",
+    "created_on": "2024-11-15T00:35:15.232Z",
     "status": "wip"
   }
 },
@@ -481,6 +490,15 @@
     "feedback": 16,
     "name": "John",
     "mail": "example@mail.ru"
+  }
+},
+{
+  "model": "feedback.feedbackauthor",
+  "pk": 17,
+  "fields": {
+    "feedback": 17,
+    "name": "Имя",
+    "mail": "d@aa.ru"
   }
 },
 {
@@ -513,7 +531,7 @@
   "fields": {
     "feedback": 16,
     "user": 1,
-    "timestamp": "2024-11-14T23:01:17.148",
+    "timestamp": "2024-11-14T23:01:17.148Z",
     "from_status": "new",
     "to_status": "wip"
   }
@@ -524,9 +542,20 @@
   "fields": {
     "feedback": 15,
     "user": 1,
-    "timestamp": "2024-11-14T23:10:19.304",
+    "timestamp": "2024-11-14T23:10:19.304Z",
     "from_status": "new",
     "to_status": "ans"
+  }
+},
+{
+  "model": "feedback.statuslog",
+  "pk": 3,
+  "fields": {
+    "feedback": 17,
+    "user": 1,
+    "timestamp": "2024-11-15T00:35:28.325Z",
+    "from_status": "new",
+    "to_status": "wip"
   }
 },
 {
@@ -543,7 +572,7 @@
   "model": "admin.logentry",
   "pk": 1,
   "fields": {
-    "action_time": "2024-10-17T21:24:43.386",
+    "action_time": "2024-10-17T21:24:43.386Z",
     "user": 1,
     "content_type": 7,
     "object_id": "4",
@@ -556,7 +585,7 @@
   "model": "admin.logentry",
   "pk": 2,
   "fields": {
-    "action_time": "2024-10-17T21:29:31.689",
+    "action_time": "2024-10-17T21:29:31.689Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -569,7 +598,7 @@
   "model": "admin.logentry",
   "pk": 3,
   "fields": {
-    "action_time": "2024-10-17T21:39:52.503",
+    "action_time": "2024-10-17T21:39:52.503Z",
     "user": 1,
     "content_type": 7,
     "object_id": "4",
@@ -582,7 +611,7 @@
   "model": "admin.logentry",
   "pk": 4,
   "fields": {
-    "action_time": "2024-10-17T21:43:49.545",
+    "action_time": "2024-10-17T21:43:49.545Z",
     "user": 1,
     "content_type": 7,
     "object_id": "4",
@@ -595,7 +624,7 @@
   "model": "admin.logentry",
   "pk": 5,
   "fields": {
-    "action_time": "2024-10-17T21:43:49.546",
+    "action_time": "2024-10-17T21:43:49.546Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -608,7 +637,7 @@
   "model": "admin.logentry",
   "pk": 6,
   "fields": {
-    "action_time": "2024-10-19T18:55:47.004",
+    "action_time": "2024-10-19T18:55:47.004Z",
     "user": 1,
     "content_type": 9,
     "object_id": "1",
@@ -621,7 +650,7 @@
   "model": "admin.logentry",
   "pk": 7,
   "fields": {
-    "action_time": "2024-10-19T18:56:34.540",
+    "action_time": "2024-10-19T18:56:34.540Z",
     "user": 1,
     "content_type": 8,
     "object_id": "1",
@@ -634,7 +663,7 @@
   "model": "admin.logentry",
   "pk": 8,
   "fields": {
-    "action_time": "2024-10-19T19:18:33.915",
+    "action_time": "2024-10-19T19:18:33.915Z",
     "user": 1,
     "content_type": 9,
     "object_id": "2",
@@ -647,7 +676,7 @@
   "model": "admin.logentry",
   "pk": 9,
   "fields": {
-    "action_time": "2024-10-19T19:18:42.482",
+    "action_time": "2024-10-19T19:18:42.482Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -660,7 +689,7 @@
   "model": "admin.logentry",
   "pk": 10,
   "fields": {
-    "action_time": "2024-10-19T19:18:52.809",
+    "action_time": "2024-10-19T19:18:52.809Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -673,7 +702,7 @@
   "model": "admin.logentry",
   "pk": 11,
   "fields": {
-    "action_time": "2024-10-19T19:19:26.103",
+    "action_time": "2024-10-19T19:19:26.103Z",
     "user": 1,
     "content_type": 9,
     "object_id": "2",
@@ -686,7 +715,7 @@
   "model": "admin.logentry",
   "pk": 12,
   "fields": {
-    "action_time": "2024-10-19T19:19:47.634",
+    "action_time": "2024-10-19T19:19:47.634Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -699,7 +728,7 @@
   "model": "admin.logentry",
   "pk": 13,
   "fields": {
-    "action_time": "2024-10-19T19:19:57.589",
+    "action_time": "2024-10-19T19:19:57.589Z",
     "user": 1,
     "content_type": 7,
     "object_id": "4",
@@ -712,7 +741,7 @@
   "model": "admin.logentry",
   "pk": 14,
   "fields": {
-    "action_time": "2024-10-19T19:23:46.411",
+    "action_time": "2024-10-19T19:23:46.411Z",
     "user": 1,
     "content_type": 9,
     "object_id": "1",
@@ -725,7 +754,7 @@
   "model": "admin.logentry",
   "pk": 15,
   "fields": {
-    "action_time": "2024-10-19T19:25:30.127",
+    "action_time": "2024-10-19T19:25:30.127Z",
     "user": 1,
     "content_type": 9,
     "object_id": "1",
@@ -738,7 +767,7 @@
   "model": "admin.logentry",
   "pk": 16,
   "fields": {
-    "action_time": "2024-10-19T19:26:41.991",
+    "action_time": "2024-10-19T19:26:41.991Z",
     "user": 1,
     "content_type": 9,
     "object_id": "1",
@@ -751,7 +780,7 @@
   "model": "admin.logentry",
   "pk": 17,
   "fields": {
-    "action_time": "2024-10-19T19:32:44.965",
+    "action_time": "2024-10-19T19:32:44.965Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -764,7 +793,7 @@
   "model": "admin.logentry",
   "pk": 18,
   "fields": {
-    "action_time": "2024-10-19T19:32:56.200",
+    "action_time": "2024-10-19T19:32:56.200Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -777,7 +806,7 @@
   "model": "admin.logentry",
   "pk": 19,
   "fields": {
-    "action_time": "2024-10-19T19:33:08.744",
+    "action_time": "2024-10-19T19:33:08.744Z",
     "user": 1,
     "content_type": 7,
     "object_id": "4",
@@ -790,7 +819,7 @@
   "model": "admin.logentry",
   "pk": 20,
   "fields": {
-    "action_time": "2024-10-19T19:33:39.091",
+    "action_time": "2024-10-19T19:33:39.091Z",
     "user": 1,
     "content_type": 9,
     "object_id": "3",
@@ -803,7 +832,7 @@
   "model": "admin.logentry",
   "pk": 21,
   "fields": {
-    "action_time": "2024-10-19T19:34:18.385",
+    "action_time": "2024-10-19T19:34:18.385Z",
     "user": 1,
     "content_type": 8,
     "object_id": "2",
@@ -816,7 +845,7 @@
   "model": "admin.logentry",
   "pk": 22,
   "fields": {
-    "action_time": "2024-10-19T19:34:53.143",
+    "action_time": "2024-10-19T19:34:53.143Z",
     "user": 1,
     "content_type": 7,
     "object_id": "4",
@@ -829,7 +858,7 @@
   "model": "admin.logentry",
   "pk": 23,
   "fields": {
-    "action_time": "2024-10-19T19:36:07.809",
+    "action_time": "2024-10-19T19:36:07.809Z",
     "user": 1,
     "content_type": 9,
     "object_id": "3",
@@ -842,7 +871,7 @@
   "model": "admin.logentry",
   "pk": 24,
   "fields": {
-    "action_time": "2024-10-19T19:36:19.820",
+    "action_time": "2024-10-19T19:36:19.820Z",
     "user": 1,
     "content_type": 9,
     "object_id": "1",
@@ -855,7 +884,7 @@
   "model": "admin.logentry",
   "pk": 25,
   "fields": {
-    "action_time": "2024-10-19T19:36:53.177",
+    "action_time": "2024-10-19T19:36:53.177Z",
     "user": 1,
     "content_type": 9,
     "object_id": "4",
@@ -868,7 +897,7 @@
   "model": "admin.logentry",
   "pk": 26,
   "fields": {
-    "action_time": "2024-10-19T19:37:29.227",
+    "action_time": "2024-10-19T19:37:29.227Z",
     "user": 1,
     "content_type": 9,
     "object_id": "5",
@@ -881,7 +910,7 @@
   "model": "admin.logentry",
   "pk": 27,
   "fields": {
-    "action_time": "2024-10-19T19:37:39.792",
+    "action_time": "2024-10-19T19:37:39.792Z",
     "user": 1,
     "content_type": 9,
     "object_id": "5",
@@ -894,7 +923,7 @@
   "model": "admin.logentry",
   "pk": 28,
   "fields": {
-    "action_time": "2024-10-19T19:39:00.708",
+    "action_time": "2024-10-19T19:39:00.708Z",
     "user": 1,
     "content_type": 9,
     "object_id": "6",
@@ -907,7 +936,7 @@
   "model": "admin.logentry",
   "pk": 29,
   "fields": {
-    "action_time": "2024-10-19T19:40:40.734",
+    "action_time": "2024-10-19T19:40:40.734Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -920,7 +949,7 @@
   "model": "admin.logentry",
   "pk": 30,
   "fields": {
-    "action_time": "2024-10-19T19:42:17.372",
+    "action_time": "2024-10-19T19:42:17.372Z",
     "user": 1,
     "content_type": 7,
     "object_id": "4",
@@ -933,7 +962,7 @@
   "model": "admin.logentry",
   "pk": 31,
   "fields": {
-    "action_time": "2024-10-19T19:46:01.580",
+    "action_time": "2024-10-19T19:46:01.580Z",
     "user": 1,
     "content_type": 7,
     "object_id": "6",
@@ -946,7 +975,7 @@
   "model": "admin.logentry",
   "pk": 32,
   "fields": {
-    "action_time": "2024-10-19T19:46:16.096",
+    "action_time": "2024-10-19T19:46:16.096Z",
     "user": 1,
     "content_type": 7,
     "object_id": "4",
@@ -959,7 +988,7 @@
   "model": "admin.logentry",
   "pk": 33,
   "fields": {
-    "action_time": "2024-10-19T19:46:37.972",
+    "action_time": "2024-10-19T19:46:37.972Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -972,7 +1001,7 @@
   "model": "admin.logentry",
   "pk": 34,
   "fields": {
-    "action_time": "2024-10-19T19:48:37.437",
+    "action_time": "2024-10-19T19:48:37.437Z",
     "user": 1,
     "content_type": 7,
     "object_id": "7",
@@ -985,7 +1014,7 @@
   "model": "admin.logentry",
   "pk": 35,
   "fields": {
-    "action_time": "2024-10-19T19:51:23.991",
+    "action_time": "2024-10-19T19:51:23.991Z",
     "user": 1,
     "content_type": 7,
     "object_id": "8",
@@ -998,7 +1027,7 @@
   "model": "admin.logentry",
   "pk": 36,
   "fields": {
-    "action_time": "2024-10-19T20:47:37.205",
+    "action_time": "2024-10-19T20:47:37.205Z",
     "user": 1,
     "content_type": 8,
     "object_id": "2",
@@ -1011,7 +1040,7 @@
   "model": "admin.logentry",
   "pk": 37,
   "fields": {
-    "action_time": "2024-10-19T20:48:22.229",
+    "action_time": "2024-10-19T20:48:22.229Z",
     "user": 1,
     "content_type": 8,
     "object_id": "2",
@@ -1024,7 +1053,7 @@
   "model": "admin.logentry",
   "pk": 38,
   "fields": {
-    "action_time": "2024-10-19T20:48:36.135",
+    "action_time": "2024-10-19T20:48:36.135Z",
     "user": 1,
     "content_type": 8,
     "object_id": "1",
@@ -1037,7 +1066,7 @@
   "model": "admin.logentry",
   "pk": 39,
   "fields": {
-    "action_time": "2024-10-21T17:52:11.265",
+    "action_time": "2024-10-21T17:52:11.265Z",
     "user": 1,
     "content_type": 8,
     "object_id": "2",
@@ -1050,7 +1079,7 @@
   "model": "admin.logentry",
   "pk": 40,
   "fields": {
-    "action_time": "2024-10-21T17:52:19.087",
+    "action_time": "2024-10-21T17:52:19.087Z",
     "user": 1,
     "content_type": 8,
     "object_id": "1",
@@ -1063,7 +1092,7 @@
   "model": "admin.logentry",
   "pk": 41,
   "fields": {
-    "action_time": "2024-10-21T17:52:25.402",
+    "action_time": "2024-10-21T17:52:25.402Z",
     "user": 1,
     "content_type": 9,
     "object_id": "1",
@@ -1076,7 +1105,7 @@
   "model": "admin.logentry",
   "pk": 42,
   "fields": {
-    "action_time": "2024-10-21T17:52:33.464",
+    "action_time": "2024-10-21T17:52:33.464Z",
     "user": 1,
     "content_type": 9,
     "object_id": "4",
@@ -1089,7 +1118,7 @@
   "model": "admin.logentry",
   "pk": 43,
   "fields": {
-    "action_time": "2024-10-21T17:52:37.983",
+    "action_time": "2024-10-21T17:52:37.983Z",
     "user": 1,
     "content_type": 9,
     "object_id": "4",
@@ -1102,7 +1131,7 @@
   "model": "admin.logentry",
   "pk": 44,
   "fields": {
-    "action_time": "2024-10-21T17:52:44.896",
+    "action_time": "2024-10-21T17:52:44.896Z",
     "user": 1,
     "content_type": 9,
     "object_id": "5",
@@ -1115,7 +1144,7 @@
   "model": "admin.logentry",
   "pk": 45,
   "fields": {
-    "action_time": "2024-10-21T17:52:59.572",
+    "action_time": "2024-10-21T17:52:59.572Z",
     "user": 1,
     "content_type": 9,
     "object_id": "3",
@@ -1128,7 +1157,7 @@
   "model": "admin.logentry",
   "pk": 46,
   "fields": {
-    "action_time": "2024-10-21T17:53:17.638",
+    "action_time": "2024-10-21T17:53:17.638Z",
     "user": 1,
     "content_type": 9,
     "object_id": "6",
@@ -1141,7 +1170,7 @@
   "model": "admin.logentry",
   "pk": 47,
   "fields": {
-    "action_time": "2024-10-21T18:19:36.716",
+    "action_time": "2024-10-21T18:19:36.716Z",
     "user": 1,
     "content_type": 7,
     "object_id": "7",
@@ -1154,7 +1183,7 @@
   "model": "admin.logentry",
   "pk": 48,
   "fields": {
-    "action_time": "2024-10-21T18:19:56.841",
+    "action_time": "2024-10-21T18:19:56.841Z",
     "user": 1,
     "content_type": 7,
     "object_id": "8",
@@ -1167,7 +1196,7 @@
   "model": "admin.logentry",
   "pk": 49,
   "fields": {
-    "action_time": "2024-10-21T18:20:10.311",
+    "action_time": "2024-10-21T18:20:10.311Z",
     "user": 1,
     "content_type": 9,
     "object_id": "1",
@@ -1180,7 +1209,7 @@
   "model": "admin.logentry",
   "pk": 50,
   "fields": {
-    "action_time": "2024-10-21T18:20:13.498",
+    "action_time": "2024-10-21T18:20:13.498Z",
     "user": 1,
     "content_type": 9,
     "object_id": "6",
@@ -1193,7 +1222,7 @@
   "model": "admin.logentry",
   "pk": 51,
   "fields": {
-    "action_time": "2024-10-21T18:20:17.077",
+    "action_time": "2024-10-21T18:20:17.077Z",
     "user": 1,
     "content_type": 9,
     "object_id": "4",
@@ -1206,7 +1235,7 @@
   "model": "admin.logentry",
   "pk": 52,
   "fields": {
-    "action_time": "2024-10-21T18:20:20.717",
+    "action_time": "2024-10-21T18:20:20.717Z",
     "user": 1,
     "content_type": 9,
     "object_id": "5",
@@ -1219,7 +1248,7 @@
   "model": "admin.logentry",
   "pk": 53,
   "fields": {
-    "action_time": "2024-10-21T18:20:24.271",
+    "action_time": "2024-10-21T18:20:24.271Z",
     "user": 1,
     "content_type": 9,
     "object_id": "3",
@@ -1232,7 +1261,7 @@
   "model": "admin.logentry",
   "pk": 54,
   "fields": {
-    "action_time": "2024-10-21T18:20:28.128",
+    "action_time": "2024-10-21T18:20:28.128Z",
     "user": 1,
     "content_type": 8,
     "object_id": "2",
@@ -1245,7 +1274,7 @@
   "model": "admin.logentry",
   "pk": 55,
   "fields": {
-    "action_time": "2024-10-21T18:20:32.412",
+    "action_time": "2024-10-21T18:20:32.412Z",
     "user": 1,
     "content_type": 8,
     "object_id": "1",
@@ -1258,7 +1287,7 @@
   "model": "admin.logentry",
   "pk": 56,
   "fields": {
-    "action_time": "2024-10-22T14:29:37.364",
+    "action_time": "2024-10-22T14:29:37.364Z",
     "user": 1,
     "content_type": 9,
     "object_id": "1",
@@ -1271,7 +1300,7 @@
   "model": "admin.logentry",
   "pk": 57,
   "fields": {
-    "action_time": "2024-10-22T14:29:43.165",
+    "action_time": "2024-10-22T14:29:43.165Z",
     "user": 1,
     "content_type": 9,
     "object_id": "1",
@@ -1284,7 +1313,7 @@
   "model": "admin.logentry",
   "pk": 58,
   "fields": {
-    "action_time": "2024-10-22T14:29:47.592",
+    "action_time": "2024-10-22T14:29:47.592Z",
     "user": 1,
     "content_type": 9,
     "object_id": "1",
@@ -1297,7 +1326,7 @@
   "model": "admin.logentry",
   "pk": 59,
   "fields": {
-    "action_time": "2024-10-22T14:29:51.107",
+    "action_time": "2024-10-22T14:29:51.107Z",
     "user": 1,
     "content_type": 9,
     "object_id": "1",
@@ -1310,7 +1339,7 @@
   "model": "admin.logentry",
   "pk": 60,
   "fields": {
-    "action_time": "2024-10-29T19:17:35.851",
+    "action_time": "2024-10-29T19:17:35.851Z",
     "user": 1,
     "content_type": 11,
     "object_id": "1",
@@ -1323,7 +1352,7 @@
   "model": "admin.logentry",
   "pk": 61,
   "fields": {
-    "action_time": "2024-10-29T19:17:59.175",
+    "action_time": "2024-10-29T19:17:59.175Z",
     "user": 1,
     "content_type": 11,
     "object_id": "2",
@@ -1336,7 +1365,7 @@
   "model": "admin.logentry",
   "pk": 62,
   "fields": {
-    "action_time": "2024-10-29T19:18:02.441",
+    "action_time": "2024-10-29T19:18:02.441Z",
     "user": 1,
     "content_type": 11,
     "object_id": "2",
@@ -1349,7 +1378,7 @@
   "model": "admin.logentry",
   "pk": 63,
   "fields": {
-    "action_time": "2024-10-29T19:18:11.124",
+    "action_time": "2024-10-29T19:18:11.124Z",
     "user": 1,
     "content_type": 11,
     "object_id": "3",
@@ -1362,7 +1391,7 @@
   "model": "admin.logentry",
   "pk": 64,
   "fields": {
-    "action_time": "2024-10-29T19:19:46.008",
+    "action_time": "2024-10-29T19:19:46.008Z",
     "user": 1,
     "content_type": 8,
     "object_id": "3",
@@ -1375,7 +1404,7 @@
   "model": "admin.logentry",
   "pk": 65,
   "fields": {
-    "action_time": "2024-10-29T19:20:29.146",
+    "action_time": "2024-10-29T19:20:29.146Z",
     "user": 1,
     "content_type": 9,
     "object_id": "7",
@@ -1388,7 +1417,7 @@
   "model": "admin.logentry",
   "pk": 66,
   "fields": {
-    "action_time": "2024-10-29T19:21:02.265",
+    "action_time": "2024-10-29T19:21:02.265Z",
     "user": 1,
     "content_type": 7,
     "object_id": "9",
@@ -1401,7 +1430,7 @@
   "model": "admin.logentry",
   "pk": 67,
   "fields": {
-    "action_time": "2024-10-29T19:48:29.179",
+    "action_time": "2024-10-29T19:48:29.179Z",
     "user": 1,
     "content_type": 12,
     "object_id": "1",
@@ -1414,7 +1443,7 @@
   "model": "admin.logentry",
   "pk": 68,
   "fields": {
-    "action_time": "2024-10-29T19:49:59.843",
+    "action_time": "2024-10-29T19:49:59.843Z",
     "user": 1,
     "content_type": 7,
     "object_id": "10",
@@ -1427,7 +1456,7 @@
   "model": "admin.logentry",
   "pk": 69,
   "fields": {
-    "action_time": "2024-10-29T19:50:20.467",
+    "action_time": "2024-10-29T19:50:20.467Z",
     "user": 1,
     "content_type": 12,
     "object_id": "2",
@@ -1440,7 +1469,7 @@
   "model": "admin.logentry",
   "pk": 70,
   "fields": {
-    "action_time": "2024-10-29T19:51:26.697",
+    "action_time": "2024-10-29T19:51:26.697Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -1453,7 +1482,7 @@
   "model": "admin.logentry",
   "pk": 71,
   "fields": {
-    "action_time": "2024-10-29T19:51:38.587",
+    "action_time": "2024-10-29T19:51:38.587Z",
     "user": 1,
     "content_type": 12,
     "object_id": "3",
@@ -1466,7 +1495,7 @@
   "model": "admin.logentry",
   "pk": 72,
   "fields": {
-    "action_time": "2024-10-29T19:57:09.582",
+    "action_time": "2024-10-29T19:57:09.582Z",
     "user": 1,
     "content_type": 12,
     "object_id": "3",
@@ -1479,7 +1508,7 @@
   "model": "admin.logentry",
   "pk": 73,
   "fields": {
-    "action_time": "2024-10-29T20:06:53.509",
+    "action_time": "2024-10-29T20:06:53.509Z",
     "user": 1,
     "content_type": 12,
     "object_id": "3",
@@ -1492,7 +1521,7 @@
   "model": "admin.logentry",
   "pk": 74,
   "fields": {
-    "action_time": "2024-10-29T20:06:53.513",
+    "action_time": "2024-10-29T20:06:53.513Z",
     "user": 1,
     "content_type": 12,
     "object_id": "2",
@@ -1505,7 +1534,7 @@
   "model": "admin.logentry",
   "pk": 75,
   "fields": {
-    "action_time": "2024-10-29T20:06:53.517",
+    "action_time": "2024-10-29T20:06:53.517Z",
     "user": 1,
     "content_type": 12,
     "object_id": "1",
@@ -1518,7 +1547,7 @@
   "model": "admin.logentry",
   "pk": 76,
   "fields": {
-    "action_time": "2024-10-29T20:21:56.467",
+    "action_time": "2024-10-29T20:21:56.467Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -1531,7 +1560,7 @@
   "model": "admin.logentry",
   "pk": 77,
   "fields": {
-    "action_time": "2024-10-29T20:29:20.895",
+    "action_time": "2024-10-29T20:29:20.895Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -1544,7 +1573,7 @@
   "model": "admin.logentry",
   "pk": 78,
   "fields": {
-    "action_time": "2024-10-29T20:29:31.148",
+    "action_time": "2024-10-29T20:29:31.148Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -1557,7 +1586,7 @@
   "model": "admin.logentry",
   "pk": 79,
   "fields": {
-    "action_time": "2024-10-29T20:30:00.301",
+    "action_time": "2024-10-29T20:30:00.301Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -1570,7 +1599,7 @@
   "model": "admin.logentry",
   "pk": 80,
   "fields": {
-    "action_time": "2024-10-29T20:31:30.984",
+    "action_time": "2024-10-29T20:31:30.984Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -1583,7 +1612,7 @@
   "model": "admin.logentry",
   "pk": 81,
   "fields": {
-    "action_time": "2024-10-29T20:31:40.692",
+    "action_time": "2024-10-29T20:31:40.692Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -1596,7 +1625,7 @@
   "model": "admin.logentry",
   "pk": 82,
   "fields": {
-    "action_time": "2024-10-29T22:05:16.290",
+    "action_time": "2024-10-29T22:05:16.290Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -1609,7 +1638,7 @@
   "model": "admin.logentry",
   "pk": 83,
   "fields": {
-    "action_time": "2024-10-29T22:56:33.579",
+    "action_time": "2024-10-29T22:56:33.579Z",
     "user": 1,
     "content_type": 7,
     "object_id": "10",
@@ -1622,7 +1651,7 @@
   "model": "admin.logentry",
   "pk": 84,
   "fields": {
-    "action_time": "2024-10-29T22:56:46.582",
+    "action_time": "2024-10-29T22:56:46.582Z",
     "user": 1,
     "content_type": 7,
     "object_id": "9",
@@ -1635,7 +1664,7 @@
   "model": "admin.logentry",
   "pk": 85,
   "fields": {
-    "action_time": "2024-10-30T21:49:40.566",
+    "action_time": "2024-10-30T21:49:40.566Z",
     "user": 1,
     "content_type": 7,
     "object_id": "8",
@@ -1648,7 +1677,7 @@
   "model": "admin.logentry",
   "pk": 86,
   "fields": {
-    "action_time": "2024-10-31T00:24:32.970",
+    "action_time": "2024-10-31T00:24:32.970Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -1661,7 +1690,7 @@
   "model": "admin.logentry",
   "pk": 87,
   "fields": {
-    "action_time": "2024-10-31T00:24:41.065",
+    "action_time": "2024-10-31T00:24:41.065Z",
     "user": 1,
     "content_type": 7,
     "object_id": "10",
@@ -1674,7 +1703,7 @@
   "model": "admin.logentry",
   "pk": 88,
   "fields": {
-    "action_time": "2024-10-31T00:24:59.077",
+    "action_time": "2024-10-31T00:24:59.077Z",
     "user": 1,
     "content_type": 7,
     "object_id": "9",
@@ -1687,7 +1716,7 @@
   "model": "admin.logentry",
   "pk": 89,
   "fields": {
-    "action_time": "2024-10-31T00:25:11.349",
+    "action_time": "2024-10-31T00:25:11.349Z",
     "user": 1,
     "content_type": 7,
     "object_id": "8",
@@ -1700,7 +1729,7 @@
   "model": "admin.logentry",
   "pk": 90,
   "fields": {
-    "action_time": "2024-10-31T00:25:11.350",
+    "action_time": "2024-10-31T00:25:11.350Z",
     "user": 1,
     "content_type": 7,
     "object_id": "7",
@@ -1713,7 +1742,7 @@
   "model": "admin.logentry",
   "pk": 91,
   "fields": {
-    "action_time": "2024-10-31T00:25:11.351",
+    "action_time": "2024-10-31T00:25:11.351Z",
     "user": 1,
     "content_type": 7,
     "object_id": "6",
@@ -1726,7 +1755,7 @@
   "model": "admin.logentry",
   "pk": 92,
   "fields": {
-    "action_time": "2024-10-31T00:25:11.352",
+    "action_time": "2024-10-31T00:25:11.352Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -1739,7 +1768,7 @@
   "model": "admin.logentry",
   "pk": 93,
   "fields": {
-    "action_time": "2024-10-31T00:25:11.353",
+    "action_time": "2024-10-31T00:25:11.353Z",
     "user": 1,
     "content_type": 7,
     "object_id": "4",
@@ -1752,7 +1781,7 @@
   "model": "admin.logentry",
   "pk": 94,
   "fields": {
-    "action_time": "2024-11-01T20:31:12.504",
+    "action_time": "2024-11-01T20:31:12.504Z",
     "user": 1,
     "content_type": 7,
     "object_id": "8",
@@ -1765,7 +1794,7 @@
   "model": "admin.logentry",
   "pk": 95,
   "fields": {
-    "action_time": "2024-11-02T00:00:30.292",
+    "action_time": "2024-11-02T00:00:30.292Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -1778,7 +1807,7 @@
   "model": "admin.logentry",
   "pk": 96,
   "fields": {
-    "action_time": "2024-11-02T00:00:37.077",
+    "action_time": "2024-11-02T00:00:37.077Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -1791,7 +1820,7 @@
   "model": "admin.logentry",
   "pk": 97,
   "fields": {
-    "action_time": "2024-11-02T00:00:40.466",
+    "action_time": "2024-11-02T00:00:40.466Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -1804,7 +1833,7 @@
   "model": "admin.logentry",
   "pk": 98,
   "fields": {
-    "action_time": "2024-11-02T00:48:31.509",
+    "action_time": "2024-11-02T00:48:31.509Z",
     "user": 1,
     "content_type": 7,
     "object_id": "8",
@@ -1817,7 +1846,7 @@
   "model": "admin.logentry",
   "pk": 99,
   "fields": {
-    "action_time": "2024-11-02T00:48:41.694",
+    "action_time": "2024-11-02T00:48:41.694Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -1830,7 +1859,7 @@
   "model": "admin.logentry",
   "pk": 100,
   "fields": {
-    "action_time": "2024-11-02T00:48:41.696",
+    "action_time": "2024-11-02T00:48:41.696Z",
     "user": 1,
     "content_type": 7,
     "object_id": "10",
@@ -1843,7 +1872,7 @@
   "model": "admin.logentry",
   "pk": 101,
   "fields": {
-    "action_time": "2024-11-02T00:48:41.697",
+    "action_time": "2024-11-02T00:48:41.697Z",
     "user": 1,
     "content_type": 7,
     "object_id": "9",
@@ -1856,7 +1885,7 @@
   "model": "admin.logentry",
   "pk": 102,
   "fields": {
-    "action_time": "2024-11-02T00:48:41.698",
+    "action_time": "2024-11-02T00:48:41.698Z",
     "user": 1,
     "content_type": 7,
     "object_id": "8",
@@ -1869,7 +1898,7 @@
   "model": "admin.logentry",
   "pk": 103,
   "fields": {
-    "action_time": "2024-11-02T00:51:05.999",
+    "action_time": "2024-11-02T00:51:05.999Z",
     "user": 1,
     "content_type": 7,
     "object_id": "7",
@@ -1882,7 +1911,7 @@
   "model": "admin.logentry",
   "pk": 104,
   "fields": {
-    "action_time": "2024-11-02T00:51:06.001",
+    "action_time": "2024-11-02T00:51:06.001Z",
     "user": 1,
     "content_type": 7,
     "object_id": "6",
@@ -1895,7 +1924,7 @@
   "model": "admin.logentry",
   "pk": 105,
   "fields": {
-    "action_time": "2024-11-02T00:53:52.176",
+    "action_time": "2024-11-02T00:53:52.176Z",
     "user": 1,
     "content_type": 7,
     "object_id": "8",
@@ -1908,7 +1937,7 @@
   "model": "admin.logentry",
   "pk": 106,
   "fields": {
-    "action_time": "2024-11-02T00:53:52.177",
+    "action_time": "2024-11-02T00:53:52.177Z",
     "user": 1,
     "content_type": 7,
     "object_id": "7",
@@ -1921,7 +1950,7 @@
   "model": "admin.logentry",
   "pk": 107,
   "fields": {
-    "action_time": "2024-11-02T00:53:52.178",
+    "action_time": "2024-11-02T00:53:52.178Z",
     "user": 1,
     "content_type": 7,
     "object_id": "6",
@@ -1934,7 +1963,7 @@
   "model": "admin.logentry",
   "pk": 108,
   "fields": {
-    "action_time": "2024-11-02T00:57:33.135",
+    "action_time": "2024-11-02T00:57:33.135Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -1947,7 +1976,7 @@
   "model": "admin.logentry",
   "pk": 109,
   "fields": {
-    "action_time": "2024-11-02T01:02:40.603",
+    "action_time": "2024-11-02T01:02:40.603Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -1960,7 +1989,7 @@
   "model": "admin.logentry",
   "pk": 110,
   "fields": {
-    "action_time": "2024-11-02T01:02:40.605",
+    "action_time": "2024-11-02T01:02:40.605Z",
     "user": 1,
     "content_type": 7,
     "object_id": "10",
@@ -1973,7 +2002,7 @@
   "model": "admin.logentry",
   "pk": 111,
   "fields": {
-    "action_time": "2024-11-02T01:02:40.606",
+    "action_time": "2024-11-02T01:02:40.606Z",
     "user": 1,
     "content_type": 7,
     "object_id": "9",
@@ -1986,7 +2015,7 @@
   "model": "admin.logentry",
   "pk": 112,
   "fields": {
-    "action_time": "2024-11-02T01:02:40.607",
+    "action_time": "2024-11-02T01:02:40.607Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -1999,7 +2028,7 @@
   "model": "admin.logentry",
   "pk": 113,
   "fields": {
-    "action_time": "2024-11-02T01:02:40.608",
+    "action_time": "2024-11-02T01:02:40.608Z",
     "user": 1,
     "content_type": 7,
     "object_id": "8",
@@ -2012,7 +2041,7 @@
   "model": "admin.logentry",
   "pk": 114,
   "fields": {
-    "action_time": "2024-11-02T01:06:31.306",
+    "action_time": "2024-11-02T01:06:31.306Z",
     "user": 1,
     "content_type": 7,
     "object_id": "8",
@@ -2025,7 +2054,7 @@
   "model": "admin.logentry",
   "pk": 115,
   "fields": {
-    "action_time": "2024-11-02T01:06:31.308",
+    "action_time": "2024-11-02T01:06:31.308Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -2038,7 +2067,7 @@
   "model": "admin.logentry",
   "pk": 116,
   "fields": {
-    "action_time": "2024-11-02T02:26:29.630",
+    "action_time": "2024-11-02T02:26:29.630Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -2051,7 +2080,7 @@
   "model": "admin.logentry",
   "pk": 117,
   "fields": {
-    "action_time": "2024-11-02T02:30:37.379",
+    "action_time": "2024-11-02T02:30:37.379Z",
     "user": 1,
     "content_type": 7,
     "object_id": "12",
@@ -2064,7 +2093,7 @@
   "model": "admin.logentry",
   "pk": 118,
   "fields": {
-    "action_time": "2024-11-02T23:26:15.875",
+    "action_time": "2024-11-02T23:26:15.875Z",
     "user": 1,
     "content_type": 7,
     "object_id": "10",
@@ -2077,7 +2106,7 @@
   "model": "admin.logentry",
   "pk": 119,
   "fields": {
-    "action_time": "2024-11-02T23:28:16.278",
+    "action_time": "2024-11-02T23:28:16.278Z",
     "user": 1,
     "content_type": 7,
     "object_id": "10",
@@ -2090,7 +2119,7 @@
   "model": "admin.logentry",
   "pk": 120,
   "fields": {
-    "action_time": "2024-11-02T23:28:41.130",
+    "action_time": "2024-11-02T23:28:41.130Z",
     "user": 1,
     "content_type": 7,
     "object_id": "10",
@@ -2103,7 +2132,7 @@
   "model": "admin.logentry",
   "pk": 121,
   "fields": {
-    "action_time": "2024-11-02T23:37:19.339",
+    "action_time": "2024-11-02T23:37:19.339Z",
     "user": 1,
     "content_type": 7,
     "object_id": "10",
@@ -2116,7 +2145,7 @@
   "model": "admin.logentry",
   "pk": 122,
   "fields": {
-    "action_time": "2024-11-03T12:18:28.241",
+    "action_time": "2024-11-03T12:18:28.241Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -2129,7 +2158,7 @@
   "model": "admin.logentry",
   "pk": 123,
   "fields": {
-    "action_time": "2024-11-03T12:21:13.464",
+    "action_time": "2024-11-03T12:21:13.464Z",
     "user": 1,
     "content_type": 7,
     "object_id": "9",
@@ -2142,7 +2171,7 @@
   "model": "admin.logentry",
   "pk": 124,
   "fields": {
-    "action_time": "2024-11-03T13:46:13.501",
+    "action_time": "2024-11-03T13:46:13.501Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -2155,7 +2184,7 @@
   "model": "admin.logentry",
   "pk": 125,
   "fields": {
-    "action_time": "2024-11-04T11:53:50.187",
+    "action_time": "2024-11-04T11:53:50.187Z",
     "user": 1,
     "content_type": 7,
     "object_id": "12",
@@ -2168,7 +2197,7 @@
   "model": "admin.logentry",
   "pk": 126,
   "fields": {
-    "action_time": "2024-11-04T11:54:19.215",
+    "action_time": "2024-11-04T11:54:19.215Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -2181,7 +2210,7 @@
   "model": "admin.logentry",
   "pk": 127,
   "fields": {
-    "action_time": "2024-11-04T11:54:29.763",
+    "action_time": "2024-11-04T11:54:29.763Z",
     "user": 1,
     "content_type": 7,
     "object_id": "10",
@@ -2194,7 +2223,7 @@
   "model": "admin.logentry",
   "pk": 128,
   "fields": {
-    "action_time": "2024-11-04T11:54:37.663",
+    "action_time": "2024-11-04T11:54:37.663Z",
     "user": 1,
     "content_type": 7,
     "object_id": "9",
@@ -2207,7 +2236,7 @@
   "model": "admin.logentry",
   "pk": 129,
   "fields": {
-    "action_time": "2024-11-04T11:54:44.953",
+    "action_time": "2024-11-04T11:54:44.953Z",
     "user": 1,
     "content_type": 7,
     "object_id": "8",
@@ -2220,7 +2249,7 @@
   "model": "admin.logentry",
   "pk": 130,
   "fields": {
-    "action_time": "2024-11-04T11:54:51.513",
+    "action_time": "2024-11-04T11:54:51.513Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -2233,7 +2262,7 @@
   "model": "admin.logentry",
   "pk": 131,
   "fields": {
-    "action_time": "2024-11-04T12:07:37.054",
+    "action_time": "2024-11-04T12:07:37.054Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -2246,7 +2275,7 @@
   "model": "admin.logentry",
   "pk": 132,
   "fields": {
-    "action_time": "2024-11-04T12:08:19.101",
+    "action_time": "2024-11-04T12:08:19.101Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -2259,7 +2288,7 @@
   "model": "admin.logentry",
   "pk": 133,
   "fields": {
-    "action_time": "2024-11-04T12:09:47.777",
+    "action_time": "2024-11-04T12:09:47.777Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -2272,7 +2301,7 @@
   "model": "admin.logentry",
   "pk": 134,
   "fields": {
-    "action_time": "2024-11-04T12:10:20.976",
+    "action_time": "2024-11-04T12:10:20.976Z",
     "user": 1,
     "content_type": 7,
     "object_id": "10",
@@ -2285,7 +2314,7 @@
   "model": "admin.logentry",
   "pk": 135,
   "fields": {
-    "action_time": "2024-11-04T12:11:43.382",
+    "action_time": "2024-11-04T12:11:43.382Z",
     "user": 1,
     "content_type": 7,
     "object_id": "9",
@@ -2298,7 +2327,7 @@
   "model": "admin.logentry",
   "pk": 136,
   "fields": {
-    "action_time": "2024-11-04T12:12:40.311",
+    "action_time": "2024-11-04T12:12:40.311Z",
     "user": 1,
     "content_type": 7,
     "object_id": "8",
@@ -2311,7 +2340,7 @@
   "model": "admin.logentry",
   "pk": 137,
   "fields": {
-    "action_time": "2024-11-04T12:13:48.947",
+    "action_time": "2024-11-04T12:13:48.947Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -2324,7 +2353,7 @@
   "model": "admin.logentry",
   "pk": 138,
   "fields": {
-    "action_time": "2024-11-04T12:18:37.822",
+    "action_time": "2024-11-04T12:18:37.822Z",
     "user": 1,
     "content_type": 7,
     "object_id": "13",
@@ -2337,7 +2366,7 @@
   "model": "admin.logentry",
   "pk": 139,
   "fields": {
-    "action_time": "2024-11-04T12:20:22.616",
+    "action_time": "2024-11-04T12:20:22.616Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -2350,7 +2379,7 @@
   "model": "admin.logentry",
   "pk": 140,
   "fields": {
-    "action_time": "2024-11-04T17:46:46.949",
+    "action_time": "2024-11-04T17:46:46.949Z",
     "user": 1,
     "content_type": 8,
     "object_id": "2",
@@ -2363,7 +2392,7 @@
   "model": "admin.logentry",
   "pk": 141,
   "fields": {
-    "action_time": "2024-11-04T17:46:51.270",
+    "action_time": "2024-11-04T17:46:51.270Z",
     "user": 1,
     "content_type": 8,
     "object_id": "2",
@@ -2376,7 +2405,7 @@
   "model": "admin.logentry",
   "pk": 142,
   "fields": {
-    "action_time": "2024-11-04T17:46:55.834",
+    "action_time": "2024-11-04T17:46:55.834Z",
     "user": 1,
     "content_type": 8,
     "object_id": "1",
@@ -2389,7 +2418,7 @@
   "model": "admin.logentry",
   "pk": 143,
   "fields": {
-    "action_time": "2024-11-04T17:46:59.595",
+    "action_time": "2024-11-04T17:46:59.595Z",
     "user": 1,
     "content_type": 8,
     "object_id": "3",
@@ -2402,7 +2431,7 @@
   "model": "admin.logentry",
   "pk": 144,
   "fields": {
-    "action_time": "2024-11-04T17:47:08.588",
+    "action_time": "2024-11-04T17:47:08.588Z",
     "user": 1,
     "content_type": 9,
     "object_id": "1",
@@ -2415,7 +2444,7 @@
   "model": "admin.logentry",
   "pk": 145,
   "fields": {
-    "action_time": "2024-11-04T20:50:58.559",
+    "action_time": "2024-11-04T20:50:58.559Z",
     "user": 1,
     "content_type": 7,
     "object_id": "14",
@@ -2428,7 +2457,7 @@
   "model": "admin.logentry",
   "pk": 146,
   "fields": {
-    "action_time": "2024-11-04T21:16:57.312",
+    "action_time": "2024-11-04T21:16:57.312Z",
     "user": 1,
     "content_type": 7,
     "object_id": "14",
@@ -2441,7 +2470,7 @@
   "model": "admin.logentry",
   "pk": 147,
   "fields": {
-    "action_time": "2024-11-04T21:17:11.607",
+    "action_time": "2024-11-04T21:17:11.607Z",
     "user": 1,
     "content_type": 7,
     "object_id": "15",
@@ -2454,7 +2483,7 @@
   "model": "admin.logentry",
   "pk": 148,
   "fields": {
-    "action_time": "2024-11-05T18:54:16.660",
+    "action_time": "2024-11-05T18:54:16.660Z",
     "user": 1,
     "content_type": 7,
     "object_id": "15",
@@ -2467,7 +2496,7 @@
   "model": "admin.logentry",
   "pk": 149,
   "fields": {
-    "action_time": "2024-11-05T20:40:06.167",
+    "action_time": "2024-11-05T20:40:06.167Z",
     "user": 1,
     "content_type": 8,
     "object_id": "4",
@@ -2480,7 +2509,7 @@
   "model": "admin.logentry",
   "pk": 150,
   "fields": {
-    "action_time": "2024-11-05T20:40:26.806",
+    "action_time": "2024-11-05T20:40:26.806Z",
     "user": 1,
     "content_type": 8,
     "object_id": "4",
@@ -2493,7 +2522,7 @@
   "model": "admin.logentry",
   "pk": 151,
   "fields": {
-    "action_time": "2024-11-05T22:29:55.050",
+    "action_time": "2024-11-05T22:29:55.050Z",
     "user": 1,
     "content_type": 7,
     "object_id": "15",
@@ -2506,7 +2535,7 @@
   "model": "admin.logentry",
   "pk": 152,
   "fields": {
-    "action_time": "2024-11-05T22:30:30.924",
+    "action_time": "2024-11-05T22:30:30.924Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -2519,7 +2548,7 @@
   "model": "admin.logentry",
   "pk": 153,
   "fields": {
-    "action_time": "2024-11-07T23:02:19.251",
+    "action_time": "2024-11-07T23:02:19.251Z",
     "user": 1,
     "content_type": 7,
     "object_id": "13",
@@ -2532,7 +2561,7 @@
   "model": "admin.logentry",
   "pk": 154,
   "fields": {
-    "action_time": "2024-11-07T23:08:52.407",
+    "action_time": "2024-11-07T23:08:52.407Z",
     "user": 1,
     "content_type": 7,
     "object_id": "13",
@@ -2545,7 +2574,7 @@
   "model": "admin.logentry",
   "pk": 155,
   "fields": {
-    "action_time": "2024-11-07T23:32:21.504",
+    "action_time": "2024-11-07T23:32:21.504Z",
     "user": 1,
     "content_type": 7,
     "object_id": "11",
@@ -2558,7 +2587,7 @@
   "model": "admin.logentry",
   "pk": 156,
   "fields": {
-    "action_time": "2024-11-07T23:33:57.285",
+    "action_time": "2024-11-07T23:33:57.285Z",
     "user": 1,
     "content_type": 7,
     "object_id": "10",
@@ -2571,7 +2600,7 @@
   "model": "admin.logentry",
   "pk": 157,
   "fields": {
-    "action_time": "2024-11-07T23:34:42.341",
+    "action_time": "2024-11-07T23:34:42.341Z",
     "user": 1,
     "content_type": 7,
     "object_id": "9",
@@ -2584,7 +2613,7 @@
   "model": "admin.logentry",
   "pk": 158,
   "fields": {
-    "action_time": "2024-11-07T23:35:04.804",
+    "action_time": "2024-11-07T23:35:04.804Z",
     "user": 1,
     "content_type": 7,
     "object_id": "8",
@@ -2597,7 +2626,7 @@
   "model": "admin.logentry",
   "pk": 159,
   "fields": {
-    "action_time": "2024-11-07T23:36:09.423",
+    "action_time": "2024-11-07T23:36:09.423Z",
     "user": 1,
     "content_type": 7,
     "object_id": "5",
@@ -2610,7 +2639,7 @@
   "model": "admin.logentry",
   "pk": 160,
   "fields": {
-    "action_time": "2024-11-11T23:05:25.715",
+    "action_time": "2024-11-11T23:05:25.715Z",
     "user": 1,
     "content_type": 14,
     "object_id": "2",
@@ -2623,7 +2652,7 @@
   "model": "admin.logentry",
   "pk": 161,
   "fields": {
-    "action_time": "2024-11-11T23:05:25.728",
+    "action_time": "2024-11-11T23:05:25.728Z",
     "user": 1,
     "content_type": 14,
     "object_id": "1",
@@ -2636,7 +2665,7 @@
   "model": "admin.logentry",
   "pk": 162,
   "fields": {
-    "action_time": "2024-11-11T23:11:26.496",
+    "action_time": "2024-11-11T23:11:26.496Z",
     "user": 1,
     "content_type": 14,
     "object_id": "5",
@@ -2649,7 +2678,7 @@
   "model": "admin.logentry",
   "pk": 163,
   "fields": {
-    "action_time": "2024-11-11T23:11:26.501",
+    "action_time": "2024-11-11T23:11:26.501Z",
     "user": 1,
     "content_type": 14,
     "object_id": "4",
@@ -2662,7 +2691,7 @@
   "model": "admin.logentry",
   "pk": 164,
   "fields": {
-    "action_time": "2024-11-11T23:11:26.504",
+    "action_time": "2024-11-11T23:11:26.504Z",
     "user": 1,
     "content_type": 14,
     "object_id": "3",
@@ -2675,7 +2704,7 @@
   "model": "admin.logentry",
   "pk": 165,
   "fields": {
-    "action_time": "2024-11-11T23:17:25.227",
+    "action_time": "2024-11-11T23:17:25.227Z",
     "user": 1,
     "content_type": 14,
     "object_id": "7",
@@ -2688,7 +2717,7 @@
   "model": "admin.logentry",
   "pk": 166,
   "fields": {
-    "action_time": "2024-11-11T23:17:25.231",
+    "action_time": "2024-11-11T23:17:25.231Z",
     "user": 1,
     "content_type": 14,
     "object_id": "6",
@@ -2701,7 +2730,7 @@
   "model": "admin.logentry",
   "pk": 167,
   "fields": {
-    "action_time": "2024-11-11T23:29:11.567",
+    "action_time": "2024-11-11T23:29:11.567Z",
     "user": 1,
     "content_type": 14,
     "object_id": "10",
@@ -2714,7 +2743,7 @@
   "model": "admin.logentry",
   "pk": 168,
   "fields": {
-    "action_time": "2024-11-11T23:29:11.572",
+    "action_time": "2024-11-11T23:29:11.572Z",
     "user": 1,
     "content_type": 14,
     "object_id": "9",
@@ -2727,7 +2756,7 @@
   "model": "admin.logentry",
   "pk": 169,
   "fields": {
-    "action_time": "2024-11-11T23:29:11.576",
+    "action_time": "2024-11-11T23:29:11.576Z",
     "user": 1,
     "content_type": 14,
     "object_id": "8",
@@ -2740,7 +2769,7 @@
   "model": "admin.logentry",
   "pk": 170,
   "fields": {
-    "action_time": "2024-11-11T23:29:28.494",
+    "action_time": "2024-11-11T23:29:28.494Z",
     "user": 1,
     "content_type": 14,
     "object_id": "11",
@@ -2753,7 +2782,7 @@
   "model": "admin.logentry",
   "pk": 171,
   "fields": {
-    "action_time": "2024-11-11T23:32:28.925",
+    "action_time": "2024-11-11T23:32:28.925Z",
     "user": 1,
     "content_type": 14,
     "object_id": "14",
@@ -2766,7 +2795,7 @@
   "model": "admin.logentry",
   "pk": 172,
   "fields": {
-    "action_time": "2024-11-11T23:32:28.930",
+    "action_time": "2024-11-11T23:32:28.930Z",
     "user": 1,
     "content_type": 14,
     "object_id": "13",
@@ -2779,7 +2808,7 @@
   "model": "admin.logentry",
   "pk": 173,
   "fields": {
-    "action_time": "2024-11-11T23:32:28.933",
+    "action_time": "2024-11-11T23:32:28.933Z",
     "user": 1,
     "content_type": 14,
     "object_id": "12",
@@ -2792,7 +2821,7 @@
   "model": "admin.logentry",
   "pk": 174,
   "fields": {
-    "action_time": "2024-11-11T23:34:33.874",
+    "action_time": "2024-11-11T23:34:33.874Z",
     "user": 1,
     "content_type": 14,
     "object_id": "15",
@@ -2805,7 +2834,7 @@
   "model": "admin.logentry",
   "pk": 175,
   "fields": {
-    "action_time": "2024-11-11T23:34:37.881",
+    "action_time": "2024-11-11T23:34:37.881Z",
     "user": 1,
     "content_type": 14,
     "object_id": "11",
@@ -2818,7 +2847,7 @@
   "model": "admin.logentry",
   "pk": 176,
   "fields": {
-    "action_time": "2024-11-13T22:39:23.556",
+    "action_time": "2024-11-13T22:39:23.556Z",
     "user": 1,
     "content_type": 4,
     "object_id": "1",
@@ -2831,7 +2860,7 @@
   "model": "admin.logentry",
   "pk": 177,
   "fields": {
-    "action_time": "2024-11-13T23:36:11.619",
+    "action_time": "2024-11-13T23:36:11.619Z",
     "user": 1,
     "content_type": 4,
     "object_id": "1",
@@ -2844,7 +2873,7 @@
   "model": "admin.logentry",
   "pk": 178,
   "fields": {
-    "action_time": "2024-11-13T23:49:09.850",
+    "action_time": "2024-11-13T23:49:09.850Z",
     "user": 1,
     "content_type": 4,
     "object_id": "1",
@@ -2857,7 +2886,7 @@
   "model": "admin.logentry",
   "pk": 179,
   "fields": {
-    "action_time": "2024-11-13T23:56:34.949",
+    "action_time": "2024-11-13T23:56:34.949Z",
     "user": 1,
     "content_type": 4,
     "object_id": "1",
@@ -2870,7 +2899,7 @@
   "model": "admin.logentry",
   "pk": 180,
   "fields": {
-    "action_time": "2024-11-13T23:57:02.499",
+    "action_time": "2024-11-13T23:57:02.499Z",
     "user": 1,
     "content_type": 4,
     "object_id": "1",
@@ -2883,7 +2912,7 @@
   "model": "admin.logentry",
   "pk": 181,
   "fields": {
-    "action_time": "2024-11-14T00:02:56.553",
+    "action_time": "2024-11-14T00:02:56.553Z",
     "user": 1,
     "content_type": 4,
     "object_id": "1",
@@ -2896,7 +2925,7 @@
   "model": "admin.logentry",
   "pk": 182,
   "fields": {
-    "action_time": "2024-11-14T00:06:30.192",
+    "action_time": "2024-11-14T00:06:30.192Z",
     "user": 1,
     "content_type": 4,
     "object_id": "1",
@@ -2909,7 +2938,7 @@
   "model": "admin.logentry",
   "pk": 183,
   "fields": {
-    "action_time": "2024-11-14T23:01:17.150",
+    "action_time": "2024-11-14T23:01:17.150Z",
     "user": 1,
     "content_type": 14,
     "object_id": "16",
@@ -2922,7 +2951,7 @@
   "model": "admin.logentry",
   "pk": 184,
   "fields": {
-    "action_time": "2024-11-14T23:01:56.666",
+    "action_time": "2024-11-14T23:01:56.666Z",
     "user": 1,
     "content_type": 14,
     "object_id": "16",
@@ -2935,7 +2964,7 @@
   "model": "admin.logentry",
   "pk": 185,
   "fields": {
-    "action_time": "2024-11-14T23:02:50.026",
+    "action_time": "2024-11-14T23:02:50.026Z",
     "user": 1,
     "content_type": 14,
     "object_id": "16",
@@ -2948,13 +2977,130 @@
   "model": "admin.logentry",
   "pk": 186,
   "fields": {
-    "action_time": "2024-11-14T23:10:19.306",
+    "action_time": "2024-11-14T23:10:19.306Z",
     "user": 1,
     "content_type": 14,
     "object_id": "15",
     "object_repr": "Текст крутого фидбека",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 187,
+  "fields": {
+    "action_time": "2024-11-15T00:34:06.523Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "iPad",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 188,
+  "fields": {
+    "action_time": "2024-11-15T00:34:46.834Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "iPad",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 189,
+  "fields": {
+    "action_time": "2024-11-15T00:35:28.327Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "17",
+    "object_repr": "Фидбек",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 190,
+  "fields": {
+    "action_time": "2024-11-15T20:22:45.493Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "Футболка Яндекс",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 191,
+  "fields": {
+    "action_time": "2024-11-15T20:22:51.974Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "iPad",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 192,
+  "fields": {
+    "action_time": "2024-11-15T20:22:56.314Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Macbook",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 193,
+  "fields": {
+    "action_time": "2024-11-15T20:23:00.980Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "iPhone 16 Pro M",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 194,
+  "fields": {
+    "action_time": "2024-11-15T20:23:04.797Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Набор Lego",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 195,
+  "fields": {
+    "action_time": "2024-11-15T20:23:09.783Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Квадрокоптер",
+    "action_flag": 2,
+    "change_message": "[]"
   }
 },
 {
@@ -3610,7 +3756,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$600000$KSSyPAivTckCqBZzvN4542$tpK9vUtxdcb4grV1VB6VG9H3db8MnLrT33Zem8on4TM=",
-    "last_login": "2024-11-13T22:23:05",
+    "last_login": "2024-11-13T22:23:05Z",
     "is_superuser": true,
     "username": "kudes",
     "first_name": "",
@@ -3618,7 +3764,7 @@
     "email": "",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2024-10-16T18:16:50",
+    "date_joined": "2024-10-16T18:16:50Z",
     "groups": [],
     "user_permissions": []
   }
@@ -3628,7 +3774,7 @@
   "pk": "8d44ngn6b33oe5tt8es88o3jjt7kbmtu",
   "fields": {
     "session_data": ".eJxVjDsOgzAUBO_iOrLwD5uU6TkDst8-AklkSxiqKHcPSBRJuzOzbzHEbZ2GrfIyzBBXocTld0uRnpwPgEfM9yKp5HWZkzwUedIq-wJ-3U7372CKddprgkMK0DqoMFqyxltuTQOluSOvO9gGO2isC-hGrZJDBEdj2LdGgcTnC-NNOAU:1tBIxF:DZIjH7M60_dixuqVPpTBJBBJ2QC9Xn89wkRN6uxJhIY",
-    "expire_date": "2024-11-27T22:23:05.596"
+    "expire_date": "2024-11-27T22:23:05.596Z"
   }
 },
 {
@@ -3636,7 +3782,7 @@
   "pk": "cghz9r0jkymxojupdgn56dp6jk8r4ykt",
   "fields": {
     "session_data": ".eJxVjDsOgzAUBO_iOrLwD5uU6TkDst8-AklkSxiqKHcPSBRJuzOzbzHEbZ2GrfIyzBBXocTld0uRnpwPgEfM9yKp5HWZkzwUedIq-wJ-3U7372CKddprgkMK0DqoMFqyxltuTQOluSOvO9gGO2isC-hGrZJDBEdj2LdGgcTnC-NNOAU:1t18bW:Py3DBcNG62IrpE5kXkml0gTpIGCW7pPa3JHSjUeMh9A",
-    "expire_date": "2024-10-30T18:18:38.230"
+    "expire_date": "2024-10-30T18:18:38.230Z"
   }
 },
 {
@@ -3644,7 +3790,7 @@
   "pk": "d6e1j3b1cbaaa12qv81ulzjion1tlqji",
   "fields": {
     "session_data": ".eJxVjDsOgzAUBO_iOrLwD5uU6TkDst8-AklkSxiqKHcPSBRJuzOzbzHEbZ2GrfIyzBBXocTld0uRnpwPgEfM9yKp5HWZkzwUedIq-wJ-3U7372CKddprgkMK0DqoMFqyxltuTQOluSOvO9gGO2isC-hGrZJDBEdj2LdGgcTnC-NNOAU:1t7Mle:H8JfZL3EOZU07E7_Vb9VvN9tmEAtNlhaR9pE3m2d6NI",
-    "expire_date": "2024-11-16T22:38:50.275"
+    "expire_date": "2024-11-16T22:38:50.275Z"
   }
 },
 {

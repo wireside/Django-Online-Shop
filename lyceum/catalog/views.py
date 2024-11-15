@@ -3,8 +3,7 @@ import random
 
 import django.db.models
 import django.shortcuts
-
-# from django.utils import timezone --> for UZE_TZ
+import django.utils.timezone
 
 import catalog.models
 
@@ -31,7 +30,7 @@ def new(request):
     items_ids = catalog.models.Item.objects.published()
 
     items_ids = items_ids.filter(
-        created__gte=datetime.datetime.now() - datetime.timedelta(days=7),
+        created__gte=django.utils.timezone.now() - datetime.timedelta(days=7),
     )
     items_ids = list(
         items_ids.values_list("pk", flat=True),
