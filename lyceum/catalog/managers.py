@@ -68,9 +68,7 @@ class ItemManager(django.db.models.Manager):
 
         queryset = queryset.only(*only_fields)
 
-        queryset = queryset.order_by(*order_by_fields)
-
-        return queryset
+        return queryset.order_by(*order_by_fields)
 
     def detail_published(self):
         queryset = self.get_queryset()
@@ -125,9 +123,7 @@ class ItemManager(django.db.models.Manager):
 
         queryset = queryset.only(*only_fields)
 
-        queryset = queryset.order_by(*order_by_fields)
-
-        return queryset
+        return queryset.order_by(*order_by_fields)
 
 
 class CategoryManager(django.db.models.Manager):
@@ -143,6 +139,4 @@ class CategoryManager(django.db.models.Manager):
 
         queryset = queryset.only(field_name)
 
-        queryset = queryset.order_by(order_field)
-
-        return queryset
+        return queryset.order_by(order_field)

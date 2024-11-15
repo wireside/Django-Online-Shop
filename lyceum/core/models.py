@@ -1,8 +1,8 @@
 import re
 
+import django.conf
 import django.core.exceptions
 import django.db.models
-from django.conf import settings
 import sorl.thumbnail
 import transliterate
 
@@ -13,7 +13,7 @@ __all__ = ["BaseModel", "ImageBaseModel"]
 
 storage = None
 
-if not settings.DEBUG:
+if not django.conf.settings.DEBUG:
     storage = MediaStorage()
 
 ONLY_LETTERS_REGEX = re.compile(r"[^\w]")

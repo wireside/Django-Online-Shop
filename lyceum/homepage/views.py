@@ -25,14 +25,11 @@ def echo(request):
         echo_form = homepage.forms.EchoForm(request.POST or None)
         context = {"echo_form": echo_form}
 
-        if echo_form.is_valid() and request.method == "POST":
-            return django.http.HttpResponseBadRequest()
-        else:
-            return django.shortcuts.render(
-                request=request,
-                template_name="homepage/echo.html",
-                context=context,
-            )
+        return django.shortcuts.render(
+            request=request,
+            template_name="homepage/echo.html",
+            context=context,
+        )
 
     return django.http.HttpResponseNotAllowed(["POST"])
 

@@ -1,4 +1,5 @@
 import django.urls
+
 import feedback.views
 
 app_name = "feedback"

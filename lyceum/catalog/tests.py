@@ -244,13 +244,13 @@ class DetailItemTests(django.test.TestCase):
     fixtures = ["fixtures/data.json"]
 
     @parameterized.parameterized.expand(
-        [
-            id
-            for id in catalog.models.Item.objects.published().values_list(
+        (
+            item_id
+            for item_id in catalog.models.Item.objects.published().values_list(
                 "id",
                 flat=True,
             )
-        ],
+        ),
     )
     def test_item_in_context(self, item_id):
         response = django.test.Client().get(
@@ -262,13 +262,13 @@ class DetailItemTests(django.test.TestCase):
         self.assertIn("item", response.context)
 
     @parameterized.parameterized.expand(
-        [
-            id
-            for id in catalog.models.Item.objects.published().values_list(
+        (
+            item_id
+            for item_id in catalog.models.Item.objects.published().values_list(
                 "id",
                 flat=True,
             )
-        ],
+        ),
     )
     def test_item_type(self, item_id):
         response = django.test.Client().get(
