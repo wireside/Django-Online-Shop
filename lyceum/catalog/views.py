@@ -28,12 +28,13 @@ def item_list(request):
 
 
 def new(request):
+    items_ids = catalog.models.Item.objects.published()
+
+    items_ids = items_ids.filter(
+        created__gte=datetime.datetime.now() - datetime.timedelta(days=7),
+    )
     items_ids = list(
-        catalog.models.Item.objects.published()
-        .filter(
-            created__gte=datetime.datetime.now() - datetime.timedelta(days=7),
-        )
-        .values_list("pk", flat=True),
+        items_ids.values_list("pk", flat=True),
     )
 
     try:
@@ -51,13 +52,10 @@ def new(request):
 
 
 def friday(request):
-    items = (
-        catalog.models.Item.objects.published()
-        .filter(updated__week_day=6)
-        .order_by(
-            f"-{catalog.models.Item.updated.field.name}",
-        )[:ITEMS_PER_PAGE]
-    )
+    items = catalog.models.Item.objects.published()
+    items = items.filter(updated__week_day=6)
+    order_field = "-" + catalog.models.Item.updated.field.name
+    items = (items.order_by(order_field))[:ITEMS_PER_PAGE]
 
     context = {
         "items": items,
@@ -67,21 +65,19 @@ def friday(request):
 
 
 def unverified(request):
-    items = (
-        catalog.models.Item.objects.published()
-        .filter(
-            created__gte=django.db.models.F(
-                catalog.models.Item.updated.field.name,
-            )
-            - datetime.timedelta(seconds=1),
-            created__lte=django.db.models.F(
-                catalog.models.Item.updated.field.name,
-            )
-            + datetime.timedelta(seconds=1),
+    items = catalog.models.Item.objects.published()
+    items = items.filter(
+        created__gte=django.db.models.F(
+            catalog.models.Item.updated.field.name,
         )
-        .order_by(
-            "?",
+        - datetime.timedelta(seconds=1),
+        created__lte=django.db.models.F(
+            catalog.models.Item.updated.field.name,
         )
+        + datetime.timedelta(seconds=1),
+    )
+    items = items.order_by(
+        "?",
     )
 
     context = {
@@ -93,24 +89,7 @@ def unverified(request):
 
 def item_detail(request, pk):
     item = django.shortcuts.get_object_or_404(
-        catalog.models.Item.objects.filter(is_published=True)
-        .select_related(catalog.models.Item.category.field.name)
-        .prefetch_related(
-            django.db.models.Prefetch(
-                catalog.models.Item.tags.field.name,
-                catalog.models.Tag.objects.only(
-                    catalog.models.Tag.name.field.name,
-                ),
-            ),
-        )
-        .only(
-            catalog.models.Item.name.field.name,
-            catalog.models.Item.text.field.name,
-            f"{catalog.models.Item.category.field.name}"
-            f"__{catalog.models.Category.name.field.name}",
-            f"{catalog.models.Item.tags.field.name}"
-            f"__{catalog.models.Tag.name.field.name}",
-        ),
+        catalog.models.Item.objects.detail_published(),
         pk=pk,
     )
 

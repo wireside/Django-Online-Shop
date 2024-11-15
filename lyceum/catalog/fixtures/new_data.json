@@ -1,0 +1,5078 @@
+[
+{
+  "model": "catalog.category",
+  "pk": 1,
+  "fields": {
+    "is_published": true,
+    "name": "игрушки",
+    "canonical_name": "igrushki",
+    "slug": "toys__342342341",
+    "weight": 3
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 2,
+  "fields": {
+    "is_published": true,
+    "name": "одежда",
+    "canonical_name": "odezhda",
+    "slug": "slug_slugovich11241",
+    "weight": 2
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 3,
+  "fields": {
+    "is_published": true,
+    "name": "электронная техника",
+    "canonical_name": "elektronnajatehnika",
+    "slug": "fsafajifappler12",
+    "weight": 87
+  }
+},
+{
+  "model": "catalog.tag",
+  "pk": 1,
+  "fields": {
+    "is_published": true,
+    "name": "для детей",
+    "canonical_name": "dljadetej",
+    "slug": "dsafasd__hjjfd2344234"
+  }
+},
+{
+  "model": "catalog.tag",
+  "pk": 3,
+  "fields": {
+    "is_published": true,
+    "name": "для взрослых",
+    "canonical_name": null,
+    "slug": "sluuuuug_123321214"
+  }
+},
+{
+  "model": "catalog.tag",
+  "pk": 4,
+  "fields": {
+    "is_published": true,
+    "name": "со скидкой",
+    "canonical_name": null,
+    "slug": "slug131242341321twqeas"
+  }
+},
+{
+  "model": "catalog.tag",
+  "pk": 5,
+  "fields": {
+    "is_published": true,
+    "name": "осенняя распродажа",
+    "canonical_name": null,
+    "slug": "slug_10313231tesadt"
+  }
+},
+{
+  "model": "catalog.tag",
+  "pk": 6,
+  "fields": {
+    "is_published": true,
+    "name": "сертефецированный продовец",
+    "canonical_name": null,
+    "slug": "slu423234g23423_92eqwe"
+  }
+},
+{
+  "model": "catalog.tag",
+  "pk": 7,
+  "fields": {
+    "is_published": true,
+    "name": "apple",
+    "canonical_name": null,
+    "slug": "sdfsdfsdfsfsdf123333333333333333333"
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 4,
+  "fields": {
+    "is_published": false,
+    "is_on_main": false,
+    "name": "Игрушка \"Лапка\"",
+    "category": 1,
+    "text": "тестовое описание роскошно",
+    "updated": "2024-11-04T20:13:30.896",
+    "created": "2024-11-04T20:13:30.890",
+    "tags": [
+      1
+    ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 5,
+  "fields": {
+    "is_published": true,
+    "is_on_main": false,
+    "name": "Квадрокоптер",
+    "category": 1,
+    "text": "<p>Складной мини-дрон с <strong>Wi-Fi HD FPV</strong> камерой дистанционного управления. С откидной ручкой, она маленькая и легко переносится. Имеет высокую функцию режима удержания для обеспечения стабильного полета. Превосходно работает на протяжении 30 минут полета</p>",
+    "updated": "2024-11-07T23:36:08.666",
+    "created": "2024-11-04T20:13:30.890",
+    "tags": [
+      1,
+      6,
+      4,
+      3
+    ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 6,
+  "fields": {
+    "is_published": false,
+    "is_on_main": false,
+    "name": "Джинсы широкие",
+    "category": 2,
+    "text": "превосходно подходят для мужчин и женщин",
+    "updated": "2024-11-04T20:13:30.896",
+    "created": "2024-11-04T20:13:30.890",
+    "tags": [
+      4,
+      5,
+      3
+    ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 7,
+  "fields": {
+    "is_published": false,
+    "is_on_main": false,
+    "name": "Платье Prada",
+    "category": 2,
+    "text": "роскошно е платье от именитого бренда Prada",
+    "updated": "2024-11-04T20:13:30.896",
+    "created": "2024-11-04T20:13:30.890",
+    "tags": [
+      6,
+      3
+    ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 8,
+  "fields": {
+    "is_published": true,
+    "is_on_main": false,
+    "name": "Набор Lego",
+    "category": 1,
+    "text": "<p>Данный набор лего превосходно и весело скрасит ваши дни. Собирать Lego можно одному или всей семьей.</p>",
+    "updated": "2024-11-07T23:35:04.353",
+    "created": "2024-11-04T20:13:30.890",
+    "tags": [
+      1,
+      6,
+      4,
+      5,
+      3
+    ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 9,
+  "fields": {
+    "is_published": true,
+    "is_on_main": true,
+    "name": "iPhone 16 Pro Max",
+    "category": 3,
+    "text": "<p>Революционная производительность. Графика следующего поколения. Превосходно работает до 22 часов без подзарядки. &loz; Теперь в цвете космический черный.</p>",
+    "updated": "2024-11-07T23:34:41.488",
+    "created": "2024-11-04T20:13:30.890",
+    "tags": [
+      7,
+      6
+    ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 10,
+  "fields": {
+    "is_published": true,
+    "is_on_main": true,
+    "name": "Macbook",
+    "category": 3,
+    "text": "<p>Невероятно тонкий, легкий и портативный дизайн. Раздвиньте границы того, что возможно на iPad, с помощью увеличенной 13-дюймовой модели. Превосходно подойдет под любые цели!</p>",
+    "updated": "2024-11-07T23:33:55.974",
+    "created": "2024-11-04T20:13:30.890",
+    "tags": [
+      7,
+      6,
+      5
+    ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 11,
+  "fields": {
+    "is_published": true,
+    "is_on_main": true,
+    "name": "iPad",
+    "category": 3,
+    "text": "<p>Превосходный дизайн и эргономика. Искусственный интеллект. Новый процессор и улучшенные камеры. Качественный дисплей и защита глаз. И это ещё далеко не всё! роскошно</p>",
+    "updated": "2024-11-07T23:32:21.058",
+    "created": "2024-11-04T20:13:30.890",
+    "tags": [
+      7,
+      6
+    ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 13,
+  "fields": {
+    "is_published": true,
+    "is_on_main": false,
+    "name": "Футболка Яндекс",
+    "category": 2,
+    "text": "<p>Футболки новой базовой коллекции <strong>Яндекса</strong>. Большой логотип заметен издалека, даже если надеть пиджак или ветровку. Доступны новые мягкие цвета: пыльно-голубой, оливковый и графит. <strong>92% хлопок</strong>. Превосходно подйдет для <strong>взрослых и детей</strong>.</p>",
+    "updated": "2024-11-07T23:08:51.701",
+    "created": "2024-11-04T20:13:30.890",
+    "tags": [
+      1,
+      6,
+      4,
+      3
+    ]
+  }
+},
+{
+  "model": "catalog.mainimage",
+  "pk": 8,
+  "fields": {
+    "image": "catalog/ipad_main.jpg",
+    "item": 11
+  }
+},
+{
+  "model": "catalog.mainimage",
+  "pk": 9,
+  "fields": {
+    "image": "catalog/macbook_main.png",
+    "item": 10
+  }
+},
+{
+  "model": "catalog.mainimage",
+  "pk": 10,
+  "fields": {
+    "image": "catalog/iphone-16-pro_main.jpg",
+    "item": 9
+  }
+},
+{
+  "model": "catalog.mainimage",
+  "pk": 11,
+  "fields": {
+    "image": "catalog/lego_main.jpg",
+    "item": 8
+  }
+},
+{
+  "model": "catalog.mainimage",
+  "pk": 12,
+  "fields": {
+    "image": "catalog/kvadrokopter_main.jpg",
+    "item": 5
+  }
+},
+{
+  "model": "catalog.mainimage",
+  "pk": 13,
+  "fields": {
+    "image": "catalog/t-shirt_main.webp",
+    "item": 13
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 14,
+  "fields": {
+    "image": "catalog/ipad_2.jpg",
+    "item": 11
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 15,
+  "fields": {
+    "image": "catalog/ipad_3.jpg",
+    "item": 11
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 16,
+  "fields": {
+    "image": "catalog/macbook_1.png",
+    "item": 10
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 17,
+  "fields": {
+    "image": "catalog/macbook_2.png",
+    "item": 10
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 18,
+  "fields": {
+    "image": "catalog/macbook_3.png",
+    "item": 10
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 19,
+  "fields": {
+    "image": "catalog/iphone-16-pro_1.jpg",
+    "item": 9
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 20,
+  "fields": {
+    "image": "catalog/iphone-16-pro_2.jpg",
+    "item": 9
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 21,
+  "fields": {
+    "image": "catalog/iphone-16-pro_3.jpg",
+    "item": 9
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 22,
+  "fields": {
+    "image": "catalog/lego_1.jpg",
+    "item": 8
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 23,
+  "fields": {
+    "image": "catalog/lego_2.jpg",
+    "item": 8
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 24,
+  "fields": {
+    "image": "catalog/kvadrokopter_1.jpg",
+    "item": 5
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 25,
+  "fields": {
+    "image": "catalog/kvadrokopter_2.jpg",
+    "item": 5
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 26,
+  "fields": {
+    "image": "catalog/kvadrokopter_3.jpg",
+    "item": 5
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 27,
+  "fields": {
+    "image": "catalog/t-shirt_1.webp",
+    "item": 13
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 28,
+  "fields": {
+    "image": "catalog/t-shirt_2.webp",
+    "item": 13
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 29,
+  "fields": {
+    "image": "catalog/t-shirt_3.webp",
+    "item": 13
+  }
+},
+{
+  "model": "feedback.feedback",
+  "pk": 11,
+  "fields": {
+    "text": "Какая хорошая форма отправки фидбека",
+    "created_on": "2024-11-11T23:23:33.190",
+    "status": "new"
+  }
+},
+{
+  "model": "feedback.feedback",
+  "pk": 15,
+  "fields": {
+    "text": "Текст крутого фидбека",
+    "created_on": "2024-11-11T23:32:36.536",
+    "status": "ans"
+  }
+},
+{
+  "model": "feedback.feedback",
+  "pk": 16,
+  "fields": {
+    "text": "Test storage feedback text",
+    "created_on": "2024-11-11T23:36:31.995",
+    "status": "wip"
+  }
+},
+{
+  "model": "feedback.feedbackauthor",
+  "pk": 11,
+  "fields": {
+    "feedback": 11,
+    "name": "Данил",
+    "mail": "danildanilov@outlook.com"
+  }
+},
+{
+  "model": "feedback.feedbackauthor",
+  "pk": 15,
+  "fields": {
+    "feedback": 15,
+    "name": "Александр",
+    "mail": "example@mail.ru"
+  }
+},
+{
+  "model": "feedback.feedbackauthor",
+  "pk": 16,
+  "fields": {
+    "feedback": 16,
+    "name": "John",
+    "mail": "example@mail.ru"
+  }
+},
+{
+  "model": "feedback.feedbackfile",
+  "pk": 7,
+  "fields": {
+    "feedback": 15,
+    "file": "uploads/15/1731357156.545423_14mathege.jpg"
+  }
+},
+{
+  "model": "feedback.feedbackfile",
+  "pk": 8,
+  "fields": {
+    "feedback": 15,
+    "file": "uploads/15/1731357156.55142_10mathege.jpg"
+  }
+},
+{
+  "model": "feedback.feedbackfile",
+  "pk": 9,
+  "fields": {
+    "feedback": 16,
+    "file": "uploads/16/1731357392.0043945_Снимок_экрана_2023-12-26_224616.png"
+  }
+},
+{
+  "model": "feedback.statuslog",
+  "pk": 1,
+  "fields": {
+    "feedback": 16,
+    "user": 1,
+    "timestamp": "2024-11-14T23:01:17.148",
+    "from_status": "new",
+    "to_status": "wip"
+  }
+},
+{
+  "model": "feedback.statuslog",
+  "pk": 2,
+  "fields": {
+    "feedback": 15,
+    "user": 1,
+    "timestamp": "2024-11-14T23:10:19.304",
+    "from_status": "new",
+    "to_status": "ans"
+  }
+},
+{
+  "model": "users.profile",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "birthday": "2007-10-25",
+    "image": "users/profile_pics/243bd80ed79c7766b8efaaa45b95c347.jpg",
+    "coffee_count": 86
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-10-17T21:24:43.386",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Item object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-10-17T21:29:31.689",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Товар2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-10-17T21:39:52.503",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "1214",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-10-17T21:43:49.545",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "превосходно тов",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-10-17T21:43:49.546",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "превосходно",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-10-19T18:55:47.004",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "tag1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-10-19T18:56:34.540",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "игрушки",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-10-19T19:18:33.915",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "tag2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-10-19T19:18:42.482",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "превосходно",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-10-19T19:18:52.809",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "превосходно",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-10-19T19:19:26.103",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "tag2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-10-19T19:19:47.634",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "превосходно",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-10-19T19:19:57.589",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "превосходно тов",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2024-10-19T19:23:46.411",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "tag1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0435\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2024-10-19T19:25:30.127",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "tag1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0435\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2024-10-19T19:26:41.991",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "tag1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0435\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2024-10-19T19:32:44.965",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "превосходно",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2024-10-19T19:32:56.200",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "товар 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2024-10-19T19:33:08.744",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "товар 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2024-10-19T19:33:39.091",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "tag2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2024-10-19T19:34:18.385",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "одежда",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2024-10-19T19:34:53.143",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "товар 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f\", \"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2024-10-19T19:36:07.809",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "для взрослых",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2024-10-19T19:36:19.820",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "для детей",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2024-10-19T19:36:53.177",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "со скидкой",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2024-10-19T19:37:29.227",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Осенняя распрод",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2024-10-19T19:37:39.792",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "осенняя распрод",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2024-10-19T19:39:00.708",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "сертефецированн",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2024-10-19T19:40:40.734",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Квадрокоптер",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\", \"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2024-10-19T19:42:17.372",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Игрушка \"Лапка\"",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\", \"Tags\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2024-10-19T19:46:01.580",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Джинсы широкие",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2024-10-19T19:46:16.096",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Игрушка \"Лапка\"",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2024-10-19T19:46:37.972",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Квадрокоптер",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2024-10-19T19:48:37.437",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Платье Prada",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2024-10-19T19:51:23.991",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Набор Lego",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2024-10-19T20:47:37.205",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "одежда",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0435\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2024-10-19T20:48:22.229",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "одежда",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0435\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2024-10-19T20:48:36.135",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "игрушки",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0435\\u0441\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2024-10-21T17:52:11.265",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "одежда",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043b\\u0430\\u0433\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2024-10-21T17:52:19.087",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "игрушки",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043b\\u0430\\u0433\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2024-10-21T17:52:25.402",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "для детей",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043b\\u0430\\u0433\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2024-10-21T17:52:33.464",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "со скидкой",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043b\\u0430\\u0433\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2024-10-21T17:52:37.983",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "со скидкой",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043b\\u0430\\u0433\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2024-10-21T17:52:44.896",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "осенняя распродажа",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043b\\u0430\\u0433\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2024-10-21T17:52:59.572",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "для взрослых",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043b\\u0430\\u0433\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2024-10-21T17:53:17.638",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "сертефецированный продовец",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043b\\u0430\\u0433\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2024-10-21T18:19:36.716",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Платье Prada",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2024-10-21T18:19:56.841",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Набор Lego",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2024-10-21T18:20:10.311",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "для детей",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2024-10-21T18:20:13.498",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "сертефецированный продовец",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2024-10-21T18:20:17.077",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "со скидкой",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2024-10-21T18:20:20.717",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "осенняя распродажа",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2024-10-21T18:20:24.271",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "для взрослых",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2024-10-21T18:20:28.128",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "одежда",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2024-10-21T18:20:32.412",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "игрушки",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2024-10-22T14:29:37.364",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "для детей",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2024-10-22T14:29:43.165",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "для дете",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2024-10-22T14:29:47.592",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "для детей",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2024-10-22T14:29:51.107",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "для детей",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2024-10-29T19:17:35.851",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "ImageModel object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2024-10-29T19:17:59.175",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "ImageModel object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2024-10-29T19:18:02.441",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "ImageModel object (2)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2024-10-29T19:18:11.124",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "ImageModel object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2024-10-29T19:19:46.008",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "электронная тех",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2024-10-29T19:20:29.146",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "apple",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2024-10-29T19:21:02.265",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "iPhone 16 Pro M",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2024-10-29T19:48:29.179",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "iPhone 16 Pro Max",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2024-10-29T19:49:59.843",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Macbook",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2024-10-29T19:50:20.467",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Macbook",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2024-10-29T19:51:26.697",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ipad",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2024-10-29T19:51:38.587",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Ipad",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2024-10-29T19:57:09.582",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Ipad",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2024-10-29T20:06:53.509",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Ipad",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2024-10-29T20:06:53.513",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Macbook",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2024-10-29T20:06:53.517",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "iPhone 16 Pro Max",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2024-10-29T20:21:56.467",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ipad",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u043a\\u0430\\u0440\\u0442\\u0438\\u043d\\u043a\\u0430\", \"object\": \"Ipad\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2024-10-29T20:29:20.895",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ipad",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"Ipad\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2024-10-29T20:29:31.148",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ipad",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"Ipad\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2024-10-29T20:30:00.301",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ipad",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"Ipad\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2024-10-29T20:31:30.984",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ipad",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Ipad\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Ipad\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Ipad\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2024-10-29T20:31:40.692",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ipad",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Ipad\"}}, {\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Ipad\"}}, {\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Ipad\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2024-10-29T22:05:16.290",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ipad",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"Ipad\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Ipad\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2024-10-29T22:56:33.579",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Macbook",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"Macbook\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2024-10-29T22:56:46.582",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "iPhone 16 Pro M",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"iPhone 16 Pro Max\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2024-10-30T21:49:40.566",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Набор Lego",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2024-10-31T00:24:32.970",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ipad",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}, {\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"Ipad\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2024-10-31T00:24:41.065",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Macbook",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}, {\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"Macbook\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2024-10-31T00:24:59.077",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "iPhone 16 Pro M",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}, {\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"iPhone 16 Pro Max\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2024-10-31T00:25:11.349",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Набор Lego",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2024-10-31T00:25:11.350",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Платье Prada",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2024-10-31T00:25:11.351",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Джинсы широкие",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2024-10-31T00:25:11.352",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Квадрокоптер",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2024-10-31T00:25:11.353",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Игрушка \"Лапка\"",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2024-11-01T20:31:12.504",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Набор Lego",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2024-11-02T00:00:30.292",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ipad",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2024-11-02T00:00:37.077",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ipad",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2024-11-02T00:00:40.466",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ipad",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2024-11-02T00:48:31.509",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Набор Lego",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"\\u041d\\u0430\\u0431\\u043e\\u0440 Lego\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2024-11-02T00:48:41.694",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ipad",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2024-11-02T00:48:41.696",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Macbook",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2024-11-02T00:48:41.697",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "iPhone 16 Pro M",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2024-11-02T00:48:41.698",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Набор Lego",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2024-11-02T00:51:05.999",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Платье Prada",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\", \"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2024-11-02T00:51:06.001",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Джинсы широкие",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\", \"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2024-11-02T00:53:52.176",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Набор Lego",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\", \"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2024-11-02T00:53:52.177",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Платье Prada",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\", \"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2024-11-02T00:53:52.178",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Джинсы широкие",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\", \"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2024-11-02T00:57:33.135",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Квадрокоптер",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\", \"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}, {\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"\\u041a\\u0432\\u0430\\u0434\\u0440\\u043e\\u043a\\u043e\\u043f\\u0442\\u0435\\u0440\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2024-11-02T01:02:40.603",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ipad",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2024-11-02T01:02:40.605",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Macbook",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2024-11-02T01:02:40.606",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "iPhone 16 Pro M",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2024-11-02T01:02:40.607",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Квадрокоптер",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2024-11-02T01:02:40.608",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Набор Lego",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\", \"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2024-11-02T01:06:31.306",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Набор Lego",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2024-11-02T01:06:31.308",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Квадрокоптер",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2024-11-02T02:26:29.630",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Квадрокоптер",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 117,
+  "fields": {
+    "action_time": "2024-11-02T02:30:37.379",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Футболка Яндекс",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"\\u0424\\u0443\\u0442\\u0431\\u043e\\u043b\\u043a\\u0430 \\u042f\\u043d\\u0434\\u0435\\u043a\\u0441\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 118,
+  "fields": {
+    "action_time": "2024-11-02T23:26:15.875",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Macbook",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Macbook\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Macbook\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Macbook\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 119,
+  "fields": {
+    "action_time": "2024-11-02T23:28:16.278",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Macbook",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 120,
+  "fields": {
+    "action_time": "2024-11-02T23:28:41.130",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Macbook",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Macbook\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 121,
+  "fields": {
+    "action_time": "2024-11-02T23:37:19.339",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Macbook",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Macbook\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2024-11-03T12:18:28.241",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ipad",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Ipad\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Ipad\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2024-11-03T12:21:13.464",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "iPhone 16 Pro M",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPhone 16 Pro Max\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPhone 16 Pro Max\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPhone 16 Pro Max\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2024-11-03T13:46:13.501",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "iPad",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2024-11-04T11:53:50.187",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Футболка Яндекс",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2024-11-04T11:54:19.215",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "iPad",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"iPad\"}}, {\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPad\"}}, {\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPad\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 127,
+  "fields": {
+    "action_time": "2024-11-04T11:54:29.763",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Macbook",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"Macbook\"}}, {\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Macbook\"}}, {\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Macbook\"}}, {\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Macbook\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 128,
+  "fields": {
+    "action_time": "2024-11-04T11:54:37.663",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "iPhone 16 Pro M",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"iPhone 16 Pro Max\"}}, {\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPhone 16 Pro Max\"}}, {\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPhone 16 Pro Max\"}}, {\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPhone 16 Pro Max\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 129,
+  "fields": {
+    "action_time": "2024-11-04T11:54:44.953",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Набор Lego",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"\\u041d\\u0430\\u0431\\u043e\\u0440 Lego\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 130,
+  "fields": {
+    "action_time": "2024-11-04T11:54:51.513",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Квадрокоптер",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"\\u041a\\u0432\\u0430\\u0434\\u0440\\u043e\\u043a\\u043e\\u043f\\u0442\\u0435\\u0440\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 131,
+  "fields": {
+    "action_time": "2024-11-04T12:07:37.054",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "iPad",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"iPad\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPad\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPad\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPad\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 132,
+  "fields": {
+    "action_time": "2024-11-04T12:08:19.101",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "iPad",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"iPad\"}}, {\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPad\"}}, {\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPad\"}}, {\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPad\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 133,
+  "fields": {
+    "action_time": "2024-11-04T12:09:47.777",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "iPad",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"iPad\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPad\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPad\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPad\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 134,
+  "fields": {
+    "action_time": "2024-11-04T12:10:20.976",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Macbook",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"Macbook\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Macbook\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Macbook\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Macbook\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 135,
+  "fields": {
+    "action_time": "2024-11-04T12:11:43.382",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "iPhone 16 Pro M",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"iPhone 16 Pro Max\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPhone 16 Pro Max\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPhone 16 Pro Max\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPhone 16 Pro Max\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 136,
+  "fields": {
+    "action_time": "2024-11-04T12:12:40.311",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Набор Lego",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"\\u041d\\u0430\\u0431\\u043e\\u0440 Lego\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u041d\\u0430\\u0431\\u043e\\u0440 Lego\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u041d\\u0430\\u0431\\u043e\\u0440 Lego\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 137,
+  "fields": {
+    "action_time": "2024-11-04T12:13:48.947",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Квадрокоптер",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"\\u041a\\u0432\\u0430\\u0434\\u0440\\u043e\\u043a\\u043e\\u043f\\u0442\\u0435\\u0440\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u041a\\u0432\\u0430\\u0434\\u0440\\u043e\\u043a\\u043e\\u043f\\u0442\\u0435\\u0440\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u041a\\u0432\\u0430\\u0434\\u0440\\u043e\\u043a\\u043e\\u043f\\u0442\\u0435\\u0440\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u041a\\u0432\\u0430\\u0434\\u0440\\u043e\\u043a\\u043e\\u043f\\u0442\\u0435\\u0440\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 138,
+  "fields": {
+    "action_time": "2024-11-04T12:18:37.822",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "Футболка Яндекс",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"\\u0424\\u0443\\u0442\\u0431\\u043e\\u043b\\u043a\\u0430 \\u042f\\u043d\\u0434\\u0435\\u043a\\u0441\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u0424\\u0443\\u0442\\u0431\\u043e\\u043b\\u043a\\u0430 \\u042f\\u043d\\u0434\\u0435\\u043a\\u0441\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u0424\\u0443\\u0442\\u0431\\u043e\\u043b\\u043a\\u0430 \\u042f\\u043d\\u0434\\u0435\\u043a\\u0441\"}}, {\"added\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u0424\\u0443\\u0442\\u0431\\u043e\\u043b\\u043a\\u0430 \\u042f\\u043d\\u0434\\u0435\\u043a\\u0441\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 139,
+  "fields": {
+    "action_time": "2024-11-04T12:20:22.616",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "iPad",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPad\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 140,
+  "fields": {
+    "action_time": "2024-11-04T17:46:46.949",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "одежда",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 141,
+  "fields": {
+    "action_time": "2024-11-04T17:46:51.270",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "одежда",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 142,
+  "fields": {
+    "action_time": "2024-11-04T17:46:55.834",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "игрушки",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 143,
+  "fields": {
+    "action_time": "2024-11-04T17:46:59.595",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "электронная тех",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 144,
+  "fields": {
+    "action_time": "2024-11-04T17:47:08.588",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "для детей",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 145,
+  "fields": {
+    "action_time": "2024-11-04T20:50:58.559",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "тестовый",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 146,
+  "fields": {
+    "action_time": "2024-11-04T21:16:57.312",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "тестовый",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 147,
+  "fields": {
+    "action_time": "2024-11-04T21:17:11.607",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "asd",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 148,
+  "fields": {
+    "action_time": "2024-11-05T18:54:16.660",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "asd",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 149,
+  "fields": {
+    "action_time": "2024-11-05T20:40:06.167",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "d",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 150,
+  "fields": {
+    "action_time": "2024-11-05T20:40:26.806",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "d",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 151,
+  "fields": {
+    "action_time": "2024-11-05T22:29:55.050",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "asd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 152,
+  "fields": {
+    "action_time": "2024-11-05T22:30:30.924",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Квадрокоптер",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 153,
+  "fields": {
+    "action_time": "2024-11-07T23:02:19.251",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "Футболка Яндекс",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 154,
+  "fields": {
+    "action_time": "2024-11-07T23:08:52.407",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "Футболка Яндекс",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"\\u0424\\u0443\\u0442\\u0431\\u043e\\u043b\\u043a\\u0430 \\u042f\\u043d\\u0434\\u0435\\u043a\\u0441\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u0424\\u0443\\u0442\\u0431\\u043e\\u043b\\u043a\\u0430 \\u042f\\u043d\\u0434\\u0435\\u043a\\u0441\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u0424\\u0443\\u0442\\u0431\\u043e\\u043b\\u043a\\u0430 \\u042f\\u043d\\u0434\\u0435\\u043a\\u0441\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u0424\\u0443\\u0442\\u0431\\u043e\\u043b\\u043a\\u0430 \\u042f\\u043d\\u0434\\u0435\\u043a\\u0441\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 155,
+  "fields": {
+    "action_time": "2024-11-07T23:32:21.504",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "iPad",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"iPad\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPad\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPad\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 156,
+  "fields": {
+    "action_time": "2024-11-07T23:33:57.285",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Macbook",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"Macbook\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Macbook\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Macbook\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"Macbook\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 157,
+  "fields": {
+    "action_time": "2024-11-07T23:34:42.341",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "iPhone 16 Pro M",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"iPhone 16 Pro Max\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPhone 16 Pro Max\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPhone 16 Pro Max\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"iPhone 16 Pro Max\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 158,
+  "fields": {
+    "action_time": "2024-11-07T23:35:04.804",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Набор Lego",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"\\u041d\\u0430\\u0431\\u043e\\u0440 Lego\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u041d\\u0430\\u0431\\u043e\\u0440 Lego\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u041d\\u0430\\u0431\\u043e\\u0440 Lego\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 159,
+  "fields": {
+    "action_time": "2024-11-07T23:36:09.423",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Квадрокоптер",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"object\": \"\\u041a\\u0432\\u0430\\u0434\\u0440\\u043e\\u043a\\u043e\\u043f\\u0442\\u0435\\u0440\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u041a\\u0432\\u0430\\u0434\\u0440\\u043e\\u043a\\u043e\\u043f\\u0442\\u0435\\u0440\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u041a\\u0432\\u0430\\u0434\\u0440\\u043e\\u043a\\u043e\\u043f\\u0442\\u0435\\u0440\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}, {\"changed\": {\"name\": \"\\u0444\\u043e\\u0442\\u043e\", \"object\": \"\\u041a\\u0432\\u0430\\u0434\\u0440\\u043e\\u043a\\u043e\\u043f\\u0442\\u0435\\u0440\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 160,
+  "fields": {
+    "action_time": "2024-11-11T23:05:25.715",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "Feedback object (2)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 161,
+  "fields": {
+    "action_time": "2024-11-11T23:05:25.728",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Feedback object (1)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 162,
+  "fields": {
+    "action_time": "2024-11-11T23:11:26.496",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "5",
+    "object_repr": "Feedback object (5)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 163,
+  "fields": {
+    "action_time": "2024-11-11T23:11:26.501",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "Feedback object (4)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 164,
+  "fields": {
+    "action_time": "2024-11-11T23:11:26.504",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "Feedback object (3)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 165,
+  "fields": {
+    "action_time": "2024-11-11T23:17:25.227",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "7",
+    "object_repr": "Feedback object (7)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 166,
+  "fields": {
+    "action_time": "2024-11-11T23:17:25.231",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "6",
+    "object_repr": "Feedback object (6)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 167,
+  "fields": {
+    "action_time": "2024-11-11T23:29:11.567",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "10",
+    "object_repr": "ввы",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 168,
+  "fields": {
+    "action_time": "2024-11-11T23:29:11.572",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "9",
+    "object_repr": "Текст сообщения крутого очень",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 169,
+  "fields": {
+    "action_time": "2024-11-11T23:29:11.576",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "8",
+    "object_repr": "Текст сообщения крутого очень",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 170,
+  "fields": {
+    "action_time": "2024-11-11T23:29:28.494",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "11",
+    "object_repr": "Какая хорошая форма отправки фидбека",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 171,
+  "fields": {
+    "action_time": "2024-11-11T23:32:28.925",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "14",
+    "object_repr": "Текст крутого фидбека",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 172,
+  "fields": {
+    "action_time": "2024-11-11T23:32:28.930",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "13",
+    "object_repr": "Текст крутого фидбека",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 173,
+  "fields": {
+    "action_time": "2024-11-11T23:32:28.933",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "12",
+    "object_repr": "Текст крутого фидбека",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 174,
+  "fields": {
+    "action_time": "2024-11-11T23:34:33.874",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "15",
+    "object_repr": "Текст крутого фидбека",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 175,
+  "fields": {
+    "action_time": "2024-11-11T23:34:37.881",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "11",
+    "object_repr": "Какая хорошая форма отправки фидбека",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 176,
+  "fields": {
+    "action_time": "2024-11-13T22:39:23.556",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u043f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044c\", \"object\": \"Profile object (1)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 177,
+  "fields": {
+    "action_time": "2024-11-13T23:36:11.619",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u043f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044c\", \"object\": \"Profile object (1)\", \"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 178,
+  "fields": {
+    "action_time": "2024-11-13T23:49:09.850",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u043f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044c\", \"object\": \"Profile object (1)\", \"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 179,
+  "fields": {
+    "action_time": "2024-11-13T23:56:34.949",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 180,
+  "fields": {
+    "action_time": "2024-11-13T23:57:02.499",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 181,
+  "fields": {
+    "action_time": "2024-11-14T00:02:56.553",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u043f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044c\", \"object\": \"Profile object (1)\", \"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 182,
+  "fields": {
+    "action_time": "2024-11-14T00:06:30.192",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u043f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044c\", \"object\": \"Profile object (1)\", \"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 183,
+  "fields": {
+    "action_time": "2024-11-14T23:01:17.150",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "16",
+    "object_repr": "Test storage feedback text",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 184,
+  "fields": {
+    "action_time": "2024-11-14T23:01:56.666",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "16",
+    "object_repr": "Test storage feedback text",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 185,
+  "fields": {
+    "action_time": "2024-11-14T23:02:50.026",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "16",
+    "object_repr": "Test storage feedback text",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 186,
+  "fields": {
+    "action_time": "2024-11-14T23:10:19.306",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "15",
+    "object_repr": "Текст крутого фидбека",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add item",
+    "content_type": 7,
+    "codename": "add_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change item",
+    "content_type": 7,
+    "codename": "change_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete item",
+    "content_type": 7,
+    "codename": "delete_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view item",
+    "content_type": 7,
+    "codename": "view_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Категория",
+    "content_type": 8,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Категория",
+    "content_type": 8,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Категория",
+    "content_type": 8,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Категория",
+    "content_type": 8,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Тег",
+    "content_type": 9,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Тег",
+    "content_type": 9,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Тег",
+    "content_type": 9,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Тег",
+    "content_type": 9,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add kv store",
+    "content_type": 10,
+    "codename": "add_kvstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change kv store",
+    "content_type": 10,
+    "codename": "change_kvstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete kv store",
+    "content_type": 10,
+    "codename": "delete_kvstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view kv store",
+    "content_type": 10,
+    "codename": "view_kvstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add image model",
+    "content_type": 11,
+    "codename": "add_imagemodel"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change image model",
+    "content_type": 11,
+    "codename": "change_imagemodel"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete image model",
+    "content_type": 11,
+    "codename": "delete_imagemodel"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view image model",
+    "content_type": 11,
+    "codename": "view_imagemodel"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add картинка",
+    "content_type": 12,
+    "codename": "add_mainimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change картинка",
+    "content_type": 12,
+    "codename": "change_mainimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete картинка",
+    "content_type": 12,
+    "codename": "delete_mainimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view картинка",
+    "content_type": 12,
+    "codename": "view_mainimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add фото",
+    "content_type": 13,
+    "codename": "add_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change фото",
+    "content_type": 13,
+    "codename": "change_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete фото",
+    "content_type": 13,
+    "codename": "delete_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view фото",
+    "content_type": 13,
+    "codename": "view_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add feedback",
+    "content_type": 14,
+    "codename": "add_feedback"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change feedback",
+    "content_type": 14,
+    "codename": "change_feedback"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete feedback",
+    "content_type": 14,
+    "codename": "delete_feedback"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view feedback",
+    "content_type": 14,
+    "codename": "view_feedback"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add feedback file",
+    "content_type": 15,
+    "codename": "add_feedbackfile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change feedback file",
+    "content_type": 15,
+    "codename": "change_feedbackfile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete feedback file",
+    "content_type": 15,
+    "codename": "delete_feedbackfile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view feedback file",
+    "content_type": 15,
+    "codename": "view_feedbackfile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add feedback author",
+    "content_type": 16,
+    "codename": "add_feedbackauthor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change feedback author",
+    "content_type": 16,
+    "codename": "change_feedbackauthor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete feedback author",
+    "content_type": 16,
+    "codename": "delete_feedbackauthor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view feedback author",
+    "content_type": 16,
+    "codename": "view_feedbackauthor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add profile",
+    "content_type": 17,
+    "codename": "add_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change profile",
+    "content_type": 17,
+    "codename": "change_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete profile",
+    "content_type": 17,
+    "codename": "delete_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view profile",
+    "content_type": 17,
+    "codename": "view_profile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add status log",
+    "content_type": 18,
+    "codename": "add_statuslog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change status log",
+    "content_type": 18,
+    "codename": "change_statuslog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete status log",
+    "content_type": 18,
+    "codename": "delete_statuslog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view status log",
+    "content_type": 18,
+    "codename": "view_statuslog"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$KSSyPAivTckCqBZzvN4542$tpK9vUtxdcb4grV1VB6VG9H3db8MnLrT33Zem8on4TM=",
+    "last_login": "2024-11-13T22:23:05",
+    "is_superuser": true,
+    "username": "kudes",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-10-16T18:16:50",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "8d44ngn6b33oe5tt8es88o3jjt7kbmtu",
+  "fields": {
+    "session_data": ".eJxVjDsOgzAUBO_iOrLwD5uU6TkDst8-AklkSxiqKHcPSBRJuzOzbzHEbZ2GrfIyzBBXocTld0uRnpwPgEfM9yKp5HWZkzwUedIq-wJ-3U7372CKddprgkMK0DqoMFqyxltuTQOluSOvO9gGO2isC-hGrZJDBEdj2LdGgcTnC-NNOAU:1tBIxF:DZIjH7M60_dixuqVPpTBJBBJ2QC9Xn89wkRN6uxJhIY",
+    "expire_date": "2024-11-27T22:23:05.596"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "cghz9r0jkymxojupdgn56dp6jk8r4ykt",
+  "fields": {
+    "session_data": ".eJxVjDsOgzAUBO_iOrLwD5uU6TkDst8-AklkSxiqKHcPSBRJuzOzbzHEbZ2GrfIyzBBXocTld0uRnpwPgEfM9yKp5HWZkzwUedIq-wJ-3U7372CKddprgkMK0DqoMFqyxltuTQOluSOvO9gGO2isC-hGrZJDBEdj2LdGgcTnC-NNOAU:1t18bW:Py3DBcNG62IrpE5kXkml0gTpIGCW7pPa3JHSjUeMh9A",
+    "expire_date": "2024-10-30T18:18:38.230"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "d6e1j3b1cbaaa12qv81ulzjion1tlqji",
+  "fields": {
+    "session_data": ".eJxVjDsOgzAUBO_iOrLwD5uU6TkDst8-AklkSxiqKHcPSBRJuzOzbzHEbZ2GrfIyzBBXocTld0uRnpwPgEfM9yKp5HWZkzwUedIq-wJ-3U7372CKddprgkMK0DqoMFqyxltuTQOluSOvO9gGO2isC-hGrZJDBEdj2LdGgcTnC-NNOAU:1t7Mle:H8JfZL3EOZU07E7_Vb9VvN9tmEAtNlhaR9pE3m2d6NI",
+    "expire_date": "2024-11-16T22:38:50.275"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||028dc472ed74f317786fca4894f90433",
+  "fields": {
+    "value": "{\"name\": \"cache/3f/da/3fda84897fd56dbe8752eda1be4f4d04.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||0374b9d7150fcf7c5fbbdc883575de57",
+  "fields": {
+    "value": "{\"name\": \"cache/66/ca/66caa1be7cd9850871decb517ecd0eee.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||03df09a825fd16246c2b9a22f255b9f7",
+  "fields": {
+    "value": "{\"name\": \"catalog/macbook_3.png\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1500, 1500]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||04afbfa2848f3ee7668944f8d508fc6e",
+  "fields": {
+    "value": "{\"name\": \"cache/eb/81/eb81a073ab676fe3133eb153ad801f32.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||0539a7aa21df0169b976db4bfe111b7c",
+  "fields": {
+    "value": "{\"name\": \"cache/34/00/340083ed626773e9745c4fe8ca94993e.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||09124472eb881b2982f66af5debd9f91",
+  "fields": {
+    "value": "{\"name\": \"catalog/kvadrokopter_main.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||0a0e80fde04c45f88daa91dd7462cbdb",
+  "fields": {
+    "value": "{\"name\": \"cache/1a/ee/1aeed7d392c08161d240893b1c77b905.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||0dfa624b9641b448e0e3bc6c92918736",
+  "fields": {
+    "value": "{\"name\": \"cache/78/60/786025d3a1ad938300ace6624e307067.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||118250b146978819e81d87345d39ab0a",
+  "fields": {
+    "value": "{\"name\": \"catalog/ipad_main.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [750, 750]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||11ce0a26c74293a1eea53737d556d987",
+  "fields": {
+    "value": "{\"name\": \"cache/06/63/06634943172ee9fd8e5c27f722b0b16a.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||144dadc81f6341d1d4cbfdda9f3430f3",
+  "fields": {
+    "value": "{\"name\": \"cache/20/c2/20c271a941f18b020e2f8824bc1821d2.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||147c412081dc1e234dd09744f259d942",
+  "fields": {
+    "value": "{\"name\": \"catalog/t-shirt_1.webp\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [2000, 1337]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||1634a877f90370b751760c7ccacba60e",
+  "fields": {
+    "value": "{\"name\": \"cache/92/32/92329b81af061ef66514ee4c730c621d.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||16c9de6dd6ca66d7af94f61efba3665d",
+  "fields": {
+    "value": "{\"name\": \"catalog/ipad_0.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||16fe11bb6cf0bea3f5f5d2828826e3ad",
+  "fields": {
+    "value": "{\"name\": \"cache/6c/4d/6c4d4107db39839d660840c832b0dcf8.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||17491a4d60bd8f10d2321c8930ee50a7",
+  "fields": {
+    "value": "{\"name\": \"catalog/t-shirt_main.webp\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [469, 500]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||1831b318f80bf9becec7ae18c6a2b810",
+  "fields": {
+    "value": "{\"name\": \"catalog/iphone-16-pro_3.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||1aa778a67f70e6dc5c085fbc0bf999fa",
+  "fields": {
+    "value": "{\"name\": \"cache/69/16/69165f37e4269d8510a6a7a0c573f960.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||1cb17534794fa3c587d142f6754fcdff",
+  "fields": {
+    "value": "{\"name\": \"cache/3a/02/3a02800e5ec96a728805fb24ba035a71.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||2045bb91b62dbbb95341ac18d5425d7f",
+  "fields": {
+    "value": "{\"name\": \"cache/f0/de/f0de0d1564e2e5a89fa029c5d1579f80.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||22ecd86d5352c3297099030e8a958f37",
+  "fields": {
+    "value": "{\"name\": \"cache/f3/ce/f3cee14552a65174868db7a55827e83d.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||23b24d07247011a6ba2a7e9c6c6667ee",
+  "fields": {
+    "value": "{\"name\": \"cache/36/fa/36fa3cf36064ecebe3e6b53f15dc1bb2.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||2440d2426dd84e8eef4fa66bac5397f7",
+  "fields": {
+    "value": "{\"name\": \"cache/d5/dc/d5dc8219a6b8b1ea22407601d76fa7a6.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||25590948cab1e67d77598024d098df3f",
+  "fields": {
+    "value": "{\"name\": \"cache/79/e5/79e59eeb3d9644caca1b016f181cd45b.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||27d87f424119beefb7c369c863f952b8",
+  "fields": {
+    "value": "{\"name\": \"catalog/macbook_main.png\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1500, 1500]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||2809eeeb4674a4f3df515200c53b4c23",
+  "fields": {
+    "value": "{\"name\": \"cache/f7/c9/f7c9f2afb8840a8ed40bfa4611e5305e.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||2f833610268bfbaa27eda92a4c6741fe",
+  "fields": {
+    "value": "{\"name\": \"catalog/ipad_BeCcA5F.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [800, 800]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||302a826d99eac1ac7a18a2fb4c0b08c9",
+  "fields": {
+    "value": "{\"name\": \"cache/5f/03/5f03282934399834421f89ff9434a155.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||3055850bba139349b443e52c25b9843e",
+  "fields": {
+    "value": "{\"name\": \"catalog/iphone_1.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1024, 1024]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||32c075f1fc8ddb368e735e94860c81c8",
+  "fields": {
+    "value": "{\"name\": \"cache/7e/63/7e634590d51ffcbd17f7a9bf0f0b8915.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||36f5739afed365612508f193cc18ab90",
+  "fields": {
+    "value": "{\"name\": \"cache/5b/6e/5b6ed78a6e5de732e5033e76abe25767.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||39558b694ec7102d0ca1ad20b22a51c8",
+  "fields": {
+    "value": "{\"name\": \"catalog/macbook_2.jpeg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [2048, 1574]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||3ad3af22eae931245d19b23a9905e844",
+  "fields": {
+    "value": "{\"name\": \"cache/94/46/94462ca39a6a46bf894494a975a47ee7.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||403023cd003c170dae99634d6f1957ca",
+  "fields": {
+    "value": "{\"name\": \"cache/aa/21/aa21f31c9d09b0c11a3e98218d4c7f19.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||40be1719b4f4fc75a89ad331ed4fbe57",
+  "fields": {
+    "value": "{\"name\": \"cache/d9/22/d922d5676a3a4eb92b190344cd1316e1.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||429ebe25bb52937456205facc3565146",
+  "fields": {
+    "value": "{\"name\": \"cache/81/e9/81e9dabaadeb67398c743be6b64c6c31.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||43a66b464ab2b530a79ee0f669ab361f",
+  "fields": {
+    "value": "{\"name\": \"cache/3f/6a/3f6a50b098fe2ea30a297749241dcf11.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||43f13e5bd762feb82e10313e9cb73d93",
+  "fields": {
+    "value": "{\"name\": \"cache/78/e4/78e4963e426a1a0c1082cbfa2960bf89.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||47fbc8973123fcd0a86f6cba2792fb43",
+  "fields": {
+    "value": "{\"name\": \"catalog/ipad_Zg8mUOy.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [800, 800]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||48dae1d62589d0b93bed1eac7339fdb2",
+  "fields": {
+    "value": "{\"name\": \"cache/ab/36/ab36a6ca6e3dda7ed6ae0ed9a2c211cd.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||4a1fe92f66827d80666e45b18409c921",
+  "fields": {
+    "value": "{\"name\": \"catalog/lego_main.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [601, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||4a717788ac151511fb2df95169dec0c5",
+  "fields": {
+    "value": "{\"name\": \"cache/f9/d8/f9d837a11868876ac54216103818502c.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||4c11878a2e7cc0677bc6c4a573a1f618",
+  "fields": {
+    "value": "{\"name\": \"catalog/iphone-16-pro_main.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||5208387a647d16df9839bb9bea13208b",
+  "fields": {
+    "value": "{\"name\": \"cache/cb/35/cb35b6e3f7990990aa132db2ab5edefb.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||52ad5f07f71767e5213ec526fe16e31e",
+  "fields": {
+    "value": "{\"name\": \"catalog/kvadrokopter_3.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||5385aef52c24f2ec59f61c75eed85d81",
+  "fields": {
+    "value": "{\"name\": \"cache/f1/80/f180b65b360d2c4c6e9433ae6ace52af.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||56d9dde6b54bb9a813e81292de139590",
+  "fields": {
+    "value": "{\"name\": \"cache/4e/4f/4e4f17d54a6b2e3af266f417be2756f0.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||5ad6073cea85a1faee312436418bac81",
+  "fields": {
+    "value": "{\"name\": \"catalog/iphone_0.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1024, 1024]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||5ba67e51741602c626322badeb77621a",
+  "fields": {
+    "value": "{\"name\": \"cache/72/5e/725eff4aa4ce43be9210d03c764df512.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||5d4da05092a8815c1a24488f2244a224",
+  "fields": {
+    "value": "{\"name\": \"cache/2d/0f/2d0fd11787a41982a45da495b6f21ec3.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||5e43ab3752d6f36de3cd2f01209cdd9b",
+  "fields": {
+    "value": "{\"name\": \"cache/95/72/957287c37e72312c410a338f96cf4fc4.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||5ed75b0947ae21296c50ae40f96c2b74",
+  "fields": {
+    "value": "{\"name\": \"catalog/macbook_0.jpeg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [2048, 1574]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||5ef845afc49dea262a9739894de196ad",
+  "fields": {
+    "value": "{\"name\": \"cache/5f/cf/5fcf27b94126a78afb544f29057fc833.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||6125a520108a301ca5177f88b1bd59c1",
+  "fields": {
+    "value": "{\"name\": \"catalog/iphone_p8MiKxX.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [498, 498]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||636ae8cfb9af4cc98509cd3895d5844f",
+  "fields": {
+    "value": "{\"name\": \"catalog/ipad_main.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [750, 750]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||678b9a2b9e9ec8d4e936cf0141d39f15",
+  "fields": {
+    "value": "{\"name\": \"cache/b4/c5/b4c59a1a1ba6a585d962f7d90cde4272.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||696b7dad41ffb47f5a59f3eab9fc54c1",
+  "fields": {
+    "value": "{\"name\": \"cache/d6/02/d602bf03d7cfc41f72ae55280bd68487.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||6b02be06267271c1dff9c2e84df37f60",
+  "fields": {
+    "value": "{\"name\": \"catalog/macbook_Dpt47um.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [970, 970]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||6b1c3693b91bedaa981f36eab877ce69",
+  "fields": {
+    "value": "{\"name\": \"cache/3f/1d/3f1dde28da3c1d8adf3a655ae63a9b3c.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||6c947517ca8256e726e9cec2dfece6a0",
+  "fields": {
+    "value": "{\"name\": \"cache/1c/89/1c89012aa3f2e7e99b30e0af12ed5217.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||6ea6e537353f3e8bfaa0cb929f7094f9",
+  "fields": {
+    "value": "{\"name\": \"cache/64/f5/64f58874ab0d4a2f1804b8f99be34674.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||7056601546f044dc7664709d5c9de5f1",
+  "fields": {
+    "value": "{\"name\": \"cache/0f/f5/0ff575eae00e11a872592cb434d17627.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||707ae5ab42efb003a73031eeacb0a7cd",
+  "fields": {
+    "value": "{\"name\": \"catalog/ipad_GqFE8iq.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [800, 800]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||711693791c841f75652a41766d6cc0fb",
+  "fields": {
+    "value": "{\"name\": \"catalog/macbook_2.png\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1500, 1500]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||71ea84dea0e9efcf1dd01ddd26656bfa",
+  "fields": {
+    "value": "{\"name\": \"catalog/9hq.webp\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [469, 500]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||722b2c354906370277ae1af7236d24ae",
+  "fields": {
+    "value": "{\"name\": \"catalog/iphone-16-pro_1.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||72d9b675af325af35cd7fe6431ce37f8",
+  "fields": {
+    "value": "{\"name\": \"cache/10/dc/10dca10fbd09f1303ab54919a751df78.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||74c3462104eaa8a000b107043716bbdc",
+  "fields": {
+    "value": "{\"name\": \"cache/59/d1/59d1865c43bd0f0614fcdf59a02c22ab.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||779176f0cb6ac7db01f9f5303d5f05fa",
+  "fields": {
+    "value": "{\"name\": \"catalog/ipad_17DOdSj.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [800, 800]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||7815b8fab888bd43599686c9efc0dc6a",
+  "fields": {
+    "value": "{\"name\": \"cache/46/34/4634beec3cc88b22f353b450b65de77f.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||7a1324de5d7fba52a417c834a2c89aad",
+  "fields": {
+    "value": "{\"name\": \"cache/e2/ad/e2ad74cfd6f2ff58460044ead8c282d6.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||7ad284449f086d1623d2a0d8533ba668",
+  "fields": {
+    "value": "{\"name\": \"cache/34/ca/34ca5fe8cacb6684111f708c297e1def.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||7fa29ee057d859a4bfbd24c334271003",
+  "fields": {
+    "value": "{\"name\": \"cache/3b/7b/3b7bcda2ff44b3166ebb454c9825f93e.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||819891c8591a68f6d2a6404290231f14",
+  "fields": {
+    "value": "{\"name\": \"cache/53/77/5377bfb301fcabce808b1404e24a504b.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||83e8e845010b6c819d698aa34aaa5cf9",
+  "fields": {
+    "value": "{\"name\": \"catalog/ipad_3.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [750, 750]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||842a17d98cd2832db1bb3cfa82367fb1",
+  "fields": {
+    "value": "{\"name\": \"cache/9c/62/9c62dfd777ec62168da28c30ebdb6b89.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||84e9009d7244cb0d00a122f90a1e0573",
+  "fields": {
+    "value": "{\"name\": \"catalog/lego_2.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [601, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||85844ab5bb940a86aaae55c4db0bc97a",
+  "fields": {
+    "value": "{\"name\": \"catalog/lego_main.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [601, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||868f063836ddafc61492f0e9e2c119fd",
+  "fields": {
+    "value": "{\"name\": \"cache/a5/e9/a5e9924b95c4c2381eeb6731a82efcc7.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||887ac27e36554ebdfe43e5631940625c",
+  "fields": {
+    "value": "{\"name\": \"cache/81/71/817119d6df9d5bbc96d86e29510e05d7.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||8abc9015cbe48b343d3809c66c682a5b",
+  "fields": {
+    "value": "{\"name\": \"cache/5c/fa/5cfafc3b137d29c0eb0825453c79cea9.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||8c8d47d86f1ac42347bdb97bfa5c468e",
+  "fields": {
+    "value": "{\"name\": \"catalog/macbook_main.png\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [1500, 1500]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||8c903c856391d7c00d2dc57f29b299bc",
+  "fields": {
+    "value": "{\"name\": \"cache/53/87/5387c69aecf96f951c6165fafae62247.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||8cfcdf945665e773b640f422201f841c",
+  "fields": {
+    "value": "{\"name\": \"cache/1a/7e/1a7e54520562ec257b0da4fb1269b189.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||8d3fafc3de9a3a61089e0649c846bb67",
+  "fields": {
+    "value": "{\"name\": \"cache/df/8a/df8a0c405c7224d41dbb84e26143aa02.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||8e4a50a3276a7498605e5ebcd0d68ec2",
+  "fields": {
+    "value": "{\"name\": \"catalog/t-shirt_3.webp\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [663, 621]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||9089ba37bf8f5e86968da0b0fcac9e5e",
+  "fields": {
+    "value": "{\"name\": \"cache/a0/cd/a0cd8ba75d6cb6053cf05dc91b6d97de.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||931ade3ffd7e5a2141d37b73fca5de88",
+  "fields": {
+    "value": "{\"name\": \"cache/4f/68/4f683c884ad4f450292c00b81ec9be41.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||9386722255b21e2291503917c1ebc9c5",
+  "fields": {
+    "value": "{\"name\": \"cache/cf/08/cf085adb2ca74c05dc866cdbe1d4a72d.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||9614872a6fa845164dcca954fb1903f8",
+  "fields": {
+    "value": "{\"name\": \"catalog/ipad_1.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||9bb0b7cd7055cdb91544609c73c05fb0",
+  "fields": {
+    "value": "{\"name\": \"catalog/\\u0421\\u043d\\u0438\\u043c\\u043e\\u043a_\\u044d\\u043a\\u0440\\u0430\\u043d\\u0430_2024-09-18_200231.png\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1417, 1111]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||9bcb5cd117b46ce24a86b8c5f7e400a6",
+  "fields": {
+    "value": "{\"name\": \"catalog/kvadrokopter_main.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||9ccd41bbededaa01d3df716f68be9af8",
+  "fields": {
+    "value": "{\"name\": \"catalog/ipad_IRIwyxa.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [800, 800]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||9d496486349e34c4fcd7be3c229ba1d7",
+  "fields": {
+    "value": "{\"name\": \"cache/c6/8e/c68e6bf86dc955ba33fa84bfde66d50c.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||9dd2b8f6088cf594e207f07dbb6bb783",
+  "fields": {
+    "value": "{\"name\": \"cache/0d/9f/0d9f0bc24f8b02c3b8a6a3c38b431cf4.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||9f3a11c527a3425eda220e615929932a",
+  "fields": {
+    "value": "{\"name\": \"catalog/iphone-16-pro_2.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||9f9ca30cb643946e33d97d9fbcb82306",
+  "fields": {
+    "value": "{\"name\": \"cache/ca/76/ca76296f132aee1e05623d613a8a2fcd.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||a04fb2c0492a92875e007dd1cd8cc070",
+  "fields": {
+    "value": "{\"name\": \"cache/95/6e/956e25978622e0b4400a5d2bf34bee17.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||a09cdfb86f64a88c526c7bb9cc5e1354",
+  "fields": {
+    "value": "{\"name\": \"catalog/macbook_2VUY1Il.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [970, 970]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||a0b943aa6072df51b007a998a097210f",
+  "fields": {
+    "value": "{\"name\": \"cache/aa/8f/aa8f70d0e238da673a3e91bdfeccfb95.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||a18222a0e918e46cb8b2150ba1fd8b5d",
+  "fields": {
+    "value": "{\"name\": \"catalog/kvadrokopter_1.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||a1a3f757491da14bd11aaf9d65533e29",
+  "fields": {
+    "value": "{\"name\": \"cache/eb/4a/eb4ac6c1ee4505c441e0d078551b9f43.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||a34f3e7ec847516e7a0e7aeb8018ad3a",
+  "fields": {
+    "value": "{\"name\": \"cache/48/44/48447fde7d02b3fcf22741ed3a15b6b2.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||a465f317eeddfb0ef47c35f541b92661",
+  "fields": {
+    "value": "{\"name\": \"cache/89/6a/896aeef1f4b37cba176953ca9c2b1475.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||a91e78871f358136264872ff373ce3e3",
+  "fields": {
+    "value": "{\"name\": \"cache/d4/fc/d4fc0356512050bc336d4cbd706c1292.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||ab1678bc1bec5f3bc826f8ee7d91bd90",
+  "fields": {
+    "value": "{\"name\": \"cache/8a/98/8a98dfc4676338a0a67c8cb81664118e.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||ab45b83ce31cc53f520b14a6a1c2bc74",
+  "fields": {
+    "value": "{\"name\": \"cache/4c/14/4c140bc4e5001a9b73e01029a0a9459c.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||ab74e417cb1055680028d1c798e8078c",
+  "fields": {
+    "value": "{\"name\": \"cache/a4/86/a486d1cb0faad2636b2e193f32d0cf4e.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||af5a00f9b4610d7cd07509561e386a25",
+  "fields": {
+    "value": "{\"name\": \"catalog/7001.750.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [601, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||b0878b3b12673b1089a2ca5e1be7c249",
+  "fields": {
+    "value": "{\"name\": \"cache/00/1c/001cc4e34df826cf44183b9dd58c7980.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||b15da1095d5d1d8ba4262674ba00b891",
+  "fields": {
+    "value": "{\"name\": \"cache/92/56/9256ee3e241c38a0507846bb64100d39.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||b3f74ff4b3d26c1355578f8624e635c6",
+  "fields": {
+    "value": "{\"name\": \"catalog/lego_1.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [601, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||b7f2e1c42f870e0a11307d9a88a2d337",
+  "fields": {
+    "value": "{\"name\": \"catalog/kvadrokopter.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||b8091883d82c76631d8640f82e8c9aa4",
+  "fields": {
+    "value": "{\"name\": \"catalog/t-shirt_main.webp\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [469, 500]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||b871df783d3526b268c701b017fa749c",
+  "fields": {
+    "value": "{\"name\": \"cache/cc/9f/cc9f7b9ccba31931c1db6d84ce17b139.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||c2d777b8b236018bb6cc1262e5d34af3",
+  "fields": {
+    "value": "{\"name\": \"cache/18/df/18df6a29e176a216f0f375013cf6a6a3.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||c4baab2145c007cb13bbced5161530a8",
+  "fields": {
+    "value": "{\"name\": \"cache/19/15/191516307bf1b276eb13118971e7bd39.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||c5598251da27be552898915cf4a57234",
+  "fields": {
+    "value": "{\"name\": \"cache/86/c2/86c2faf00648c095833240494fedbd41.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||c60efed9416f10c86399d1b46aeb4ceb",
+  "fields": {
+    "value": "{\"name\": \"cache/a3/b6/a3b627a111eb1288b4a4b99a4dfcec20.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||c71d34d97995b9c87acb4ab0f00dc3ff",
+  "fields": {
+    "value": "{\"name\": \"catalog/ipad_2.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [750, 750]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||c7fd106da01937edbaedeffce9fe3ac0",
+  "fields": {
+    "value": "{\"name\": \"catalog/tom-vanhoof-BNS6QPaaVzY-unsplash.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [3712, 5568]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||cf516ea7a3509a22f7d58e3dc9a79445",
+  "fields": {
+    "value": "{\"name\": \"cache/59/f1/59f1cd3a8d5c2ee0c14037edf18c8852.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||d122f4f9eb4945c2bf2fa86d6469b3b9",
+  "fields": {
+    "value": "{\"name\": \"cache/da/dc/dadc9e3f68cd4991ac3e83c762b93590.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||d2382fc3dda75f96564bd222cd08a9c6",
+  "fields": {
+    "value": "{\"name\": \"catalog/iphone_LRccu4V.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [498, 498]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||d23904501246c8a32414b8ab337bd449",
+  "fields": {
+    "value": "{\"name\": \"cache/36/c1/36c17b45adcefd01b967d8da3f56a037.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||d2ef75eca8d7a998c919d2abde212d72",
+  "fields": {
+    "value": "{\"name\": \"cache/38/fc/38fcf3f0ba53173d68ad6974e9e6fc5b.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||d30b4df6022a07eb4babcab6c3308dbc",
+  "fields": {
+    "value": "{\"name\": \"catalog/iphone-16-pro_main.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||d49d6953c70b85dbff55521b8239e672",
+  "fields": {
+    "value": "{\"name\": \"cache/e0/e8/e0e890b2652f0d753bb6e67c7e8cea4f.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||d964e3e42a465b44a62aa741197a9352",
+  "fields": {
+    "value": "{\"name\": \"cache/d8/43/d84302141fa4c639d02e2c3b66d5d82c.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||d9ee54753a5c94a6f41a094b332eaaee",
+  "fields": {
+    "value": "{\"name\": \"catalog/kvadrokopter_2.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||dcc5ce7e4ad96accf2a33050402fdebc",
+  "fields": {
+    "value": "{\"name\": \"catalog/macbook_aejmOto.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [970, 970]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||dfa182b7fbc9a75a2081c2ce3886a3e9",
+  "fields": {
+    "value": "{\"name\": \"cache/2f/96/2f963d9b981e2c85445b714390729713.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||dfd147e9d678167b975626825843cb64",
+  "fields": {
+    "value": "{\"name\": \"cache/77/5f/775fa7ce9b43de2a854990a0e1c29ade.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||e136201c56628384e8ff8f848074b1aa",
+  "fields": {
+    "value": "{\"name\": \"cache/68/83/68834fcdfb4847f4e7ceebbe1887fc62.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||e208c505375270ecdb83a189f1642791",
+  "fields": {
+    "value": "{\"name\": \"cache/95/98/9598a5c804b1983fec5915fc7ee66b0c.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||e266c5422cf13096a2cf9cacc33d502b",
+  "fields": {
+    "value": "{\"name\": \"catalog/macbook_1.png\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1500, 1500]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||e3026584e80b2fb2669bda3dd8440f24",
+  "fields": {
+    "value": "{\"name\": \"catalog/iphone_2.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1024, 1024]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||e44bfac7ece3dd06a813272a25ba1993",
+  "fields": {
+    "value": "{\"name\": \"cache/f5/13/f51371467022bd6835aa1915c3492eda.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||e4b4cb1cd2d335068660d6c4c972e671",
+  "fields": {
+    "value": "{\"name\": \"catalog/t-shirt_2.webp\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [2000, 1284]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||e504180415fee0e0dad9faf5bb65f796",
+  "fields": {
+    "value": "{\"name\": \"cache/fe/be/febee6ef7194520fc0f5e5872812023d.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||e63ad59d2efb9931630132d6a8926b5b",
+  "fields": {
+    "value": "{\"name\": \"cache/10/0e/100ed963eb6f77d7bb5d279f213ac839.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||ed0e889f59d6b14dd7303980d5d5f4cb",
+  "fields": {
+    "value": "{\"name\": \"cache/b8/bd/b8bd45cc52c78f495036d60443e38e28.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||f29d1976bef2b9bb1ab329f73f7532cb",
+  "fields": {
+    "value": "{\"name\": \"catalog/macbook_1.jpeg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [2048, 1574]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||f5376071b13127ec90e2641060e4f2aa",
+  "fields": {
+    "value": "{\"name\": \"cache/5e/bd/5ebde9fc07af0845c22d8620a898bfdd.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||f696647f0d1b82c91b5d00fddf3b8e5a",
+  "fields": {
+    "value": "{\"name\": \"cache/01/35/0135d399203333fc67b619479462424f.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||f6c25a97965bccc7c630f417ad063c8c",
+  "fields": {
+    "value": "{\"name\": \"cache/2d/cb/2dcb68f741a29825740fc3b616651482.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||f841d93a6c6ffbc06f937e5a532d1541",
+  "fields": {
+    "value": "{\"name\": \"cache/b6/ce/b6ce1d3b0cad13f051498b4666a27a95.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||f8fa21200a190fc0518ec8bc273265da",
+  "fields": {
+    "value": "{\"name\": \"cache/f4/61/f461d77c2241e68338d00cc05e0f85c2.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||fb703c8d57a799ea04c2c8d0614e4b05",
+  "fields": {
+    "value": "{\"name\": \"catalog/iphone_1QSYQcR.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [498, 498]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||fdfc755e46ddbea3e0df11a9d09ec499",
+  "fields": {
+    "value": "{\"name\": \"catalog/ipad_EQ6Y3fP.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [800, 800]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||fe9e3eadb8e5b3a2216fa2d490128f55",
+  "fields": {
+    "value": "{\"name\": \"cache/ef/0d/ef0d991d7d3dd9b586f6dc39e4ac158a.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||03df09a825fd16246c2b9a22f255b9f7",
+  "fields": {
+    "value": "[\"931ade3ffd7e5a2141d37b73fca5de88\", \"7815b8fab888bd43599686c9efc0dc6a\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||09124472eb881b2982f66af5debd9f91",
+  "fields": {
+    "value": "[\"a34f3e7ec847516e7a0e7aeb8018ad3a\", \"8cfcdf945665e773b640f422201f841c\", \"5ba67e51741602c626322badeb77621a\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||118250b146978819e81d87345d39ab0a",
+  "fields": {
+    "value": "[\"a91e78871f358136264872ff373ce3e3\", \"819891c8591a68f6d2a6404290231f14\", \"8c903c856391d7c00d2dc57f29b299bc\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||147c412081dc1e234dd09744f259d942",
+  "fields": {
+    "value": "[\"d964e3e42a465b44a62aa741197a9352\", \"f6c25a97965bccc7c630f417ad063c8c\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||16c9de6dd6ca66d7af94f61efba3665d",
+  "fields": {
+    "value": "[\"11ce0a26c74293a1eea53737d556d987\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||17491a4d60bd8f10d2321c8930ee50a7",
+  "fields": {
+    "value": "[\"0dfa624b9641b448e0e3bc6c92918736\", \"429ebe25bb52937456205facc3565146\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||1831b318f80bf9becec7ae18c6a2b810",
+  "fields": {
+    "value": "[\"fe9e3eadb8e5b3a2216fa2d490128f55\", \"e44bfac7ece3dd06a813272a25ba1993\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||27d87f424119beefb7c369c863f952b8",
+  "fields": {
+    "value": "[\"6b1c3693b91bedaa981f36eab877ce69\", \"144dadc81f6341d1d4cbfdda9f3430f3\", \"7fa29ee057d859a4bfbd24c334271003\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||2f833610268bfbaa27eda92a4c6741fe",
+  "fields": {
+    "value": "[\"f8fa21200a190fc0518ec8bc273265da\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||3055850bba139349b443e52c25b9843e",
+  "fields": {
+    "value": "[\"028dc472ed74f317786fca4894f90433\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||39558b694ec7102d0ca1ad20b22a51c8",
+  "fields": {
+    "value": "[\"403023cd003c170dae99634d6f1957ca\", \"c60efed9416f10c86399d1b46aeb4ceb\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||47fbc8973123fcd0a86f6cba2792fb43",
+  "fields": {
+    "value": "[\"2809eeeb4674a4f3df515200c53b4c23\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||4a1fe92f66827d80666e45b18409c921",
+  "fields": {
+    "value": "[\"cf516ea7a3509a22f7d58e3dc9a79445\", \"8abc9015cbe48b343d3809c66c682a5b\", \"e208c505375270ecdb83a189f1642791\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||4c11878a2e7cc0677bc6c4a573a1f618",
+  "fields": {
+    "value": "[\"6c947517ca8256e726e9cec2dfece6a0\", \"5385aef52c24f2ec59f61c75eed85d81\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||52ad5f07f71767e5213ec526fe16e31e",
+  "fields": {
+    "value": "[\"2045bb91b62dbbb95341ac18d5425d7f\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||5ad6073cea85a1faee312436418bac81",
+  "fields": {
+    "value": "[\"9f9ca30cb643946e33d97d9fbcb82306\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||5ed75b0947ae21296c50ae40f96c2b74",
+  "fields": {
+    "value": "[\"23b24d07247011a6ba2a7e9c6c6667ee\", \"a465f317eeddfb0ef47c35f541b92661\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||6125a520108a301ca5177f88b1bd59c1",
+  "fields": {
+    "value": "[\"1634a877f90370b751760c7ccacba60e\", \"d122f4f9eb4945c2bf2fa86d6469b3b9\", \"a04fb2c0492a92875e007dd1cd8cc070\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||636ae8cfb9af4cc98509cd3895d5844f",
+  "fields": {
+    "value": "[\"16fe11bb6cf0bea3f5f5d2828826e3ad\", \"3ad3af22eae931245d19b23a9905e844\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||6b02be06267271c1dff9c2e84df37f60",
+  "fields": {
+    "value": "[\"2440d2426dd84e8eef4fa66bac5397f7\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||707ae5ab42efb003a73031eeacb0a7cd",
+  "fields": {
+    "value": "[\"9089ba37bf8f5e86968da0b0fcac9e5e\", \"32c075f1fc8ddb368e735e94860c81c8\", \"40be1719b4f4fc75a89ad331ed4fbe57\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||711693791c841f75652a41766d6cc0fb",
+  "fields": {
+    "value": "[\"9d496486349e34c4fcd7be3c229ba1d7\", \"e63ad59d2efb9931630132d6a8926b5b\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||71ea84dea0e9efcf1dd01ddd26656bfa",
+  "fields": {
+    "value": "[\"302a826d99eac1ac7a18a2fb4c0b08c9\", \"a0b943aa6072df51b007a998a097210f\", \"d23904501246c8a32414b8ab337bd449\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||722b2c354906370277ae1af7236d24ae",
+  "fields": {
+    "value": "[\"7a1324de5d7fba52a417c834a2c89aad\", \"7ad284449f086d1623d2a0d8533ba668\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||779176f0cb6ac7db01f9f5303d5f05fa",
+  "fields": {
+    "value": "[\"5e43ab3752d6f36de3cd2f01209cdd9b\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||83e8e845010b6c819d698aa34aaa5cf9",
+  "fields": {
+    "value": "[\"dfa182b7fbc9a75a2081c2ce3886a3e9\", \"1aa778a67f70e6dc5c085fbc0bf999fa\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||84e9009d7244cb0d00a122f90a1e0573",
+  "fields": {
+    "value": "[\"9386722255b21e2291503917c1ebc9c5\", \"5d4da05092a8815c1a24488f2244a224\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||85844ab5bb940a86aaae55c4db0bc97a",
+  "fields": {
+    "value": "[\"f696647f0d1b82c91b5d00fddf3b8e5a\", \"7056601546f044dc7664709d5c9de5f1\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||8c8d47d86f1ac42347bdb97bfa5c468e",
+  "fields": {
+    "value": "[\"43f13e5bd762feb82e10313e9cb73d93\", \"22ecd86d5352c3297099030e8a958f37\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||8e4a50a3276a7498605e5ebcd0d68ec2",
+  "fields": {
+    "value": "[\"c2d777b8b236018bb6cc1262e5d34af3\", \"74c3462104eaa8a000b107043716bbdc\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||9614872a6fa845164dcca954fb1903f8",
+  "fields": {
+    "value": "[\"887ac27e36554ebdfe43e5631940625c\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||9bb0b7cd7055cdb91544609c73c05fb0",
+  "fields": {
+    "value": "[\"e504180415fee0e0dad9faf5bb65f796\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||9bcb5cd117b46ce24a86b8c5f7e400a6",
+  "fields": {
+    "value": "[\"678b9a2b9e9ec8d4e936cf0141d39f15\", \"4a717788ac151511fb2df95169dec0c5\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||9ccd41bbededaa01d3df716f68be9af8",
+  "fields": {
+    "value": "[\"c5598251da27be552898915cf4a57234\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||9f3a11c527a3425eda220e615929932a",
+  "fields": {
+    "value": "[\"b0878b3b12673b1089a2ca5e1be7c249\", \"0a0e80fde04c45f88daa91dd7462cbdb\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||a09cdfb86f64a88c526c7bb9cc5e1354",
+  "fields": {
+    "value": "[\"25590948cab1e67d77598024d098df3f\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||a18222a0e918e46cb8b2150ba1fd8b5d",
+  "fields": {
+    "value": "[\"04afbfa2848f3ee7668944f8d508fc6e\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||af5a00f9b4610d7cd07509561e386a25",
+  "fields": {
+    "value": "[\"dfd147e9d678167b975626825843cb64\", \"d2ef75eca8d7a998c919d2abde212d72\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||b3f74ff4b3d26c1355578f8624e635c6",
+  "fields": {
+    "value": "[\"5ef845afc49dea262a9739894de196ad\", \"56d9dde6b54bb9a813e81292de139590\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||b7f2e1c42f870e0a11307d9a88a2d337",
+  "fields": {
+    "value": "[\"ab74e417cb1055680028d1c798e8078c\", \"b15da1095d5d1d8ba4262674ba00b891\", \"e136201c56628384e8ff8f848074b1aa\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||b8091883d82c76631d8640f82e8c9aa4",
+  "fields": {
+    "value": "[\"868f063836ddafc61492f0e9e2c119fd\", \"0539a7aa21df0169b976db4bfe111b7c\", \"c4baab2145c007cb13bbced5161530a8\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||c71d34d97995b9c87acb4ab0f00dc3ff",
+  "fields": {
+    "value": "[\"36f5739afed365612508f193cc18ab90\", \"9dd2b8f6088cf594e207f07dbb6bb783\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||c7fd106da01937edbaedeffce9fe3ac0",
+  "fields": {
+    "value": "[\"ab1678bc1bec5f3bc826f8ee7d91bd90\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||d2382fc3dda75f96564bd222cd08a9c6",
+  "fields": {
+    "value": "[\"842a17d98cd2832db1bb3cfa82367fb1\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||d30b4df6022a07eb4babcab6c3308dbc",
+  "fields": {
+    "value": "[\"1cb17534794fa3c587d142f6754fcdff\", \"0374b9d7150fcf7c5fbbdc883575de57\", \"43a66b464ab2b530a79ee0f669ab361f\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||d9ee54753a5c94a6f41a094b332eaaee",
+  "fields": {
+    "value": "[\"f841d93a6c6ffbc06f937e5a532d1541\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||dcc5ce7e4ad96accf2a33050402fdebc",
+  "fields": {
+    "value": "[\"5208387a647d16df9839bb9bea13208b\", \"6ea6e537353f3e8bfaa0cb929f7094f9\", \"48dae1d62589d0b93bed1eac7339fdb2\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||e266c5422cf13096a2cf9cacc33d502b",
+  "fields": {
+    "value": "[\"f5376071b13127ec90e2641060e4f2aa\", \"72d9b675af325af35cd7fe6431ce37f8\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||e3026584e80b2fb2669bda3dd8440f24",
+  "fields": {
+    "value": "[\"696b7dad41ffb47f5a59f3eab9fc54c1\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||e4b4cb1cd2d335068660d6c4c972e671",
+  "fields": {
+    "value": "[\"b871df783d3526b268c701b017fa749c\", \"ed0e889f59d6b14dd7303980d5d5f4cb\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||f29d1976bef2b9bb1ab329f73f7532cb",
+  "fields": {
+    "value": "[\"ab45b83ce31cc53f520b14a6a1c2bc74\", \"8d3fafc3de9a3a61089e0649c846bb67\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||fb703c8d57a799ea04c2c8d0614e4b05",
+  "fields": {
+    "value": "[\"a1a3f757491da14bd11aaf9d65533e29\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||fdfc755e46ddbea3e0df11a9d09ec499",
+  "fields": {
+    "value": "[\"d49d6953c70b85dbff55521b8239e672\"]"
+  }
+}
+]

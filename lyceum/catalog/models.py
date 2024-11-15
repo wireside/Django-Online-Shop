@@ -4,6 +4,7 @@ import django.core.validators
 import django.db
 import django.db.models
 from django.utils.safestring import mark_safe
+from django.utils.text import Truncator
 
 import catalog.managers
 import catalog.validators
@@ -125,11 +126,17 @@ class Item(django.db.models.Model):
     def __str__(self):
         return self.name[:15]
 
+    def truncated_text(self):
+        text = self.text
+        truncate = Truncator(text)
+        return truncate.words(10, truncate="...")
+
     def image_tmb(self):
         if self.main_image.image:
             return mark_safe(
                 f"<img src='{self.main_image.get_image_50x50.url}'>",
             )
+
         return "Нет изображения"
 
     image_tmb.short_description = "превью"

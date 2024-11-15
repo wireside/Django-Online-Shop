@@ -53,12 +53,10 @@ def echo_submit(request):
 def coffee(response):
     if response.user.is_authenticated:
         user = users.models.Profile.objects.get(id=response.user.id)
-        user.coffee_count = (
-            django.db.models.F(
-                users.models.Profile.coffee_count.field.name,
-            )
-            + 1
+        count = django.db.models.F(
+            users.models.Profile.coffee_count.field.name,
         )
+        user.coffee_count = count + 1
         user.save(
             update_fields=[
                 users.models.Profile.coffee_count.field.name,

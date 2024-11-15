@@ -223,15 +223,7 @@ class CatalogItemsTests(django.test.TestCase):
         self.assertIn("categories", response.context)
 
     def test_categories_size(self):
-        categories_count = (
-            catalog.models.Category.objects.filter(
-                is_published=True,
-            )
-            .exclude(
-                items__exact=None,
-            )
-            .count()
-        )
+        categories_count = catalog.models.Category.objects.count()
         response = django.test.Client().get(reverse("catalog:item_list"))
         self.assertEqual(len(response.context["categories"]), categories_count)
 
