@@ -21,17 +21,14 @@ def home(request):
 
 
 def echo(request):
-    if request.method == "GET":
-        echo_form = homepage.forms.EchoForm(request.POST or None)
-        context = {"echo_form": echo_form}
+    echo_form = homepage.forms.EchoForm(request.POST or None)
+    context = {"echo_form": echo_form}
 
-        return django.shortcuts.render(
-            request=request,
-            template_name="homepage/echo.html",
-            context=context,
-        )
-
-    return django.http.HttpResponseNotAllowed(["POST"])
+    return django.shortcuts.render(
+        request=request,
+        template_name="homepage/echo.html",
+        context=context,
+    )
 
 
 def echo_submit(request):
@@ -41,10 +38,9 @@ def echo_submit(request):
             text,
             content_type="text/plain",
             status=http.HTTPStatus.OK,
-            charset="utf-16",
         )
 
-    return django.http.HttpResponseNotAllowed(["GET"])
+    return django.http.HttpResponseNotAllowed(["POST"])
 
 
 def coffee(response):
