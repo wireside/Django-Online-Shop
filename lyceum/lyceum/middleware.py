@@ -32,7 +32,11 @@ class ReverseRussianMiddleware:
             return self.get_response(request)
 
         response = self.get_response(request)
-        content = response.content.decode()
+        try:
+            content = response.content.decode()
+        except UnicodeDecodeError:
+            content = response.content.decode("utf-16")
+
         words = WORDS_REGEX.findall(content)
 
         transformed = [
@@ -40,5 +44,5 @@ class ReverseRussianMiddleware:
             for word in words
         ]
 
-        response.content = "".join(transformed).encode("utf-16")
+        response.content = "".join(transformed)
         return response
