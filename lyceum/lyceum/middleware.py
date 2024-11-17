@@ -41,7 +41,7 @@ class ReverseRussianMiddleware:
                 for word in words
             ]
 
-            response.content = "".join(transformed).encode()
+            response.content = "".join(transformed)
         except UnicodeDecodeError:
             content = response.content.decode("utf-16")
             words = WORDS_REGEX.findall(content)
@@ -51,6 +51,6 @@ class ReverseRussianMiddleware:
                 for word in words
             ]
 
-            response.content = "".join(transformed).encode("utf-16")
+            response.content = "".join(transformed)
 
         return response
