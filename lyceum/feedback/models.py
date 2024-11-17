@@ -99,7 +99,3 @@ class StatusLog(django.db.models.Model):
         max_length=16,
         verbose_name="to",
     )
-
-    class Meta:
-        verbose_name = "Статус лог"
-        verbose_name_plural = "Статус логи"
