@@ -27,4 +27,4 @@ class Profile(django.db.models.Model):
     )
 
     class Meta:
-        verbose_name = "профиль"
+        verbose_name = "Дополнительные поля"

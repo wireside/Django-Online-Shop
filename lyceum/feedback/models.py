@@ -6,7 +6,7 @@ import django.db.models
 
 from lyceum.s3_storage import MediaStorage
 
-__all__ = ["Feedback", "FeedbackAuthor", "FeedbackFile"]
+__all__ = ["Feedback", "FeedbackAuthor", "FeedbackFile", "StatusLog"]
 
 
 storage = None

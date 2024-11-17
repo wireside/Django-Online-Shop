@@ -31,6 +31,20 @@
             {% translate "About" %}
           </a>
         </li>
+        {% if not request.user.is_authenticated %}
+          <li class="nav-item">
+            <a class="nav-link {% if view_name == 'users:login' %}active disabled{% endif %}" href="{% url 'users:login' %}">
+              {% translate "Login" %}
+            </a>
+          </li>
+        {% endif %}
+        {% if request.user.is_authenticated %}
+          <li class="nav-item">
+            <a class="nav-link {% if view_name == 'users:logout' %}active disabled{% endif %}" href="{% url 'users:logout' %}">
+              {% translate "Logout" %}
+            </a>
+          </li>
+        {% endif %}
         {% if request.user.is_superuser %}
           <li class="nav-item">
             <a class="nav-link" href="{% url 'admin:index' %}">{% translate 'Admin' %}</a>
