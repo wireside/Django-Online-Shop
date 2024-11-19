@@ -10,6 +10,7 @@ __all__ = ["ProfileInlined", "UserAdmin"]
 class ProfileInlined(django.contrib.admin.TabularInline):
     model = users.models.Profile
     can_delete = False
+    readonly_fields = (users.models.Profile.birthday.field.name,)
 
 
 class UserAdmin(django.contrib.auth.admin.UserAdmin):

@@ -4,7 +4,6 @@ import django.core.validators
 import django.db
 import django.db.models
 from django.utils.safestring import mark_safe
-from django.utils.text import Truncator
 
 import catalog.managers
 import catalog.validators
@@ -111,10 +110,14 @@ class Item(django.db.models.Model):
     updated = django.db.models.DateTimeField(
         verbose_name="время изменения",
         auto_now=True,
+        null=True,
+        blank=True,
     )
     created = django.db.models.DateTimeField(
         verbose_name="время создания",
         auto_now_add=True,
+        null=True,
+        blank=True,
     )
 
     class Meta:
@@ -125,11 +128,6 @@ class Item(django.db.models.Model):
 
     def __str__(self):
         return self.name[:15]
-
-    def truncated_text(self):
-        text = self.text
-        truncate = Truncator(text)
-        return truncate.words(10, truncate="...")
 
     def image_tmb(self):
         if self.main_image.image:

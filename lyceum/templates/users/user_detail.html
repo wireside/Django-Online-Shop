@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}
+	Информация о пользователе
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h2 class="h2 mb-5 text-center">Детали аккаунта</h2>
+    {% if request.user.is_staff or request.user.id == user.id %}
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="h5">Фотография пользователя</div>
+          <img class="img-thumbnail d-block" src="{{ user.profile.get_image_300x300.url }}" alt="Изображение не загружено">
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Имя пользователя</div>
+          <p class="text">{{ user.username }}</p>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Почта</div>
+          <p class="text">{{ user.email }}</p>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Имя</div>
+          <p class="text">{{ user.first_name|default:"<strong>не указано</strong>" }}</p>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Фамилия</div>
+          <p class="text">{{ user.last_name|default:"<strong>не указано</strong>" }}</p>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Дата рождения</div>
+          <p class="text">{{ user.profile.birthday }}</p>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Дата рождения</div>
+          <p class="text">{{ user.profile.birthday }}</p>
+        </div>
+      </li>
+    </ul>
+    {% endif %}
+  </div>
+{% endblock %}

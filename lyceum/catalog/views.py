@@ -2,10 +2,15 @@ import datetime
 import random
 
 import django.db.models
+import django.db.utils
+import django.contrib
 import django.shortcuts
+import django.urls
 import django.utils.timezone
 
 import catalog.models
+import rating.forms
+import rating.models
 
 __all__ = ["friday", "item_detail", "item_list", "new", "unverified"]
 
@@ -91,9 +96,48 @@ def item_detail(request, pk):
         catalog.models.Item.objects.detail_published(),
         pk=pk,
     )
+    ratings_stats = item.rating.aggregate(
+        average=django.db.models.Avg("score"),
+        count=django.db.models.Count("score"),
+    )
+
+    rating_form = rating.forms.RatingForm(request.POST or None)
+    user_rating = None
+    if request.user.is_authenticated:
+        try:
+            user_rating = rating.models.Rating.objects.get(
+                item=item,
+                user=request.user,
+            )
+            user_rating = user_rating.score
+        except rating.models.Rating.DoesNotExist:
+            user_rating = None
+
+    if request.method == "POST" and rating_form.is_valid():
+        try:
+            new_rating = rating_form.save(commit=False)
+            new_rating.user = request.user
+            new_rating.item = item
+            new_rating.save()
+        except django.db.utils.IntegrityError:
+            new_rating = rating.models.Rating.objects.get(
+                user=request.user,
+                item=item,
+            )
+            new_rating.score = rating_form.cleaned_data["score"]
+            new_rating.save(
+                update_fields=["score"],
+            )
+
+        return django.shortcuts.redirect(
+            django.urls.reverse("catalog:item_detail", args=[pk])
+        )
 
     context = {
         "item": item,
+        "rating_form": rating_form,
+        "ratings_stats": ratings_stats,
+        "user_rating": user_rating,
     }
 
     return django.shortcuts.render(request, "catalog/item.html", context)

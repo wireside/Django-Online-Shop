@@ -7,7 +7,7 @@
       {% for tag in item.tags.all %}
         <span class="badge bg-light text-dark">{{ tag.name }}</span>
       {% endfor %}
-      <p class="card-text mt-1">{{ item.truncated_text|safe }}</p>
+      <p class="card-text mt-1">{{ item.text | safe | truncatewords:10 }}</p>
       <a href="{% url 'catalog:item_detail' item.id %}" class="btn btn-primary shadow">Подробнее</a>
     </div>
   </div>

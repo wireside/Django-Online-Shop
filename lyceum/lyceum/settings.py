@@ -24,7 +24,14 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "not_so_secret")
 
 MAIL = os.getenv("DJANGO_MAIL")
 
+MAX_AUTH_ATTEMPTS = int(os.getenv("DJANGO_MAX_AUTH_ATTEMPTS", 10))
+
 DEBUG = load_bool("DJANGO_DEBUG", True)
+
+DEFAULT_USER_IS_ACTIVE = load_bool("DJANGO_DEFAULT_USER_IS_ACTIVE", False)
+
+if DEBUG:
+    DEFAULT_USER_IS_ACTIVE = True
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "*").split(",")
 
@@ -37,6 +44,7 @@ INSTALLED_APPS = [
     "feedback.apps.FeedbackConfig",
     "core.apps.CoreConfig",
     "users.apps.UsersConfig",
+    "rating.apps.RatingConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -58,6 +66,7 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "users.middleware.UserMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "lyceum.middleware.ReverseRussianMiddleware",
@@ -123,6 +132,10 @@ CORS_ALLOWED_ORIGINS = [
 if DEBUG:
     CORS_ALLOW_ALL_ORIGINS = True
 
+AUTHENTICATION_BACKENDS = [
+    "users.backends.AuthBackend",
+    "django.contrib.auth.backends.ModelBackend",
+]
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -144,9 +157,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-LOGIN_URL = "/auth/login/"
-LOGIN_REDIRECT_URL = "/"
-LOGOUT_REDIRECT_URL = "/auth/login/"
+LOGIN_URL = "users:login"
+LOGIN_REDIRECT_URL = "users:profile"
+LOGOUT_REDIRECT_URL = "users:logout"
 
 
 LANGUAGES = [

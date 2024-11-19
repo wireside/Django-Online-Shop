@@ -31,10 +31,24 @@
             {% translate "About" %}
           </a>
         </li>
+        {% if request.user.is_authenticated %}
+          <li class="nav-item">
+            <a class="nav-link {% if view_name == 'users:profile' %}active disabled{% endif %}" href="{% url 'users:profile' %}">
+              {% translate "Profile" %}
+            </a>
+          </li>
+        {% endif %}
         {% if not request.user.is_authenticated %}
           <li class="nav-item">
             <a class="nav-link {% if view_name == 'users:login' %}active disabled{% endif %}" href="{% url 'users:login' %}">
               {% translate "Login" %}
+            </a>
+          </li>
+        {% endif %}
+        {% if not request.user.is_authenticated %}
+          <li class="nav-item">
+            <a class="nav-link {% if view_name == 'users:signup' %}active disabled{% endif %}" href="{% url 'users:signup' %}">
+              {% translate "Signup" %}
             </a>
           </li>
         {% endif %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	{{ user.username }}
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+    <h2 class="h2 text-center mb-5">Профиль пользователя</h2>
+    <form method="post">
+      {% csrf_token %}
+      {% with form=user_form %}
+      	{% include 'includes/form.html' %}
+      {% endwith %}
+      {% with form=profile_form %}
+      	{% include 'includes/form.html' %}
+      {% endwith %}
+      <button type="submit" class="btn btn-outline-primary">Сохранить</button>
+      <a class="btn btn-outline-secondary mx-4" href="{% url 'homepage:coffee' %}">Выпить кофе</a>
+    </form>
+  </div>
+{% endblock %}

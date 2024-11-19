@@ -15,8 +15,7 @@ class BootstrapForm(django.forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         for field in self.visible_fields():
-            field.field.widget.attrs["class"] = "form-control"
-            field.field.widget.attrs["placeholder"] = field.help_text
+            field.field.widget.attrs["class"] = "form-control shadow-sm"
 
 
 class FeedbackAuthorForm(BootstrapForm):
@@ -46,7 +45,7 @@ class FeedbackFileForm(BootstrapForm):
         }
         help_texts = {
             feedback.models.FeedbackFile.file.field.name: (
-                "При необходимости прикрепите файлы"
+                "При необходимости прикрепите несколько файлов"
             ),
         }
         widgets = {

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Регистрация
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+    <h2 class="h2 mb-5">Регистрация</h2>
+    <form method="post">
+      {% csrf_token %}
+      {% with form=user_form %}
+      	{% include 'includes/form.html' %}
+      {% endwith %}
+      <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+{% endblock %}

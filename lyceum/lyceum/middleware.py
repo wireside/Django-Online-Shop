@@ -1,56 +1,26 @@
 import re
 
-import django.conf
+from django.conf import settings
 
-__all__ = ["ReverseRussianMiddleware"]
+__all__ = []
 
-
-WORDS_REGEX = re.compile(r"\w+|\W+")
-NOT_RUSSIAN_REGEX = re.compile(r"^[^а-яА-Я\s]+$")
+counter = 1
 
 
 class ReverseRussianMiddleware:
-    cnt = 0
-
     def __init__(self, get_response):
         self.get_response = get_response
 
-    @classmethod
-    def check_need_reverse(cls):
-        if not django.conf.settings.ALLOW_REVERSE:
-            return False
-
-        cls.cnt += 1
-        if cls.cnt != 10:
-            return False
-
-        cls.cnt = 0
-        return True
-
     def __call__(self, request):
-        if not self.check_need_reverse():
-            return self.get_response(request)
-
+        global counter
         response = self.get_response(request)
-        try:
-            content = response.content.decode()
-            words = WORDS_REGEX.findall(content)
+        if settings.ALLOW_REVERSE and counter % 10 == 0:
+            response.content = self.reverse_only_russian_words(
+                response.content.decode(),
+            ).encode()
 
-            transformed = [
-                word if NOT_RUSSIAN_REGEX.search(word) else word[::-1]
-                for word in words
-            ]
-
-            response.content = "".join(transformed)
-        except UnicodeDecodeError:
-            content = response.content.decode("utf-16")
-            words = WORDS_REGEX.findall(content)
-
-            transformed = [
-                word if NOT_RUSSIAN_REGEX.search(word) else word[::-1]
-                for word in words
-            ]
-
-            response.content = "".join(transformed)
-
+        counter += 1
         return response
+
+    def reverse_only_russian_words(self, content):
+        return re.sub(r"\b[А-яёЁ]+\b", lambda m: m.group()[::-1], content)

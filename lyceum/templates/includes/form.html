@@ -1,15 +1,31 @@
+{% load widget_tweaks %}
+
+{% if form.errors %}
+  {% for field in form %}
+    {% for error in field.errors %}
+      {{ error|escape }}
+    {% endfor %}
+  {% endfor %}
+  {% for error in form.non_field_errors %}
+    {{ error|escape }}
+  {% endfor %}
+{% endif %}
 {% for field in form %}
-  <div class="mb-3">
+  <div class="mb-5">
     {% for error in field.errors %}
       <div class="alert alert-danger">
         {{ error|escape }}
       </div>
     {% endfor %}
-    {% if field.label %}
-      <label class="col-form-label-lg" for="{{ field.auto_id }}">
-        {{ field.label }}
-      </label>
+    <h5 class="h5">
+      {{ field.label_tag }}
+      {% if field.field.required %}
+        <span>*</span>
+      {% endif %}
+    </h5>
+    {{ field | add_class:"form-control mb-3 shadow-sm" }}
+    {% if field.help_text %}
+      <p class="help" id="{{ filed.id_for_label }}-help">{{ field.help_text | safe }}</p>
     {% endif %}
-    {{ field }}
   </div>
 {% endfor %}

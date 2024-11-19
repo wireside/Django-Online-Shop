@@ -110,25 +110,6 @@
 },
 {
   "model": "catalog.item",
-  "pk": 1,
-  "fields": {
-    "is_published": true,
-    "is_on_main": false,
-    "name": "TEST",
-    "category": 1,
-    "text": "<p>Складной мини-дрон с <strong>Wi-Fi HD FPV</strong> камерой дистанционного управления. С откидной ручкой, она маленькая и легко переносится. Имеет высокую функцию режима удержания для обеспечения стабильного полета. Превосходно работает на протяжении 30 минут полета</p>",
-    "updated": "2024-11-15T20:23:09.781Z",
-    "created": "2024-11-04T20:13:30.890Z",
-    "tags": [
-      1,
-      6,
-      4,
-      3
-    ]
-  }
-},
-{
-  "model": "catalog.item",
   "pk": 5,
   "fields": {
     "is_published": true,
@@ -481,7 +462,25 @@
   "fields": {
     "text": "Фидбек",
     "created_on": "2024-11-15T00:35:15.232Z",
-    "status": "wip"
+    "status": "ans"
+  }
+},
+{
+  "model": "feedback.feedback",
+  "pk": 18,
+  "fields": {
+    "text": "ddd",
+    "created_on": "2024-11-17T13:28:41.154Z",
+    "status": "ans"
+  }
+},
+{
+  "model": "feedback.feedback",
+  "pk": 19,
+  "fields": {
+    "text": "Сообщение фидбека тестовое",
+    "created_on": "2024-11-19T18:02:21.829Z",
+    "status": "ans"
   }
 },
 {
@@ -521,6 +520,24 @@
   }
 },
 {
+  "model": "feedback.feedbackauthor",
+  "pk": 18,
+  "fields": {
+    "feedback": 18,
+    "name": "John",
+    "mail": "example@mail.ru"
+  }
+},
+{
+  "model": "feedback.feedbackauthor",
+  "pk": 19,
+  "fields": {
+    "feedback": 19,
+    "name": "John",
+    "mail": "example@mail.ru"
+  }
+},
+{
   "model": "feedback.feedbackfile",
   "pk": 7,
   "fields": {
@@ -542,6 +559,22 @@
   "fields": {
     "feedback": 16,
     "file": "uploads/16/1731357392.0043945_Снимок_экрана_2023-12-26_224616.png"
+  }
+},
+{
+  "model": "feedback.feedbackfile",
+  "pk": 10,
+  "fields": {
+    "feedback": 19,
+    "file": "uploads/19/1732039341.841894_Кодирование_Кузьмина.pptx"
+  }
+},
+{
+  "model": "feedback.feedbackfile",
+  "pk": 11,
+  "fields": {
+    "feedback": 19,
+    "file": "uploads/19/1732039341.8489306_кодирование_салаев.pptx"
   }
 },
 {
@@ -578,13 +611,110 @@
   }
 },
 {
+  "model": "feedback.statuslog",
+  "pk": 4,
+  "fields": {
+    "feedback": 17,
+    "user": 1,
+    "timestamp": "2024-11-17T13:18:37.056Z",
+    "from_status": "wip",
+    "to_status": "ans"
+  }
+},
+{
+  "model": "feedback.statuslog",
+  "pk": 5,
+  "fields": {
+    "feedback": 18,
+    "user": 1,
+    "timestamp": "2024-11-17T13:29:10.942Z",
+    "from_status": "new",
+    "to_status": "ans"
+  }
+},
+{
+  "model": "feedback.statuslog",
+  "pk": 6,
+  "fields": {
+    "feedback": 19,
+    "user": 1,
+    "timestamp": "2024-11-19T18:05:09.527Z",
+    "from_status": "new",
+    "to_status": "wip"
+  }
+},
+{
+  "model": "feedback.statuslog",
+  "pk": 7,
+  "fields": {
+    "feedback": 19,
+    "user": 1,
+    "timestamp": "2024-11-19T18:05:25.507Z",
+    "from_status": "wip",
+    "to_status": "ans"
+  }
+},
+{
   "model": "users.profile",
   "pk": 1,
   "fields": {
     "user": 1,
     "birthday": "2007-10-25",
-    "image": "users/profile_pics/243bd80ed79c7766b8efaaa45b95c347.jpg",
-    "coffee_count": 86
+    "coffee_count": 3,
+    "image": "users/1/243bd80ed79c7766b8efaaa45b95c347.jpg",
+    "attempts_count": 0,
+    "block_date": null
+  }
+},
+{
+  "model": "users.profile",
+  "pk": 2,
+  "fields": {
+    "user": 5,
+    "birthday": "1998-10-21",
+    "coffee_count": 0,
+    "image": "",
+    "attempts_count": 0,
+    "block_date": null
+  }
+},
+{
+  "model": "users.profile",
+  "pk": 3,
+  "fields": {
+    "user": 6,
+    "birthday": "1998-10-21",
+    "coffee_count": 0,
+    "image": "",
+    "attempts_count": 0,
+    "block_date": null
+  }
+},
+{
+  "model": "rating.rating",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "item": 9,
+    "score": 5
+  }
+},
+{
+  "model": "rating.rating",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "item": 11,
+    "score": 5
+  }
+},
+{
+  "model": "rating.rating",
+  "pk": 4,
+  "fields": {
+    "user": 5,
+    "item": 11,
+    "score": 4
   }
 },
 {
@@ -3123,6 +3253,292 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 196,
+  "fields": {
+    "action_time": "2024-11-16T19:08:07.771Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 197,
+  "fields": {
+    "action_time": "2024-11-16T19:08:21.241Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 198,
+  "fields": {
+    "action_time": "2024-11-16T19:26:18.193Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 199,
+  "fields": {
+    "action_time": "2024-11-17T13:18:37.058Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "17",
+    "object_repr": "Фидбек",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 200,
+  "fields": {
+    "action_time": "2024-11-17T13:29:10.944Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "18",
+    "object_repr": "ddd",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 201,
+  "fields": {
+    "action_time": "2024-11-17T16:07:11.143Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "wireside",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 202,
+  "fields": {
+    "action_time": "2024-11-17T16:07:57.417Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u041f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044c \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\", \"object\": \"Profile object (1)\", \"fields\": [\"\\u0427\\u0430\\u0448\\u043a\\u0438 \\u043a\\u043e\\u0444\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 203,
+  "fields": {
+    "action_time": "2024-11-18T15:06:03.122Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "1",
+    "object_repr": "Rating object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 204,
+  "fields": {
+    "action_time": "2024-11-18T15:06:57.825Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "1",
+    "object_repr": "Rating object (1)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 205,
+  "fields": {
+    "action_time": "2024-11-18T16:29:25.296Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "2",
+    "object_repr": "Rating object (2)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 206,
+  "fields": {
+    "action_time": "2024-11-18T16:58:02.526Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "3",
+    "object_repr": "Rating object (3)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 207,
+  "fields": {
+    "action_time": "2024-11-18T17:16:15.263Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "4",
+    "object_repr": "Rating object (4)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 208,
+  "fields": {
+    "action_time": "2024-11-18T19:54:01.946Z",
+    "user": 1,
+    "content_type": 20,
+    "object_id": "9",
+    "object_repr": "Rating object (9)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 209,
+  "fields": {
+    "action_time": "2024-11-19T12:45:18.539Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u041f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044c \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\", \"object\": \"Profile object (1)\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 \\u043f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 210,
+  "fields": {
+    "action_time": "2024-11-19T12:59:38.304Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u041f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044c \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\", \"object\": \"Profile object (1)\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 \\u043f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 211,
+  "fields": {
+    "action_time": "2024-11-19T12:59:46.278Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u041f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044c \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\", \"object\": \"Profile object (1)\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 \\u043f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 212,
+  "fields": {
+    "action_time": "2024-11-19T15:19:30.085Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 213,
+  "fields": {
+    "action_time": "2024-11-19T15:24:11.103Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u041f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044c \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\", \"object\": \"Profile object (1)\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 \\u043f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 214,
+  "fields": {
+    "action_time": "2024-11-19T17:11:47.952Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "test-user-no-permissions",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 215,
+  "fields": {
+    "action_time": "2024-11-19T17:17:25.038Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "test-user-no-permissions",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 216,
+  "fields": {
+    "action_time": "2024-11-19T18:05:09.529Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "19",
+    "object_repr": "Сообщение фидбека тестовое",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 217,
+  "fields": {
+    "action_time": "2024-11-19T18:05:25.509Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "19",
+    "object_repr": "Сообщение фидбека тестовое",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -3771,16 +4187,88 @@
   }
 },
 {
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 19,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 19,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 19,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 19,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add Оценка",
+    "content_type": 20,
+    "codename": "add_rating"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change Оценка",
+    "content_type": 20,
+    "codename": "change_rating"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete Оценка",
+    "content_type": 20,
+    "codename": "delete_rating"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view Оценка",
+    "content_type": 20,
+    "codename": "view_rating"
+  }
+},
+{
   "model": "auth.user",
   "pk": 1,
   "fields": {
-    "password": "pbkdf2_sha256$600000$KSSyPAivTckCqBZzvN4542$tpK9vUtxdcb4grV1VB6VG9H3db8MnLrT33Zem8on4TM=",
-    "last_login": "2024-11-13T22:23:05Z",
+    "password": "pbkdf2_sha256$600000$NN0YMePMXO8TPFfu2h9WCG$SSn/KAJQGhrnk3X56/gl99HMtOaU/Gs/b8NCQPSiWg8=",
+    "last_login": "2024-11-19T17:42:42.530Z",
     "is_superuser": true,
     "username": "kudes",
-    "first_name": "",
-    "last_name": "",
-    "email": "",
+    "first_name": "Bogdan",
+    "last_name": "Salaev",
+    "email": "wiresifed@gmail.com",
     "is_staff": true,
     "is_active": true,
     "date_joined": "2024-10-16T18:16:50Z",
@@ -3789,11 +4277,47 @@
   }
 },
 {
-  "model": "sessions.session",
-  "pk": "8d44ngn6b33oe5tt8es88o3jjt7kbmtu",
+  "model": "auth.user",
+  "pk": 5,
   "fields": {
-    "session_data": ".eJxVjDsOgzAUBO_iOrLwD5uU6TkDst8-AklkSxiqKHcPSBRJuzOzbzHEbZ2GrfIyzBBXocTld0uRnpwPgEfM9yKp5HWZkzwUedIq-wJ-3U7372CKddprgkMK0DqoMFqyxltuTQOluSOvO9gGO2isC-hGrZJDBEdj2LdGgcTnC-NNOAU:1tBIxF:DZIjH7M60_dixuqVPpTBJBBJ2QC9Xn89wkRN6uxJhIY",
-    "expire_date": "2024-11-27T22:23:05.596Z"
+    "password": "pbkdf2_sha256$600000$il95Yi3aTef46N9yNWHOnu$UtHcwMO98yDf3/1l0g8jVzKm5SGPh+WdXftUtl0kS+Q=",
+    "last_login": "2024-11-19T17:39:12.157Z",
+    "is_superuser": false,
+    "username": "test-user-no-permissions",
+    "first_name": "Иван",
+    "last_name": "Иванов",
+    "email": "bogdanalaev@mail.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-11-19T17:17:54.815Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$ucJoL7YjkCR7RYPuiC6b3G$wDQAvtYATsrJ47lJJsspTT2fn+VyFQv4fO5BfuHd3To=",
+    "last_login": "2024-11-19T17:30:35.693Z",
+    "is_superuser": false,
+    "username": "test-user-no-email",
+    "first_name": "Владос",
+    "last_name": "Крутой",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-11-19T17:29:49.571Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2a2eivjooeg7008ve8cvktipvcgko4zl",
+  "fields": {
+    "session_data": ".eJxVizsOwjAQBe-yNYr2k_WHDi5ieW0jIyQKTKqIu5NIKaCcN_NWSHl597SM9kr3CmcgOP1ulsujPXex45gOHtNlS66H_Hv0PPqWS2G9mYgie8eIlZQplCbeoRlHRK9h9haJZqOo5kmttGjOcqgS4fMFG3gxAQ:1tDSFO:OglbEjU34lfufhd5240WTNfcaBrudzIEaEBJmHCOR4U",
+    "expire_date": "2024-12-03T17:42:42.591Z"
   }
 },
 {
@@ -3996,6 +4520,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||2f2d5e2e04e78791bec27ea34ae74061",
+  "fields": {
+    "value": "{\"name\": \"cache/40/bc/40bc5a2aea0a2d8183b99df5b8dab19e.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||2f833610268bfbaa27eda92a4c6741fe",
   "fields": {
     "value": "{\"name\": \"catalog/ipad_BeCcA5F.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [800, 800]}"
@@ -4020,6 +4551,13 @@
   "pk": "sorl-thumbnail||image||32c075f1fc8ddb368e735e94860c81c8",
   "fields": {
     "value": "{\"name\": \"cache/7e/63/7e634590d51ffcbd17f7a9bf0f0b8915.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||3484d250ea8e66b18bb2ab8a497581a1",
+  "fields": {
+    "value": "{\"name\": \"users/1/iphone-16-pro_2_1.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1000, 1000]}"
   }
 },
 {
@@ -4626,6 +5164,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||c3f87520e9f93612059ec650ce52cc89",
+  "fields": {
+    "value": "{\"name\": \"users/1/243bd80ed79c7766b8efaaa45b95c347.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [735, 766]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||c4baab2145c007cb13bbced5161530a8",
   "fields": {
     "value": "{\"name\": \"cache/19/15/191516307bf1b276eb13118971e7bd39.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
@@ -4706,6 +5251,13 @@
   "pk": "sorl-thumbnail||image||d49d6953c70b85dbff55521b8239e672",
   "fields": {
     "value": "{\"name\": \"cache/e0/e8/e0e890b2652f0d753bb6e67c7e8cea4f.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||d57caa00f9746ee079e91a8bdcf4cb3b",
+  "fields": {
+    "value": "{\"name\": \"cache/7e/55/7e5501aaafc187add2dab8eea86ddc7f.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
   }
 },
 {
@@ -4804,6 +5356,13 @@
   "pk": "sorl-thumbnail||image||ed0e889f59d6b14dd7303980d5d5f4cb",
   "fields": {
     "value": "{\"name\": \"cache/b8/bd/b8bd45cc52c78f495036d60443e38e28.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||eea3b6c0e8d5aa2b73cd9d51b72304a5",
+  "fields": {
+    "value": "{\"name\": \"cache/01/94/01944955a1a3420525f026272c1bbd5f.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
   }
 },
 {
@@ -4937,6 +5496,13 @@
   "pk": "sorl-thumbnail||thumbnails||3055850bba139349b443e52c25b9843e",
   "fields": {
     "value": "[\"028dc472ed74f317786fca4894f90433\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||3484d250ea8e66b18bb2ab8a497581a1",
+  "fields": {
+    "value": "[\"eea3b6c0e8d5aa2b73cd9d51b72304a5\"]"
   }
 },
 {
@@ -5154,6 +5720,13 @@
   "pk": "sorl-thumbnail||thumbnails||b8091883d82c76631d8640f82e8c9aa4",
   "fields": {
     "value": "[\"868f063836ddafc61492f0e9e2c119fd\", \"0539a7aa21df0169b976db4bfe111b7c\", \"c4baab2145c007cb13bbced5161530a8\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||c3f87520e9f93612059ec650ce52cc89",
+  "fields": {
+    "value": "[\"2f2d5e2e04e78791bec27ea34ae74061\", \"d57caa00f9746ee079e91a8bdcf4cb3b\"]"
   }
 },
 {

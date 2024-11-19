@@ -10,6 +10,7 @@ urlpatterns = [
     path("about/", include("about.urls")),
     path("download/", include("download.urls")),
     path("feedback/", include("feedback.urls")),
+    path("rating/", include("rating.urls")),
     path("ckeditor/", include("ckeditor_uploader.urls")),
     path("auth/", include("users.urls")),
     path("auth/", include("django.contrib.auth.urls")),

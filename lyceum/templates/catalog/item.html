@@ -6,7 +6,7 @@
 {% endblock %}
 {% block content %}
 	<div class="container">
-    <div class="card mb-3">
+    <div class="card mb-3 shadow-lg">
       <div class="row g-0">
         <div class="col-md-5">
           <div id="carouselImages" class="carousel slide img-fluid rounded-start" data-bs-ride="carousel">
@@ -42,15 +42,39 @@
         </div>
         <div class="col-md-7">
           <div class="card-body">
-            <h5 class="card-title">{{ item.name }}</h5>
+            <h4 class="card-title">{{ item.name }}</h4>
             <p class="card-subtitle"><span class="badge bg-secondary text-capitalize">{{ item.category.name }}</span></p>
             <p class="card-subtitle">
               {% for tag in item.tags.all %}
                 <span class="badge bg-light text-dark">{{ tag.name }}</span>
               {% endfor %}
             </p>
-            <p class="card-text">{{ item.truncated_text|safe }}</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <p class="card-text">{{ item.text | safe }}</p>
+            <div class="border-dark-subtle border-bottom"></div>
+            <h4 class="h4 text-center mt-3">Оценка товара</h4>
+            <div class="d-flex gap-3 mt-3 mb-2 align-items-stretch">
+              {% if request.user.is_authenticated %}
+                {% if user_rating %}
+                  <h5 class="text h5">Ваша оценка: <strong>{{ user_rating }} / 5</strong></h5>
+                  <span class="text text-dark-emphasis">|</span>
+                {% endif %}
+              {% endif %}
+              <h5 class="text h5">Средняя оценка: <strong>{{ ratings_stats.average|default:"Нет оценок" }} / 5</strong></h5>
+              <span class="text text-dark-emphasis">|</span>
+              <h5 class="text h5">Количество оценок: <strong>{{ ratings_stats.count|default:"Нет оценок" }}</strong></h5>
+            </div>
+            {% if request.user.is_authenticated %}
+              <form method="post" action="">
+                {% csrf_token %}
+                {% for field in rating_form %}
+                  <br>
+                  {{ field }}
+                  <br>
+                {% endfor %}
+                <button class="btn btn-secondary mt-3" type="submit">Отправить оценку</button>
+                <a class="btn btn-outline-danger mt-3" href="{% url 'rating:delete' item.id %}">Удалить оценку</a>
+              </form>
+            {% endif %}
           </div>
         </div>
       </div>

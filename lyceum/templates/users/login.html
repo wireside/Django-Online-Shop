@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-{% load widget_tweaks %}
 
 {% block title %}
 	Войти в аккаунт
@@ -7,35 +6,13 @@
 
 {% block content %}
 	<div class="container">
-    <h1 class="h1">Войти в аккаунт</h1>
-    {% if form.errors %}
-    	{% for field in form %}
-    		{% for error in field.errors %}
-    			{{ error|escape }}
-    		{% endfor %}
-    	{% endfor %}
-    {% for error in form.non_field_errors %}
-    	{{ error|escape }}
-    {% endfor %}
-    {% endif %}
-    <form method="post" action="">
+    <h1 class="h1 mb-4">Войти в аккаунт</h1>
+    <form method="post">
       {% csrf_token %}
-      {% for field in form %}
-        <label class="col-form-label-lg" for="{{ field.id_for_label }}">
-          {{ field.label }}
-          {% if field.field.required %}
-            <span>*</span>
-          {% endif %}
-        </label>
-        {{ field|add_class:"form-control mb-3" }}
-        {% if field.help_text %}
-          <small id="{{ filed.id_for_label }}-help">
-            {{ field.help_text|safe }}
-          </small>
-        {% endif %}
-      {% endfor %}
-      <button type="submit" class="btn btn-primary mt-3">Войти</button>
-      <a class="page-link link-primary" href="">Забыли пароль?</a>
+      {% include 'includes/form.html' %}
+      <input class="btn btn-primary" type="submit" value="Подтвердить">
     </form>
+    <br>
+    <a href="{% url 'users:password_reset' %}">Забыли пароль?</a>
   </div>
 {% endblock %}
