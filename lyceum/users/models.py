@@ -16,7 +16,8 @@ if not django.conf.settings.DEBUG:
 
 
 if "makemigrations" not in sys.argv and "migrate" not in sys.argv:
-    django.contrib.auth.models.User._meta.get_field("email")._unique = True
+    meta = django.contrib.auth.models.User._meta
+    meta.get_field("email")._unique = True
 
 
 class UserManager(django.contrib.auth.models.UserManager):
@@ -29,12 +30,11 @@ class UserManager(django.contrib.auth.models.UserManager):
     }
 
     def get_queryset(self):
-        return (
-            super()
-            .get_queryset()
-            .select_related(
-                django.contrib.auth.models.User.profile.related.name
-            )
+        queryset = super().get_queryset()
+        profile = django.contrib.auth.models.User.profile
+        profile_related = profile.related.name
+        return queryset.select_related(
+            profile_related,
         )
 
     def active(self):
@@ -54,7 +54,8 @@ class UserManager(django.contrib.auth.models.UserManager):
             domain_part = cls.CANONICAL_DOMAINS.get(domain_part, domain_part)
 
             email_name = email_name.replace(
-                ".", cls.DOTS.get(domain_part, ".")
+                ".",
+                cls.DOTS.get(domain_part, "."),
             )
         except ValueError:
             pass

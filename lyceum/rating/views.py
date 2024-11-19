@@ -3,6 +3,8 @@ import django.urls
 
 import rating.models
 
+__all__ = ["delete"]
+
 
 def delete(request, pk):
     rating.models.Rating.objects.filter(
@@ -11,5 +13,5 @@ def delete(request, pk):
     ).delete()
 
     return django.shortcuts.redirect(
-        django.urls.reverse("catalog:item_detail", args=[pk])
+        django.urls.reverse("catalog:item_detail", args=[pk]),
     )

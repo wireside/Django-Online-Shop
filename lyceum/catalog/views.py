@@ -1,9 +1,9 @@
 import datetime
 import random
 
+import django.contrib
 import django.db.models
 import django.db.utils
-import django.contrib
 import django.shortcuts
 import django.urls
 import django.utils.timezone
@@ -130,7 +130,7 @@ def item_detail(request, pk):
             )
 
         return django.shortcuts.redirect(
-            django.urls.reverse("catalog:item_detail", args=[pk])
+            django.urls.reverse("catalog:item_detail", args=[pk]),
         )
 
     context = {

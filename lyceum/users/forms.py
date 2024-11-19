@@ -3,6 +3,13 @@ import django.forms
 
 import users.models
 
+__all__ = [
+    "BootstrapFormMixin",
+    "UpdateProfileForm",
+    "UserChangeForm",
+    "UserCreationForm",
+]
+
 
 class BootstrapFormMixin(django.forms.ModelForm):
     def __init__(self, *args, **kwargs):
@@ -41,9 +48,10 @@ class UpdateProfileForm(
 ):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields[users.models.Profile.coffee_count.field.name].disabled = (
-            True
-        )
+        coffee_count = self.fields[
+            users.models.Profile.coffee_count.field.name
+        ]
+        coffee_count.disabled = True
 
     class Meta:
         model = users.models.Profile

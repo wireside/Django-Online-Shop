@@ -2,10 +2,13 @@ import django.conf
 import django.contrib.auth.backends
 import django.core.mail
 import django.urls
-import django.utils.timezone
 import django.utils
+import django.utils.timezone
+
 
 import users.models
+
+__all__ = ["AuthBackend"]
 
 
 class AuthBackend(django.contrib.auth.backends.ModelBackend):
@@ -22,29 +25,31 @@ class AuthBackend(django.contrib.auth.backends.ModelBackend):
             user.profile.attempts_count = 0
             user.profile.save()
             return user
-        else:
-            user.profile.attempts_count += 1
-            if (
-                user.profile.attempts_count
-                >= django.conf.settings.MAX_AUTH_ATTEMPTS
-            ):
-                user.is_active = False
-                user.profile.block_date = django.utils.timezone.now()
-                user.save()
-                activate_url = django.urls.reverse(
-                    "users:reactivate", kwargs={"pk": user.id}
-                )
-                django.core.mail.send_mail(
-                    f"Привет {user.username}",
-                    "Мы заметили подозрительную актвиность."
-                    "Из-за этого заблокировали аккаунт."
-                    "Для разблокировки перейдите по ссылке "
-                    "(действительна в течении недели)"
-                    f"{activate_url}",
-                    django.conf.settings.MAIL,
-                    [user.email],
-                    fail_silently=False,
-                )
-            user.profile.save()
+
+        user.profile.attempts_count += 1
+        if (
+            user.profile.attempts_count
+            >= django.conf.settings.MAX_AUTH_ATTEMPTS
+        ):
+            user.is_active = False
+            user.profile.block_date = django.utils.timezone.now()
+            user.save()
+            activate_url = django.urls.reverse(
+                "users:reactivate",
+                kwargs={"pk": user.id},
+            )
+            django.core.mail.send_mail(
+                f"Привет {user.username}",
+                "Мы заметили подозрительную актвиность."
+                "Из-за этого заблокировали аккаунт."
+                "Для разблокировки перейдите по ссылке "
+                "(действительна в течении недели)"
+                f"{activate_url}",
+                django.conf.settings.MAIL,
+                [user.email],
+                fail_silently=False,
+            )
+
+        user.profile.save()
 
         return None

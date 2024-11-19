@@ -1,8 +1,9 @@
 import django.db.models
-import django.core.validators
 
 import catalog.models
 import users.models
+
+__all__ = ["Rating"]
 
 
 class Rating(django.db.models.Model):

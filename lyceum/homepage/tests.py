@@ -88,6 +88,6 @@ class HomepageEchoTests(django.test.TestCase):
 
         self.assertEqual(response.status_code, http.HTTPStatus.OK)
         self.assertEqual(
-            "Тестовый текст".encode("utf-16"),
+            "Тестовый текст".encode(),
             response.content,
         )

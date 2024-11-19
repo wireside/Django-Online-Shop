@@ -2,6 +2,8 @@ import django.forms
 
 import rating.models
 
+__all__ = ["BootstrapForm", "RatingForm"]
+
 
 class BootstrapForm(django.forms.ModelForm):
     def __init__(self, *args, **kwargs):

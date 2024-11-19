@@ -2,6 +2,8 @@ import django.contrib.auth.middleware
 
 import users.models
 
+__all__ = ["UserMiddleware"]
+
 
 class UserMiddleware(django.contrib.auth.middleware.AuthenticationMiddleware):
     def process_request(self, request):

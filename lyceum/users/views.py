@@ -11,6 +11,15 @@ import django.utils.timezone
 import users.forms
 import users.models
 
+__all__ = [
+    "activate",
+    "profile",
+    "reactivate",
+    "signup",
+    "user_detail",
+    "user_list",
+]
+
 
 def signup(request):
     user_form = users.forms.UserCreationForm(request.POST or None)
@@ -27,7 +36,10 @@ def signup(request):
         activation_link = f"{request.build_absolute_uri(activate_url)}"
         django.core.mail.send_mail(
             subject="Активация аккаунта",
-            message=f"Для активации аккаунта перейдите по ссылке: {activation_link}",
+            message=(
+                f"Для активации аккаунта перейдите"
+                f" по ссылке: {activation_link}"
+            ),
             from_email=django.conf.settings.MAIL,
             recipient_list=[user.email],
         )
