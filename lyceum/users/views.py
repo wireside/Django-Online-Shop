@@ -98,6 +98,7 @@ def profile(request):
     )
     profile_form = users.forms.UpdateProfileForm(
         request.POST or None,
+        request.FILES or None,
         instance=request.user.profile,
     )
     context = {
@@ -112,7 +113,9 @@ def profile(request):
     ):
         user_form.save()
         profile_form.save()
+
         django.contrib.messages.success(request, "Изменения сохранены")
+
         return django.shortcuts.redirect(django.urls.reverse("users:profile"))
 
     return django.shortcuts.render(request, "users/profile.html", context)

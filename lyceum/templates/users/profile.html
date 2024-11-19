@@ -6,9 +6,26 @@
 
 {% block content %}
 	<div class="container">
+    {% if messages %}
+      <div class="text-bg-success p-2 mb-3 rounded-1">
+        <ul class="messages">
+          {% for message in messages %}
+            <h2 {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </h2>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
     <h2 class="h2 text-center mb-5">Профиль пользователя</h2>
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
       {% csrf_token %}
+      <div class="mb-5">
+        <h3 class="h3">Изображение профиля:</h3>
+        {% if request.user.profile.image %}
+        	<img class="img-thumbnail" src="{{ request.user.profile.get_image_300x300.url }}" alt="Изображение профиля">
+        {% else %}
+          <small class="text-small">Без фотографии</small>
+        {% endif %}
+      </div>
       {% with form=user_form %}
       	{% include 'includes/form.html' %}
       {% endwith %}
