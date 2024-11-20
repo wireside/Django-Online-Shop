@@ -2,8 +2,9 @@ import django.core.exceptions
 import django.core.validators
 import django.db
 import django.db.models
-import django_ckeditor_5.fields
 from django.utils.safestring import mark_safe
+import django_ckeditor_5.fields
+
 
 import catalog.managers
 import catalog.validators
