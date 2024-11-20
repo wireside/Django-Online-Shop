@@ -7,10 +7,11 @@ import django.db.utils
 import django.shortcuts
 import django.urls
 import django.utils.timezone
-
-import catalog.models
 import rating.forms
 import rating.models
+
+import catalog.models
+
 
 __all__ = ["friday", "item_detail", "item_list", "new", "unverified"]
 

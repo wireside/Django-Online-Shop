@@ -1,6 +1,5 @@
 import django.shortcuts
 import django.urls
-
 import rating.models
 
 __all__ = ["delete"]

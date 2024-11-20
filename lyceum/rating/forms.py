@@ -1,5 +1,4 @@
 import django.forms
-
 import rating.models
 
 __all__ = ["BootstrapForm", "RatingForm"]

@@ -1,5 +1,3 @@
-import sys
-
 import django.conf
 import django.contrib.auth.models
 import django.db.models
@@ -13,11 +11,6 @@ storage = None
 
 if not django.conf.settings.DEBUG:
     storage = MediaStorage()
-
-
-if "makemigrations" not in sys.argv and "migrate" not in sys.argv:
-    meta = django.contrib.auth.models.User._meta
-    meta.get_field("email")._unique = True
 
 
 class UserManager(django.contrib.auth.models.UserManager):

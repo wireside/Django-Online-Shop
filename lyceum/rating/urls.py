@@ -1,5 +1,4 @@
 import django.urls
-
 import rating.views
 
 

@@ -154,7 +154,7 @@
     "name": "Платье Prada",
     "category": 2,
     "text": "роскошно е платье от именитого бренда Prada",
-    "updated": "2024-11-04T20:13:30.896Z",
+    "updated": "2024-11-20T18:10:53.828Z",
     "created": "2024-11-04T20:13:30.890Z",
     "tags": [
       6,
@@ -3536,6 +3536,32 @@
     "object_repr": "Сообщение фидбека тестовое",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 218,
+  "fields": {
+    "action_time": "2024-11-20T17:54:13.123Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Платье Prada",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 219,
+  "fields": {
+    "action_time": "2024-11-20T18:10:53.830Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Платье Prada",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
   }
 },
 {
