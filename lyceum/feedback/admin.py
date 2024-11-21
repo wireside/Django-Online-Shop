@@ -31,7 +31,7 @@ class StatusLogAdmin(django.contrib.admin.ModelAdmin):
         feedback.models.StatusLog.user.field.name,
         feedback.models.StatusLog.timestamp.field.name,
         feedback.models.StatusLog.from_status.field.name,
-        feedback.models.StatusLog.to_status.field.name,
+        feedback.models.StatusLog.to.field.name,
     )
 
 
@@ -55,7 +55,7 @@ class FeedbackAdmin(django.contrib.admin.ModelAdmin):
                     feedback=obj,
                     user=request.user,
                     from_status=old_status,
-                    to_status=obj.status,
+                    to=obj.status,
                 )
 
             obj.save()

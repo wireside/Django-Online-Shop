@@ -439,12 +439,30 @@
   }
 },
 {
+  "model": "feedback.feedback",
+  "pk": 26,
+  "fields": {
+    "text": "sadasdasdasd",
+    "created_on": "2024-11-21T19:25:39.955Z",
+    "status": "ans"
+  }
+},
+{
   "model": "feedback.feedbackauthor",
   "pk": 25,
   "fields": {
     "feedback": 25,
     "name": "John",
     "mail": "example@mail.ru"
+  }
+},
+{
+  "model": "feedback.feedbackauthor",
+  "pk": 26,
+  "fields": {
+    "feedback": 26,
+    "name": "d",
+    "mail": "d@aa.ru"
   }
 },
 {
@@ -471,7 +489,18 @@
     "user": 1,
     "timestamp": "2024-11-21T18:54:12.210Z",
     "from_status": "new",
-    "to_status": "wip"
+    "to": "wip"
+  }
+},
+{
+  "model": "feedback.statuslog",
+  "pk": 9,
+  "fields": {
+    "feedback": 26,
+    "user": 1,
+    "timestamp": "2024-11-21T19:25:49.467Z",
+    "from_status": "new",
+    "to": "ans"
   }
 },
 {
@@ -3603,6 +3632,32 @@
     "object_repr": "Тестовый фидбек с файлами",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 237,
+  "fields": {
+    "action_time": "2024-11-21T19:25:49.469Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "26",
+    "object_repr": "sadasdasdasd",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 238,
+  "fields": {
+    "action_time": "2024-11-21T19:25:53.187Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "25",
+    "object_repr": "Тестовый фидбек с файлами",
+    "action_flag": 2,
+    "change_message": "[]"
   }
 },
 {

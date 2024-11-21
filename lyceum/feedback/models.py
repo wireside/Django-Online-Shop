@@ -89,7 +89,7 @@ class StatusLog(django.db.models.Model):
         verbose_name="from",
         db_column="from",
     )
-    to_status = django.db.models.CharField(
+    to = django.db.models.CharField(
         max_length=16,
         verbose_name="to",
         db_column="to",
