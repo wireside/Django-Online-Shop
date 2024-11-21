@@ -3,6 +3,7 @@ import tempfile
 
 import django.conf
 import django.core.files.base
+import django.core.files.storage
 import django.test
 import django.urls
 
@@ -11,8 +12,29 @@ import feedback.models
 
 __all__ = ["FeedbackFormTest"]
 
+TEMP_MEDIA_ROOT = tempfile.TemporaryDirectory()
 
+
+@django.test.override_settings(
+    MEDIA_ROOT=TEMP_MEDIA_ROOT.name,
+)
 class FeedbackFormTest(django.test.TestCase):
+    def setUp(self):
+        self.original_storage = feedback.models.FeedbackFile._meta.get_field(
+            "file",
+        ).storage
+        feedback.models.FeedbackFile._meta.get_field("file").storage = (
+            django.core.files.storage.FileSystemStorage(
+                location=TEMP_MEDIA_ROOT.name,
+            )
+        )
+
+    def tearDown(self):
+        feedback.models.FeedbackFile._meta.get_field("file").storage = (
+            self.original_storage
+        )
+        TEMP_MEDIA_ROOT.cleanup()
+
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
@@ -126,9 +148,6 @@ class FeedbackFormTest(django.test.TestCase):
             ).exists(),
         )
 
-    @django.test.override_settings(
-        MEDIA_ROOT=tempfile.TemporaryDirectory().name,
-    )
     def test_file_upload(self):
         files = [
             django.core.files.base.ContentFile(
@@ -145,6 +164,7 @@ class FeedbackFormTest(django.test.TestCase):
         }
         django.test.Client().post(
             django.urls.reverse("feedback:feedback"),
+            storage=django.core.files.storage.default_storage,
             data=form_data,
             follow=True,
         )
@@ -153,7 +173,6 @@ class FeedbackFormTest(django.test.TestCase):
         feedback_files = feedback_item.files.all()
 
         media_root = pathlib.Path(django.conf.settings.MEDIA_ROOT)
-
         for index, file in enumerate(feedback_files):
             uploaded_file = media_root / file.file.path
             self.assertEqual(

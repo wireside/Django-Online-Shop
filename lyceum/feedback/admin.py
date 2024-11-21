@@ -9,6 +9,8 @@ __all__ = [
     "StatusLogAdmin",
 ]
 
+FROM_NAME = feedback.models.StatusLog._meta.get_field("from").name
+
 
 class FeedbackAuthor(django.contrib.admin.TabularInline):
     model = feedback.models.FeedbackAuthor
@@ -30,8 +32,8 @@ class StatusLogAdmin(django.contrib.admin.ModelAdmin):
         feedback.models.StatusLog.feedback.field.name,
         feedback.models.StatusLog.user.field.name,
         feedback.models.StatusLog.timestamp.field.name,
-        feedback.models.StatusLog.from_status.field.name,
-        feedback.models.StatusLog.to_status.field.name,
+        FROM_NAME,
+        feedback.models.StatusLog.to.field.name,
     )
 
 

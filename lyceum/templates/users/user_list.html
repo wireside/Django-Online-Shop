@@ -16,7 +16,7 @@
     	<ul class="list-group list-group-horizontal w-100">
         <li class="list-group-item w-100">{{ user.username }}</li>
         <li class="list-group-item w-100">{{ user.profile.birthday.day }} {{ user.profile.birthday | date:"M" }}</li>
-        <li class="list-group-item w-100"><img src="{{ user.profile.get_image_50x50.url }}" alt="нет фотографии"></li>
+        <li class="list-group-item w-100"><img src="{% if user.profile.image %}{{ user.profile.get_image_50x50.url }}{% endif %}" alt="нет фотографии"></li>
       </ul>
     {% endfor %}
   </div>

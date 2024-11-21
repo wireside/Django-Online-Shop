@@ -1,4 +1,3 @@
-import django.conf
 import django.contrib.auth.models
 import django.db.models
 import sorl.thumbnail
@@ -6,11 +5,6 @@ import sorl.thumbnail
 from lyceum.s3_storage import MediaStorage
 
 __all__ = ["Profile"]
-
-storage = None
-
-if not django.conf.settings.DEBUG:
-    storage = MediaStorage()
 
 
 class UserManager(django.contrib.auth.models.UserManager):
@@ -88,7 +82,7 @@ class Profile(django.db.models.Model):
         upload_to=image_path,
         null=True,
         blank=True,
-        storage=storage,
+        storage=MediaStorage(),
     )
     attempts_count = django.db.models.PositiveIntegerField(
         verbose_name="попыток входа",
@@ -101,20 +95,26 @@ class Profile(django.db.models.Model):
     )
 
     def get_image_300x300(self):
-        return sorl.thumbnail.get_thumbnail(
-            self.image,
-            "300x300",
-            crop="center",
-            quality=51,
-        )
+        if self.image:
+            return sorl.thumbnail.get_thumbnail(
+                self.image,
+                "300x300",
+                crop="center",
+                quality=51,
+            )
+
+        return None
 
     def get_image_50x50(self):
-        return sorl.thumbnail.get_thumbnail(
-            self.image,
-            "50x50",
-            crop="center",
-            quality=51,
-        )
+        if self.image:
+            return sorl.thumbnail.get_thumbnail(
+                self.image,
+                "50x50",
+                crop="center",
+                quality=51,
+            )
+
+        return None
 
     def __str__(self):
         return f"Профиль пользователя {self.user.username}."

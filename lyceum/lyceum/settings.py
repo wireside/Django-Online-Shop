@@ -26,7 +26,7 @@ MAIL = os.getenv("DJANGO_MAIL")
 
 MAX_AUTH_ATTEMPTS = int(os.getenv("DJANGO_MAX_AUTH_ATTEMPTS", 10))
 
-DEBUG = load_bool("DJANGO_DEBUG", True)
+DEBUG = load_bool("DJANGO_DEBUG", False)
 
 DEFAULT_USER_IS_ACTIVE = load_bool("DJANGO_DEFAULT_USER_IS_ACTIVE", False)
 

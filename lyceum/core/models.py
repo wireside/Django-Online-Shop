@@ -1,6 +1,5 @@
 import re
 
-import django.conf
 import django.core.exceptions
 import django.db.models
 import sorl.thumbnail
@@ -9,12 +8,6 @@ import transliterate
 from lyceum.s3_storage import MediaStorage
 
 __all__ = ["BaseModel", "ImageBaseModel"]
-
-
-storage = None
-
-if not django.conf.settings.DEBUG:
-    storage = MediaStorage()
 
 ONLY_LETTERS_REGEX = re.compile(r"[^\w]")
 
@@ -79,7 +72,7 @@ class ImageBaseModel(django.db.models.Model):
         "изображение",
         upload_to="catalog/",
         default=None,
-        storage=storage,
+        storage=MediaStorage(),
     )
 
     def get_image_300x300(self):
