@@ -61,9 +61,9 @@
                   <span class="text text-dark-emphasis">|</span>
                 {% endif %}
               {% endif %}
-              <h5 class="text h5">Средняя оценка: <strong>{{ ratings_stats.average|default:"Нет оценок" }} / 5</strong></h5>
+              <h5 class="text h5">Средняя оценка: <strong>{{ ratings_stats.average | floatformat:1 | default:"Нет оценок" }} / 5</strong></h5>
               <span class="text text-dark-emphasis">|</span>
-              <h5 class="text h5">Количество оценок: <strong>{{ ratings_stats.count|default:"Нет оценок" }}</strong></h5>
+              <h5 class="text h5">Количество оценок: <strong>{{ ratings_stats.count | default:"Нет оценок" }}</strong></h5>
             </div>
             {% if request.user.is_authenticated %}
               <form method="post" action="">

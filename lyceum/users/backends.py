@@ -21,6 +21,9 @@ class AuthBackend(django.contrib.auth.backends.ModelBackend):
         except users.models.User.DoesNotExist:
             return None
 
+        if user.is_superuser and not user.profile:
+            users.models.Profile.objects.create(user=user)
+
         if user.check_password(password):
             user.profile.attempts_count = 0
             user.profile.save()

@@ -80,11 +80,6 @@ urlpatterns = [
         name="password_reset_complete",
     ),
     django.urls.path(
-        "profile/",
-        users.views.profile,
-        name="profile",
-    ),
-    django.urls.path(
         "signup/",
         users.views.signup,
         name="signup",

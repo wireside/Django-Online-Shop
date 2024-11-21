@@ -33,7 +33,7 @@
         </li>
         {% if request.user.is_authenticated %}
           <li class="nav-item">
-            <a class="nav-link {% if view_name == 'users:profile' %}active disabled{% endif %}" href="{% url 'users:profile' %}">
+            <a class="nav-link {% if view_name == 'homepage:profile' %}active disabled{% endif %}" href="{% url 'homepage:profile' %}">
               {% translate "Profile" %}
             </a>
           </li>
