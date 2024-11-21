@@ -85,12 +85,12 @@ class StatusLog(django.db.models.Model):
     )
     timestamp = django.db.models.DateTimeField(auto_now_add=True)
     from_status = django.db.models.CharField(
-        name="from",
         max_length=16,
         verbose_name="from",
+        db_column="from",
     )
     to_status = django.db.models.CharField(
-        name="to",
         max_length=16,
         verbose_name="to",
+        db_column="to",
     )

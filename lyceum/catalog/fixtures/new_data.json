@@ -5,7 +5,7 @@
   "fields": {
     "is_published": true,
     "name": "игрушки",
-    "canonical_name": "igrushki",
+    "canonical_name": null,
     "slug": "toys__342342341",
     "weight": 3
   }
@@ -16,7 +16,7 @@
   "fields": {
     "is_published": true,
     "name": "одежда",
-    "canonical_name": "odezhda",
+    "canonical_name": null,
     "slug": "slug_slugovich11241",
     "weight": 2
   }
@@ -27,7 +27,7 @@
   "fields": {
     "is_published": true,
     "name": "электронная техника",
-    "canonical_name": "elektronnajatehnika",
+    "canonical_name": null,
     "slug": "fsafajifappler12",
     "weight": 87
   }
@@ -38,7 +38,7 @@
   "fields": {
     "is_published": true,
     "name": "для детей",
-    "canonical_name": "dljadetej",
+    "canonical_name": null,
     "slug": "dsafasd__hjjfd2344234"
   }
 },
@@ -101,8 +101,8 @@
     "name": "Игрушка \"Лапка\"",
     "category": 1,
     "text": "тестовое описание роскошно",
-    "updated": "2024-11-04T20:13:30.896Z",
-    "created": "2024-11-04T20:13:30.890Z",
+    "updated": "2024-11-20T19:56:43.602Z",
+    "created": "2024-11-20T19:56:43.590Z",
     "tags": [
       1
     ]
@@ -117,8 +117,8 @@
     "name": "Квадрокоптер",
     "category": 1,
     "text": "<p>Складной мини-дрон с <strong>Wi-Fi HD FPV</strong> камерой дистанционного управления. С откидной ручкой, она маленькая и легко переносится. Имеет высокую функцию режима удержания для обеспечения стабильного полета. Превосходно работает на протяжении 30 минут полета</p>",
-    "updated": "2024-11-15T20:23:09.781Z",
-    "created": "2024-11-04T20:13:30.890Z",
+    "updated": "2024-11-20T19:56:43.602Z",
+    "created": "2024-11-20T19:56:43.590Z",
     "tags": [
       1,
       6,
@@ -136,8 +136,8 @@
     "name": "Джинсы широкие",
     "category": 2,
     "text": "превосходно подходят для мужчин и женщин",
-    "updated": "2024-11-04T20:13:30.896Z",
-    "created": "2024-11-04T20:13:30.890Z",
+    "updated": "2024-11-20T19:56:43.602Z",
+    "created": "2024-11-20T19:56:43.590Z",
     "tags": [
       4,
       5,
@@ -154,8 +154,8 @@
     "name": "Платье Prada",
     "category": 2,
     "text": "роскошно е платье от именитого бренда Prada",
-    "updated": "2024-11-20T18:10:53.828Z",
-    "created": "2024-11-04T20:13:30.890Z",
+    "updated": "2024-11-20T19:56:43.602Z",
+    "created": "2024-11-20T19:56:43.590Z",
     "tags": [
       6,
       3
@@ -171,8 +171,8 @@
     "name": "Набор Lego",
     "category": 1,
     "text": "<p>Данный набор лего превосходно и весело скрасит ваши дни. Собирать Lego можно одному или всей семьей.</p>",
-    "updated": "2024-11-15T20:23:04.795Z",
-    "created": "2024-11-04T20:13:30.890Z",
+    "updated": "2024-11-20T19:56:43.602Z",
+    "created": "2024-11-20T19:56:43.590Z",
     "tags": [
       1,
       6,
@@ -191,8 +191,8 @@
     "name": "iPhone 16 Pro Max",
     "category": 3,
     "text": "<p>Революционная производительность. Графика следующего поколения. Превосходно работает до 22 часов без подзарядки. &loz; Теперь в цвете космический черный.</p>",
-    "updated": "2024-11-15T20:23:00.978Z",
-    "created": "2024-11-04T20:13:30.890Z",
+    "updated": "2024-11-21T17:49:15.839Z",
+    "created": "2024-11-20T19:56:43.590Z",
     "tags": [
       7,
       6
@@ -208,8 +208,8 @@
     "name": "Macbook",
     "category": 3,
     "text": "<p>Невероятно тонкий, легкий и портативный дизайн. Раздвиньте границы того, что возможно на iPad, с помощью увеличенной 13-дюймовой модели. Превосходно подойдет под любые цели!</p>",
-    "updated": "2024-11-15T20:22:56.313Z",
-    "created": "2024-11-04T20:13:30.890Z",
+    "updated": "2024-11-21T17:49:15.838Z",
+    "created": "2024-11-20T19:56:43.590Z",
     "tags": [
       7,
       6,
@@ -226,8 +226,8 @@
     "name": "iPad",
     "category": 3,
     "text": "<p>Превосходный дизайн и эргономика. Искусственный интеллект. Новый процессор и улучшенные камеры. Качественный дисплей и защита глаз. И это ещё далеко не всё! роскошно</p>",
-    "updated": "2024-11-15T20:22:51.972Z",
-    "created": "2024-11-04T20:13:30.890Z",
+    "updated": "2024-11-21T17:49:15.835Z",
+    "created": "2024-11-20T19:56:43.590Z",
     "tags": [
       7,
       6
@@ -243,8 +243,8 @@
     "name": "Футболка Яндекс",
     "category": 2,
     "text": "<p>Футболки новой базовой коллекции <strong>Яндекса</strong>. Большой логотип заметен издалека, даже если надеть пиджак или ветровку. Доступны новые мягкие цвета: пыльно-голубой, оливковый и графит. <strong>92% хлопок</strong>. Превосходно подйдет для <strong>взрослых и детей</strong>.</p>",
-    "updated": "2024-11-15T20:22:45.491Z",
-    "created": "2024-11-04T20:13:30.890Z",
+    "updated": "2024-11-20T19:56:43.602Z",
+    "created": "2024-11-20T19:56:43.590Z",
     "tags": [
       1,
       6,
@@ -431,227 +431,47 @@
 },
 {
   "model": "feedback.feedback",
-  "pk": 11,
+  "pk": 25,
   "fields": {
-    "text": "Какая хорошая форма отправки фидбека",
-    "created_on": "2024-11-11T23:23:33.190Z",
-    "status": "new"
-  }
-},
-{
-  "model": "feedback.feedback",
-  "pk": 15,
-  "fields": {
-    "text": "Текст крутого фидбека",
-    "created_on": "2024-11-11T23:32:36.536Z",
-    "status": "ans"
-  }
-},
-{
-  "model": "feedback.feedback",
-  "pk": 16,
-  "fields": {
-    "text": "Test storage feedback text",
-    "created_on": "2024-11-11T23:36:31.995Z",
+    "text": "Тестовый фидбек с файлами",
+    "created_on": "2024-11-21T18:45:01.418Z",
     "status": "wip"
   }
 },
 {
-  "model": "feedback.feedback",
-  "pk": 17,
-  "fields": {
-    "text": "Фидбек",
-    "created_on": "2024-11-15T00:35:15.232Z",
-    "status": "ans"
-  }
-},
-{
-  "model": "feedback.feedback",
-  "pk": 18,
-  "fields": {
-    "text": "ddd",
-    "created_on": "2024-11-17T13:28:41.154Z",
-    "status": "ans"
-  }
-},
-{
-  "model": "feedback.feedback",
-  "pk": 19,
-  "fields": {
-    "text": "Сообщение фидбека тестовое",
-    "created_on": "2024-11-19T18:02:21.829Z",
-    "status": "ans"
-  }
-},
-{
   "model": "feedback.feedbackauthor",
-  "pk": 11,
+  "pk": 25,
   "fields": {
-    "feedback": 11,
-    "name": "Данил",
-    "mail": "danildanilov@outlook.com"
-  }
-},
-{
-  "model": "feedback.feedbackauthor",
-  "pk": 15,
-  "fields": {
-    "feedback": 15,
-    "name": "Александр",
-    "mail": "example@mail.ru"
-  }
-},
-{
-  "model": "feedback.feedbackauthor",
-  "pk": 16,
-  "fields": {
-    "feedback": 16,
-    "name": "John",
-    "mail": "example@mail.ru"
-  }
-},
-{
-  "model": "feedback.feedbackauthor",
-  "pk": 17,
-  "fields": {
-    "feedback": 17,
-    "name": "Имя",
-    "mail": "d@aa.ru"
-  }
-},
-{
-  "model": "feedback.feedbackauthor",
-  "pk": 18,
-  "fields": {
-    "feedback": 18,
-    "name": "John",
-    "mail": "example@mail.ru"
-  }
-},
-{
-  "model": "feedback.feedbackauthor",
-  "pk": 19,
-  "fields": {
-    "feedback": 19,
+    "feedback": 25,
     "name": "John",
     "mail": "example@mail.ru"
   }
 },
 {
   "model": "feedback.feedbackfile",
-  "pk": 7,
+  "pk": 13,
   "fields": {
-    "feedback": 15,
-    "file": "uploads/15/1731357156.545423_14mathege.jpg"
+    "feedback": 25,
+    "file": "uploads/25/1732214701.4275928_14mathege.jpg"
   }
 },
 {
   "model": "feedback.feedbackfile",
+  "pk": 14,
+  "fields": {
+    "feedback": 25,
+    "file": "uploads/25/1732214701.682623_10mathege.jpg"
+  }
+},
+{
+  "model": "feedback.statuslog",
   "pk": 8,
   "fields": {
-    "feedback": 15,
-    "file": "uploads/15/1731357156.55142_10mathege.jpg"
-  }
-},
-{
-  "model": "feedback.feedbackfile",
-  "pk": 9,
-  "fields": {
-    "feedback": 16,
-    "file": "uploads/16/1731357392.0043945_Снимок_экрана_2023-12-26_224616.png"
-  }
-},
-{
-  "model": "feedback.feedbackfile",
-  "pk": 10,
-  "fields": {
-    "feedback": 19,
-    "file": "uploads/19/1732039341.841894_Кодирование_Кузьмина.pptx"
-  }
-},
-{
-  "model": "feedback.feedbackfile",
-  "pk": 11,
-  "fields": {
-    "feedback": 19,
-    "file": "uploads/19/1732039341.8489306_кодирование_салаев.pptx"
-  }
-},
-{
-  "model": "feedback.statuslog",
-  "pk": 1,
-  "fields": {
-    "feedback": 16,
+    "feedback": 25,
     "user": 1,
-    "timestamp": "2024-11-14T23:01:17.148Z",
+    "timestamp": "2024-11-21T18:54:12.210Z",
     "from_status": "new",
     "to_status": "wip"
-  }
-},
-{
-  "model": "feedback.statuslog",
-  "pk": 2,
-  "fields": {
-    "feedback": 15,
-    "user": 1,
-    "timestamp": "2024-11-14T23:10:19.304Z",
-    "from_status": "new",
-    "to_status": "ans"
-  }
-},
-{
-  "model": "feedback.statuslog",
-  "pk": 3,
-  "fields": {
-    "feedback": 17,
-    "user": 1,
-    "timestamp": "2024-11-15T00:35:28.325Z",
-    "from_status": "new",
-    "to_status": "wip"
-  }
-},
-{
-  "model": "feedback.statuslog",
-  "pk": 4,
-  "fields": {
-    "feedback": 17,
-    "user": 1,
-    "timestamp": "2024-11-17T13:18:37.056Z",
-    "from_status": "wip",
-    "to_status": "ans"
-  }
-},
-{
-  "model": "feedback.statuslog",
-  "pk": 5,
-  "fields": {
-    "feedback": 18,
-    "user": 1,
-    "timestamp": "2024-11-17T13:29:10.942Z",
-    "from_status": "new",
-    "to_status": "ans"
-  }
-},
-{
-  "model": "feedback.statuslog",
-  "pk": 6,
-  "fields": {
-    "feedback": 19,
-    "user": 1,
-    "timestamp": "2024-11-19T18:05:09.527Z",
-    "from_status": "new",
-    "to_status": "wip"
-  }
-},
-{
-  "model": "feedback.statuslog",
-  "pk": 7,
-  "fields": {
-    "feedback": 19,
-    "user": 1,
-    "timestamp": "2024-11-19T18:05:25.507Z",
-    "from_status": "wip",
-    "to_status": "ans"
   }
 },
 {
@@ -3565,6 +3385,227 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 220,
+  "fields": {
+    "action_time": "2024-11-21T17:46:01.650Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 221,
+  "fields": {
+    "action_time": "2024-11-21T17:47:29.091Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "kudes",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u041f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044c \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\", \"object\": \"\\u041f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044c \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f kudes.\", \"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 \\u043f\\u0440\\u043e\\u0444\\u0438\\u043b\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 222,
+  "fields": {
+    "action_time": "2024-11-21T17:49:15.837Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "iPad",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 223,
+  "fields": {
+    "action_time": "2024-11-21T17:49:15.838Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Macbook",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 224,
+  "fields": {
+    "action_time": "2024-11-21T17:49:15.839Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "iPhone 16 Pro M",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 225,
+  "fields": {
+    "action_time": "2024-11-21T18:38:43.469Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "22",
+    "object_repr": "Привет андрюша",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 226,
+  "fields": {
+    "action_time": "2024-11-21T18:38:43.474Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "21",
+    "object_repr": "fdsfsdf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 227,
+  "fields": {
+    "action_time": "2024-11-21T18:38:43.480Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "20",
+    "object_repr": "Тестовое сообщение фидбека",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 228,
+  "fields": {
+    "action_time": "2024-11-21T18:38:43.484Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "19",
+    "object_repr": "Сообщение фидбека тестовое",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 229,
+  "fields": {
+    "action_time": "2024-11-21T18:38:43.490Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "18",
+    "object_repr": "ddd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 230,
+  "fields": {
+    "action_time": "2024-11-21T18:38:43.494Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "17",
+    "object_repr": "Фидбек",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 231,
+  "fields": {
+    "action_time": "2024-11-21T18:38:43.498Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "16",
+    "object_repr": "Test storage feedback text",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 232,
+  "fields": {
+    "action_time": "2024-11-21T18:38:43.500Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "15",
+    "object_repr": "Текст крутого фидбека",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 233,
+  "fields": {
+    "action_time": "2024-11-21T18:38:43.504Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "11",
+    "object_repr": "Какая хорошая форма отправки фидбека",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 234,
+  "fields": {
+    "action_time": "2024-11-21T18:44:30.087Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "24",
+    "object_repr": "ыфвфыв",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 235,
+  "fields": {
+    "action_time": "2024-11-21T18:44:30.100Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "23",
+    "object_repr": "ыфвфывфывфыву",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 236,
+  "fields": {
+    "action_time": "2024-11-21T18:54:12.212Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "25",
+    "object_repr": "Тестовый фидбек с файлами",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -4289,7 +4330,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$600000$NN0YMePMXO8TPFfu2h9WCG$SSn/KAJQGhrnk3X56/gl99HMtOaU/Gs/b8NCQPSiWg8=",
-    "last_login": "2024-11-19T17:42:42.530Z",
+    "last_login": "2024-11-19T17:42:42Z",
     "is_superuser": true,
     "username": "kudes",
     "first_name": "Bogdan",
@@ -4609,6 +4650,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||3b11793b01220b3f901b9a9027c69c87",
+  "fields": {
+    "value": "{\"name\": \"cache/6e/25/6e256ff8fbd8026c44469caf83b16982.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||403023cd003c170dae99634d6f1957ca",
   "fields": {
     "value": "{\"name\": \"cache/aa/21/aa21f31c9d09b0c11a3e98218d4c7f19.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
@@ -4619,6 +4667,13 @@
   "pk": "sorl-thumbnail||image||40be1719b4f4fc75a89ad331ed4fbe57",
   "fields": {
     "value": "{\"name\": \"cache/d9/22/d922d5676a3a4eb92b190344cd1316e1.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||4102d36e489668c5502ed578332b12de",
+  "fields": {
+    "value": "{\"name\": \"cache/78/60/786025d3a1ad938300ace6624e307067.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
   }
 },
 {
@@ -4640,6 +4695,27 @@
   "pk": "sorl-thumbnail||image||43f13e5bd762feb82e10313e9cb73d93",
   "fields": {
     "value": "{\"name\": \"cache/78/e4/78e4963e426a1a0c1082cbfa2960bf89.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||45ac9c56e93e4ed508cafa1b40d9126d",
+  "fields": {
+    "value": "{\"name\": \"cache/5a/40/5a4038838bfe0ae843c017277e7b42c0.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||45beed0c0a09f266f27a7928df4c5e0e",
+  "fields": {
+    "value": "{\"name\": \"cache/78/e4/78e4963e426a1a0c1082cbfa2960bf89.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||47cbc3880fdb3d2579fee99cfb1eaf14",
+  "fields": {
+    "value": "{\"name\": \"cache/85/09/8509dfa7a7dda04eecf3417bdc3e8d81.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
   }
 },
 {
@@ -4672,6 +4748,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||4af6f3a00f7f439127ec2b3bbc57a4e8",
+  "fields": {
+    "value": "{\"name\": \"cache/6c/4d/6c4d4107db39839d660840c832b0dcf8.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||4c11878a2e7cc0677bc6c4a573a1f618",
   "fields": {
     "value": "{\"name\": \"catalog/iphone-16-pro_main.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [1000, 1000]}"
@@ -4689,6 +4772,13 @@
   "pk": "sorl-thumbnail||image||52ad5f07f71767e5213ec526fe16e31e",
   "fields": {
     "value": "{\"name\": \"catalog/kvadrokopter_3.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||5308e6a8a237b25f58d9c23742131fa6",
+  "fields": {
+    "value": "{\"name\": \"cache/58/30/5830e8e7f11efaaacb1658a380b10386.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
   }
 },
 {
@@ -4717,6 +4807,13 @@
   "pk": "sorl-thumbnail||image||5ba67e51741602c626322badeb77621a",
   "fields": {
     "value": "{\"name\": \"cache/72/5e/725eff4aa4ce43be9210d03c764df512.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||5c55f341e43838d2e7e5b7dec197238a",
+  "fields": {
+    "value": "{\"name\": \"cache/94/46/94462ca39a6a46bf894494a975a47ee7.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
   }
 },
 {
@@ -4770,6 +4867,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||679d1e5a0ade57c201b7eb6cd1ca8a9f",
+  "fields": {
+    "value": "{\"name\": \"cache/09/75/0975ab7d85e2f6c4f980bb86eb9966ae.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||696b7dad41ffb47f5a59f3eab9fc54c1",
   "fields": {
     "value": "{\"name\": \"cache/d6/02/d602bf03d7cfc41f72ae55280bd68487.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
@@ -4787,6 +4891,13 @@
   "pk": "sorl-thumbnail||image||6b1c3693b91bedaa981f36eab877ce69",
   "fields": {
     "value": "{\"name\": \"cache/3f/1d/3f1dde28da3c1d8adf3a655ae63a9b3c.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||6b5b8b5523df83986d6c453d9680fbea",
+  "fields": {
+    "value": "{\"name\": \"cache/1c/89/1c89012aa3f2e7e99b30e0af12ed5217.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
   }
 },
 {
@@ -4882,6 +4993,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||7bd229430cc8a8c275ffd0c8432c7d9f",
+  "fields": {
+    "value": "{\"name\": \"cache/b4/c5/b4c59a1a1ba6a585d962f7d90cde4272.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||7fa29ee057d859a4bfbd24c334271003",
   "fields": {
     "value": "{\"name\": \"cache/3b/7b/3b7bcda2ff44b3166ebb454c9825f93e.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
@@ -4927,6 +5045,13 @@
   "pk": "sorl-thumbnail||image||868f063836ddafc61492f0e9e2c119fd",
   "fields": {
     "value": "{\"name\": \"cache/a5/e9/a5e9924b95c4c2381eeb6731a82efcc7.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||87fa5cfaac632b07dfd3b503dbca2755",
+  "fields": {
+    "value": "{\"name\": \"cache/0f/f5/0ff575eae00e11a872592cb434d17627.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
   }
 },
 {
@@ -5004,6 +5129,13 @@
   "pk": "sorl-thumbnail||image||9614872a6fa845164dcca954fb1903f8",
   "fields": {
     "value": "{\"name\": \"catalog/ipad_1.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||99cb34d2e1e410b6a70828fc67a595f7",
+  "fields": {
+    "value": "{\"name\": \"users/1/243bd80ed79c7766b8efaaa45b95c347.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [735, 766]}"
   }
 },
 {
@@ -5134,6 +5266,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||ad067f56afcc1be3519d766c99f5657d",
+  "fields": {
+    "value": "{\"name\": \"cache/01/35/0135d399203333fc67b619479462424f.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||af5a00f9b4610d7cd07509561e386a25",
   "fields": {
     "value": "{\"name\": \"catalog/7001.750.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [601, 600]}"
@@ -5151,6 +5290,13 @@
   "pk": "sorl-thumbnail||image||b15da1095d5d1d8ba4262674ba00b891",
   "fields": {
     "value": "{\"name\": \"cache/92/56/9256ee3e241c38a0507846bb64100d39.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||b2a24d33d32898adb39461ac86c62f9d",
+  "fields": {
+    "value": "{\"name\": \"cache/09/75/0975ab7d85e2f6c4f980bb86eb9966ae.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [300, 300]}"
   }
 },
 {
@@ -5183,6 +5329,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||b8fcf3768ef1a10e37a931694b110d16",
+  "fields": {
+    "value": "{\"name\": \"catalog/iphone-16-pro_1.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||c2d777b8b236018bb6cc1262e5d34af3",
   "fields": {
     "value": "{\"name\": \"cache/18/df/18df6a29e176a216f0f375013cf6a6a3.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
@@ -5200,6 +5353,13 @@
   "pk": "sorl-thumbnail||image||c4baab2145c007cb13bbced5161530a8",
   "fields": {
     "value": "{\"name\": \"cache/19/15/191516307bf1b276eb13118971e7bd39.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||c4f05b81fb179befcf8617dc8d70fc0a",
+  "fields": {
+    "value": "{\"name\": \"catalog/iphone-16-pro_2.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [1000, 1000]}"
   }
 },
 {
@@ -5228,6 +5388,13 @@
   "pk": "sorl-thumbnail||image||c7fd106da01937edbaedeffce9fe3ac0",
   "fields": {
     "value": "{\"name\": \"catalog/tom-vanhoof-BNS6QPaaVzY-unsplash.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [3712, 5568]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||ca7dbda201afca79a814c7e073377a5e",
+  "fields": {
+    "value": "{\"name\": \"cache/81/e9/81e9dabaadeb67398c743be6b64c6c31.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
   }
 },
 {
@@ -5330,6 +5497,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||e1f6cd56307023471474b59f279ab044",
+  "fields": {
+    "value": "{\"name\": \"cache/f3/ce/f3cee14552a65174868db7a55827e83d.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||e208c505375270ecdb83a189f1642791",
   "fields": {
     "value": "{\"name\": \"cache/95/98/9598a5c804b1983fec5915fc7ee66b0c.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
@@ -5379,6 +5553,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||e816ecc0dfdb05168b7b396381fc027b",
+  "fields": {
+    "value": "{\"name\": \"catalog/iphone-16-pro_3.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [1000, 1000]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||ed0e889f59d6b14dd7303980d5d5f4cb",
   "fields": {
     "value": "{\"name\": \"cache/b8/bd/b8bd45cc52c78f495036d60443e38e28.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
@@ -5393,6 +5574,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||f275fb7d1fc38acb244382a5a8a79e55",
+  "fields": {
+    "value": "{\"name\": \"cache/f9/d8/f9d837a11868876ac54216103818502c.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||f29d1976bef2b9bb1ab329f73f7532cb",
   "fields": {
     "value": "{\"name\": \"catalog/macbook_1.jpeg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [2048, 1574]}"
@@ -5403,6 +5591,13 @@
   "pk": "sorl-thumbnail||image||f5376071b13127ec90e2641060e4f2aa",
   "fields": {
     "value": "{\"name\": \"cache/5e/bd/5ebde9fc07af0845c22d8620a898bfdd.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||f57fa38ec580e571df8f5658230771af",
+  "fields": {
+    "value": "{\"name\": \"cache/f1/80/f180b65b360d2c4c6e9433ae6ace52af.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
   }
 },
 {
@@ -5493,7 +5688,7 @@
   "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||thumbnails||17491a4d60bd8f10d2321c8930ee50a7",
   "fields": {
-    "value": "[\"0dfa624b9641b448e0e3bc6c92918736\", \"429ebe25bb52937456205facc3565146\"]"
+    "value": "[\"429ebe25bb52937456205facc3565146\", \"ca7dbda201afca79a814c7e073377a5e\", \"0dfa624b9641b448e0e3bc6c92918736\", \"4102d36e489668c5502ed578332b12de\"]"
   }
 },
 {
@@ -5556,7 +5751,7 @@
   "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||thumbnails||4c11878a2e7cc0677bc6c4a573a1f618",
   "fields": {
-    "value": "[\"6c947517ca8256e726e9cec2dfece6a0\", \"5385aef52c24f2ec59f61c75eed85d81\"]"
+    "value": "[\"5385aef52c24f2ec59f61c75eed85d81\", \"6b5b8b5523df83986d6c453d9680fbea\", \"6c947517ca8256e726e9cec2dfece6a0\", \"45ac9c56e93e4ed508cafa1b40d9126d\", \"f57fa38ec580e571df8f5658230771af\"]"
   }
 },
 {
@@ -5591,7 +5786,7 @@
   "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||thumbnails||636ae8cfb9af4cc98509cd3895d5844f",
   "fields": {
-    "value": "[\"16fe11bb6cf0bea3f5f5d2828826e3ad\", \"3ad3af22eae931245d19b23a9905e844\"]"
+    "value": "[\"4af6f3a00f7f439127ec2b3bbc57a4e8\", \"16fe11bb6cf0bea3f5f5d2828826e3ad\", \"3ad3af22eae931245d19b23a9905e844\", \"5c55f341e43838d2e7e5b7dec197238a\"]"
   }
 },
 {
@@ -5654,14 +5849,14 @@
   "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||thumbnails||85844ab5bb940a86aaae55c4db0bc97a",
   "fields": {
-    "value": "[\"f696647f0d1b82c91b5d00fddf3b8e5a\", \"7056601546f044dc7664709d5c9de5f1\"]"
+    "value": "[\"f696647f0d1b82c91b5d00fddf3b8e5a\", \"7056601546f044dc7664709d5c9de5f1\", \"87fa5cfaac632b07dfd3b503dbca2755\", \"ad067f56afcc1be3519d766c99f5657d\"]"
   }
 },
 {
   "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||thumbnails||8c8d47d86f1ac42347bdb97bfa5c468e",
   "fields": {
-    "value": "[\"43f13e5bd762feb82e10313e9cb73d93\", \"22ecd86d5352c3297099030e8a958f37\"]"
+    "value": "[\"43f13e5bd762feb82e10313e9cb73d93\", \"45beed0c0a09f266f27a7928df4c5e0e\", \"22ecd86d5352c3297099030e8a958f37\", \"e1f6cd56307023471474b59f279ab044\"]"
   }
 },
 {
@@ -5680,6 +5875,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||99cb34d2e1e410b6a70828fc67a595f7",
+  "fields": {
+    "value": "[\"b2a24d33d32898adb39461ac86c62f9d\", \"679d1e5a0ade57c201b7eb6cd1ca8a9f\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||thumbnails||9bb0b7cd7055cdb91544609c73c05fb0",
   "fields": {
     "value": "[\"e504180415fee0e0dad9faf5bb65f796\"]"
@@ -5689,7 +5891,7 @@
   "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||thumbnails||9bcb5cd117b46ce24a86b8c5f7e400a6",
   "fields": {
-    "value": "[\"678b9a2b9e9ec8d4e936cf0141d39f15\", \"4a717788ac151511fb2df95169dec0c5\"]"
+    "value": "[\"7bd229430cc8a8c275ffd0c8432c7d9f\", \"f275fb7d1fc38acb244382a5a8a79e55\", \"4a717788ac151511fb2df95169dec0c5\", \"678b9a2b9e9ec8d4e936cf0141d39f15\"]"
   }
 },
 {
@@ -5750,9 +5952,23 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||b8fcf3768ef1a10e37a931694b110d16",
+  "fields": {
+    "value": "[\"5308e6a8a237b25f58d9c23742131fa6\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||thumbnails||c3f87520e9f93612059ec650ce52cc89",
   "fields": {
     "value": "[\"2f2d5e2e04e78791bec27ea34ae74061\", \"d57caa00f9746ee079e91a8bdcf4cb3b\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||c4f05b81fb179befcf8617dc8d70fc0a",
+  "fields": {
+    "value": "[\"47cbc3880fdb3d2579fee99cfb1eaf14\"]"
   }
 },
 {
@@ -5816,6 +6032,13 @@
   "pk": "sorl-thumbnail||thumbnails||e4b4cb1cd2d335068660d6c4c972e671",
   "fields": {
     "value": "[\"b871df783d3526b268c701b017fa749c\", \"ed0e889f59d6b14dd7303980d5d5f4cb\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||e816ecc0dfdb05168b7b396381fc027b",
+  "fields": {
+    "value": "[\"3b11793b01220b3f901b9a9027c69c87\"]"
   }
 },
 {
