@@ -1,3 +1,5 @@
+import sys
+
 import django.contrib.auth.models
 import django.db.models
 import sorl.thumbnail
@@ -5,6 +7,10 @@ import sorl.thumbnail
 from lyceum.s3_storage import MediaStorage
 
 __all__ = ["Profile"]
+
+if "makemigrations" not in sys.argv and "migrate" not in sys.argv:
+    meta = django.contrib.auth.models.User._meta
+    meta.get_field("email")._unique = True
 
 
 class UserManager(django.contrib.auth.models.UserManager):
