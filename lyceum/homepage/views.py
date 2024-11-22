@@ -52,7 +52,7 @@ def profile(request):
         django.contrib.messages.success(request, "Изменения сохранены")
 
         return django.shortcuts.redirect(
-            django.urls.reverse("homepage:profile"),
+            django.urls.reverse("users:profile"),
         )
 
     return django.shortcuts.render(request, "users/profile.html", context)

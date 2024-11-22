@@ -1,6 +1,7 @@
 import django.contrib.auth.views
 import django.urls
 
+import homepage.views
 import users.views
 
 app_name = "users"
@@ -78,6 +79,11 @@ urlpatterns = [
         "reset/done/",
         password_reset_complete_view,
         name="password_reset_complete",
+    ),
+    django.urls.path(
+        "profile/",
+        homepage.views.profile,
+        name="profile",
     ),
     django.urls.path(
         "signup/",

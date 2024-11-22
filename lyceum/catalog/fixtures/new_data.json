@@ -509,7 +509,7 @@
   "fields": {
     "user": 1,
     "birthday": "2007-10-25",
-    "coffee_count": 3,
+    "coffee_count": 5,
     "image": "users/1/243bd80ed79c7766b8efaaa45b95c347.jpg",
     "attempts_count": 0,
     "block_date": null
@@ -552,17 +552,17 @@
   "model": "rating.rating",
   "pk": 2,
   "fields": {
-    "user": 1,
-    "item": 11,
+    "user": 6,
+    "item": 9,
     "score": 5
   }
 },
 {
   "model": "rating.rating",
-  "pk": 4,
+  "pk": 3,
   "fields": {
     "user": 5,
-    "item": 11,
+    "item": 9,
     "score": 4
   }
 },
@@ -4385,7 +4385,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$600000$NN0YMePMXO8TPFfu2h9WCG$SSn/KAJQGhrnk3X56/gl99HMtOaU/Gs/b8NCQPSiWg8=",
-    "last_login": "2024-11-19T17:42:42Z",
+    "last_login": "2024-11-22T14:55:31.701Z",
     "is_superuser": true,
     "username": "kudes",
     "first_name": "Bogdan",
@@ -4403,7 +4403,7 @@
   "pk": 5,
   "fields": {
     "password": "pbkdf2_sha256$600000$il95Yi3aTef46N9yNWHOnu$UtHcwMO98yDf3/1l0g8jVzKm5SGPh+WdXftUtl0kS+Q=",
-    "last_login": "2024-11-19T17:39:12.157Z",
+    "last_login": "2024-11-22T14:15:37.785Z",
     "is_superuser": false,
     "username": "test-user-no-permissions",
     "first_name": "Иван",
@@ -4421,7 +4421,7 @@
   "pk": 6,
   "fields": {
     "password": "pbkdf2_sha256$600000$ucJoL7YjkCR7RYPuiC6b3G$wDQAvtYATsrJ47lJJsspTT2fn+VyFQv4fO5BfuHd3To=",
-    "last_login": "2024-11-19T17:30:35.693Z",
+    "last_login": "2024-11-22T14:14:16.523Z",
     "is_superuser": false,
     "username": "test-user-no-email",
     "first_name": "Владос",
@@ -4432,14 +4432,6 @@
     "date_joined": "2024-11-19T17:29:49.571Z",
     "groups": [],
     "user_permissions": []
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "2a2eivjooeg7008ve8cvktipvcgko4zl",
-  "fields": {
-    "session_data": ".eJxVizsOwjAQBe-yNYr2k_WHDi5ieW0jIyQKTKqIu5NIKaCcN_NWSHl597SM9kr3CmcgOP1ulsujPXex45gOHtNlS66H_Hv0PPqWS2G9mYgie8eIlZQplCbeoRlHRK9h9haJZqOo5kmttGjOcqgS4fMFG3gxAQ:1tDSFO:OglbEjU34lfufhd5240WTNfcaBrudzIEaEBJmHCOR4U",
-    "expire_date": "2024-12-03T17:42:42.591Z"
   }
 },
 {
@@ -4456,6 +4448,14 @@
   "fields": {
     "session_data": ".eJxVjDsOgzAUBO_iOrLwD5uU6TkDst8-AklkSxiqKHcPSBRJuzOzbzHEbZ2GrfIyzBBXocTld0uRnpwPgEfM9yKp5HWZkzwUedIq-wJ-3U7372CKddprgkMK0DqoMFqyxltuTQOluSOvO9gGO2isC-hGrZJDBEdj2LdGgcTnC-NNOAU:1t7Mle:H8JfZL3EOZU07E7_Vb9VvN9tmEAtNlhaR9pE3m2d6NI",
     "expire_date": "2024-11-16T22:38:50.275Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "o3z5oa3375wcdi0qvfm8rfk4h9wuj5qz",
+  "fields": {
+    "session_data": ".eJxVizsOwjAQBe-yNYr2k_WHDi5ieW0jIyQKTKqIu5NIKaCcN_NWSHl597SM9kr3CmcgOP1ulsujPXex45gOHtNlS66H_Hv0PPqWS2G9mYgie8eIlZQplCbeoRlHRK9h9haJZqOo5kmttGjOcqgS4fMFG3gxAQ:1tEV4F:z35a1StrPGIH5Rur3ywoAYr9fYk3eIz3OP8CvRhDyMA",
+    "expire_date": "2024-12-06T14:55:31.726Z"
   }
 },
 {
@@ -4642,6 +4642,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||2ccc118a2e3ce8bc5b12d6e9c05e64ed",
+  "fields": {
+    "value": "{\"name\": \"cache/5a/40/5a4038838bfe0ae843c017277e7b42c0.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||2f2d5e2e04e78791bec27ea34ae74061",
   "fields": {
     "value": "{\"name\": \"cache/40/bc/40bc5a2aea0a2d8183b99df5b8dab19e.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
@@ -4701,6 +4708,13 @@
   "pk": "sorl-thumbnail||image||3ad3af22eae931245d19b23a9905e844",
   "fields": {
     "value": "{\"name\": \"cache/94/46/94462ca39a6a46bf894494a975a47ee7.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||3aef75f0947e471cf9cec18e5a955812",
+  "fields": {
+    "value": "{\"name\": \"users/1/iphone-16-pro_3_1.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [1000, 1000]}"
   }
 },
 {
@@ -4992,6 +5006,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||71be924959a89240184accd2313f1e9b",
+  "fields": {
+    "value": "{\"name\": \"cache/58/30/5830e8e7f11efaaacb1658a380b10386.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||71ea84dea0e9efcf1dd01ddd26656bfa",
   "fields": {
     "value": "{\"name\": \"catalog/9hq.webp\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [469, 500]}"
@@ -5037,6 +5058,13 @@
   "pk": "sorl-thumbnail||image||7a1324de5d7fba52a417c834a2c89aad",
   "fields": {
     "value": "{\"name\": \"cache/e2/ad/e2ad74cfd6f2ff58460044ead8c282d6.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||7aac3535bb21877f994a1d1772e32f91",
+  "fields": {
+    "value": "{\"name\": \"cache/6e/25/6e256ff8fbd8026c44469caf83b16982.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [600, 600]}"
   }
 },
 {
@@ -5510,6 +5538,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||d8d7a548c80dd1af5c7a9bcc13b9566f",
+  "fields": {
+    "value": "{\"name\": \"cache/e7/33/e7339c9d5eb1d3e2c0dbbba60ccc51c1.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||d964e3e42a465b44a62aa741197a9352",
   "fields": {
     "value": "{\"name\": \"cache/d8/43/d84302141fa4c639d02e2c3b66d5d82c.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [600, 600]}"
@@ -5615,6 +5650,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||ecdedf921a5d7cbc066ee47295fe1d34",
+  "fields": {
+    "value": "{\"name\": \"cache/85/09/8509dfa7a7dda04eecf3417bdc3e8d81.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [600, 600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||ed0e889f59d6b14dd7303980d5d5f4cb",
   "fields": {
     "value": "{\"name\": \"cache/b8/bd/b8bd45cc52c78f495036d60443e38e28.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
@@ -5681,6 +5723,13 @@
   "pk": "sorl-thumbnail||image||f8fa21200a190fc0518ec8bc273265da",
   "fields": {
     "value": "{\"name\": \"cache/f4/61/f461d77c2241e68338d00cc05e0f85c2.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||fad4e1bc7aaec504898f2eb1e1db7962",
+  "fields": {
+    "value": "{\"name\": \"cache/51/a9/51a9c8c6cf46aae53fee1a6b7d06fe7d.jpg\", \"storage\": \"lyceum.s3_storage.MediaStorage\", \"size\": [300, 300]}"
   }
 },
 {
@@ -5790,6 +5839,13 @@
 },
 {
   "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||3aef75f0947e471cf9cec18e5a955812",
+  "fields": {
+    "value": "[\"fad4e1bc7aaec504898f2eb1e1db7962\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||thumbnails||47fbc8973123fcd0a86f6cba2792fb43",
   "fields": {
     "value": "[\"2809eeeb4674a4f3df515200c53b4c23\"]"
@@ -5806,7 +5862,7 @@
   "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||thumbnails||4c11878a2e7cc0677bc6c4a573a1f618",
   "fields": {
-    "value": "[\"5385aef52c24f2ec59f61c75eed85d81\", \"6b5b8b5523df83986d6c453d9680fbea\", \"6c947517ca8256e726e9cec2dfece6a0\", \"45ac9c56e93e4ed508cafa1b40d9126d\", \"f57fa38ec580e571df8f5658230771af\"]"
+    "value": "[\"6c947517ca8256e726e9cec2dfece6a0\", \"5385aef52c24f2ec59f61c75eed85d81\", \"2ccc118a2e3ce8bc5b12d6e9c05e64ed\", \"f57fa38ec580e571df8f5658230771af\", \"6b5b8b5523df83986d6c453d9680fbea\", \"45ac9c56e93e4ed508cafa1b40d9126d\"]"
   }
 },
 {
@@ -5932,7 +5988,7 @@
   "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||thumbnails||99cb34d2e1e410b6a70828fc67a595f7",
   "fields": {
-    "value": "[\"b2a24d33d32898adb39461ac86c62f9d\", \"679d1e5a0ade57c201b7eb6cd1ca8a9f\"]"
+    "value": "[\"b2a24d33d32898adb39461ac86c62f9d\", \"d8d7a548c80dd1af5c7a9bcc13b9566f\", \"679d1e5a0ade57c201b7eb6cd1ca8a9f\"]"
   }
 },
 {
@@ -6009,7 +6065,7 @@
   "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||thumbnails||b8fcf3768ef1a10e37a931694b110d16",
   "fields": {
-    "value": "[\"5308e6a8a237b25f58d9c23742131fa6\"]"
+    "value": "[\"71be924959a89240184accd2313f1e9b\", \"5308e6a8a237b25f58d9c23742131fa6\"]"
   }
 },
 {
@@ -6023,7 +6079,7 @@
   "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||thumbnails||c4f05b81fb179befcf8617dc8d70fc0a",
   "fields": {
-    "value": "[\"47cbc3880fdb3d2579fee99cfb1eaf14\"]"
+    "value": "[\"47cbc3880fdb3d2579fee99cfb1eaf14\", \"ecdedf921a5d7cbc066ee47295fe1d34\"]"
   }
 },
 {
@@ -6093,7 +6149,7 @@
   "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||thumbnails||e816ecc0dfdb05168b7b396381fc027b",
   "fields": {
-    "value": "[\"3b11793b01220b3f901b9a9027c69c87\"]"
+    "value": "[\"3b11793b01220b3f901b9a9027c69c87\", \"7aac3535bb21877f994a1d1772e32f91\"]"
   }
 },
 {

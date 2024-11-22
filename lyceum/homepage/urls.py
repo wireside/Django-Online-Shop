@@ -11,5 +11,4 @@ urlpatterns = [
     path("echo/submit/", views.echo_submit, name="echo_submit"),
     path("coffee", views.coffee, name="coffee"),
     path("coffee/", views.coffee, name="coffee"),
-    path("profile/", views.profile, name="profile"),
 ]
