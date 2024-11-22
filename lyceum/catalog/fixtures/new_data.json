@@ -4451,14 +4451,6 @@
   }
 },
 {
-  "model": "sessions.session",
-  "pk": "o3z5oa3375wcdi0qvfm8rfk4h9wuj5qz",
-  "fields": {
-    "session_data": ".eJxVizsOwjAQBe-yNYr2k_WHDi5ieW0jIyQKTKqIu5NIKaCcN_NWSHl597SM9kr3CmcgOP1ulsujPXex45gOHtNlS66H_Hv0PPqWS2G9mYgie8eIlZQplCbeoRlHRK9h9haJZqOo5kmttGjOcqgS4fMFG3gxAQ:1tEV4F:z35a1StrPGIH5Rur3ywoAYr9fYk3eIz3OP8CvRhDyMA",
-    "expire_date": "2024-12-06T14:55:31.726Z"
-  }
-},
-{
   "model": "thumbnail.kvstore",
   "pk": "sorl-thumbnail||image||028dc472ed74f317786fca4894f90433",
   "fields": {

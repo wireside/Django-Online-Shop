@@ -47,6 +47,7 @@ class Category(core.models.BaseModel):
         )
         verbose_name = "категория"
         verbose_name_plural = "категории"
+        default_related_name = "category"
 
     def __str__(self):
         return self.name[:15]

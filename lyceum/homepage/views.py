@@ -25,7 +25,7 @@ def home(request):
     return django.shortcuts.render(request, "homepage/main.html", context)
 
 
-@django.contrib.auth.decorators.login_required(login_url="users:login")
+@django.contrib.auth.decorators.login_required
 def profile(request):
     user_form = users.forms.UserChangeForm(
         request.POST or None,
