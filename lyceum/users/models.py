@@ -6,7 +6,7 @@ import sorl.thumbnail
 
 from lyceum.s3_storage import MediaStorage
 
-__all__ = ["Profile"]
+__all__ = ["Profile", "User"]
 
 if "makemigrations" not in sys.argv and "migrate" not in sys.argv:
     meta = django.contrib.auth.models.User._meta

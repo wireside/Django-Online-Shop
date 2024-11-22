@@ -68,7 +68,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "users.middleware.UserMiddleware",
+    "users.middleware.ProxyUserMiddleware",
     "lyceum.middleware.ReverseRussianMiddleware",
 ]
 
