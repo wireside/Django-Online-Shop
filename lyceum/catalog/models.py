@@ -94,8 +94,12 @@ class Item(django.db.models.Model):
         on_delete=django.db.models.SET_NULL,
         verbose_name="категория",
         help_text="Выберите категорию",
+        related_name="items",
     )
-    tags = django.db.models.ManyToManyField(Tag)
+    tags = django.db.models.ManyToManyField(
+        Tag,
+        related_name="items",
+    )
     text = django_ckeditor_5.fields.CKEditor5Field(
         verbose_name="описание",
         help_text=(
