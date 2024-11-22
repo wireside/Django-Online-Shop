@@ -14,10 +14,44 @@ import users.models
 __all__ = [
     "activate",
     "reactivate",
+    "profile",
     "signup",
     "user_detail",
     "user_list",
 ]
+
+
+@django.contrib.auth.decorators.login_required
+def profile(request):
+    user_form = users.forms.UserChangeForm(
+        request.POST or None,
+        instance=request.user,
+    )
+    profile_form = users.forms.UpdateProfileForm(
+        request.POST or None,
+        request.FILES or None,
+        instance=request.user.profile,
+    )
+    context = {
+        "user_form": user_form,
+        "profile_form": profile_form,
+    }
+
+    if (
+        request.method == "POST"
+        and user_form.is_valid()
+        and profile_form.is_valid()
+    ):
+        user_form.save()
+        profile_form.save()
+
+        django.contrib.messages.success(request, "Изменения сохранены")
+
+        return django.shortcuts.redirect(
+            django.urls.reverse("users:profile"),
+        )
+
+    return django.shortcuts.render(request, "users/profile.html", context)
 
 
 def signup(request):

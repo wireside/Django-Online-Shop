@@ -1,7 +1,6 @@
 import django.contrib.auth.views
 import django.urls
 
-import homepage.views
 import users.views
 
 app_name = "users"
@@ -82,7 +81,7 @@ urlpatterns = [
     ),
     django.urls.path(
         "profile/",
-        homepage.views.profile,
+        users.views.profile,
         name="profile",
     ),
     django.urls.path(

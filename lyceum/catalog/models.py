@@ -47,7 +47,6 @@ class Category(core.models.BaseModel):
         )
         verbose_name = "категория"
         verbose_name_plural = "категории"
-        default_related_name = "category"
 
     def __str__(self):
         return self.name[:15]
@@ -96,10 +95,12 @@ class Item(django.db.models.Model):
         verbose_name="категория",
         help_text="Выберите категорию",
         related_name="items",
+        related_query_name="items",
     )
     tags = django.db.models.ManyToManyField(
         Tag,
         related_name="items",
+        related_query_name="items",
     )
     text = django_ckeditor_5.fields.CKEditor5Field(
         verbose_name="описание",
@@ -167,6 +168,7 @@ class Image(core.models.ImageBaseModel):
         Item,
         on_delete=django.db.models.CASCADE,
         related_name="images",
+        related_query_name="images",
     )
 
     class Meta:
