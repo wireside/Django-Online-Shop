@@ -7,7 +7,6 @@ import django.urls
 
 import catalog.models
 import homepage.forms
-import users.models
 
 
 __all__ = ["coffee", "echo", "echo_submit", "home"]
