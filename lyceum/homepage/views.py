@@ -49,13 +49,9 @@ def echo_submit(request):
 
 def coffee(request):
     if request.user.is_authenticated:
-        profile = users.models.Profile.objects.get(user_id=request.user.id)
+        profile = request.user.profile
         profile.coffee_count += 1
-        profile.save(
-            update_fields=[
-                users.models.Profile.coffee_count.field.name,
-            ],
-        )
+        profile.save()
 
     return django.http.HttpResponse(
         "Я чайник",
