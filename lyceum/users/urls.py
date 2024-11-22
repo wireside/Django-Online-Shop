@@ -81,32 +81,32 @@ urlpatterns = [
     ),
     django.urls.path(
         "profile/",
-        users.views.profile,
+        users.views.ProfileView.as_view(),
         name="profile",
     ),
     django.urls.path(
         "signup/",
-        users.views.signup,
+        users.views.SignUpView.as_view(),
         name="signup",
     ),
     django.urls.path(
         "users/",
-        users.views.user_list,
+        users.views.UserListView.as_view(),
         name="user_list",
     ),
     django.urls.path(
         "user/<pk>/",
-        users.views.user_detail,
+        users.views.UserDetailView.as_view(),
         name="user_detail",
     ),
     django.urls.path(
         "activate/<pk>/",
-        users.views.activate,
+        users.views.ActiveView.as_view(),
         name="activate",
     ),
     django.urls.path(
         "reactivate/<pk>/",
-        users.views.reactivate,
+        users.views.ReactiveView.as_view(),
         name="reactivate",
     ),
 ]
