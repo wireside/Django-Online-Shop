@@ -93,6 +93,7 @@ class ReactiveView(django.views.generic.View):
 class UserListView(django.views.generic.ListView):
     template_name = "users/user_list.html"
     model = users.models.User
+    context_object_name = "users"
 
     def get_queryset(self):
         return users.models.User.objects.active()
