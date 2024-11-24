@@ -1,5 +1,5 @@
 # Lyceum
-![pipeline](https://gitlab.crja72.ru/django/2024/autumn/course/students/248227-bogdansalaeff-course-1187/badges/main/pipeline.svg)
+![pipeline](https://gitlab.com/wireside/django-online-shop/badges/main/pipeline.svg)
 ## Установите и активируйте виртуальное окружение
 ```bash
 python3 -m venv venv
