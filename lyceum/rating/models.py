@@ -6,6 +6,18 @@ import users.models
 __all__ = ["Rating"]
 
 
+class RatingManager(django.db.models.Manager):
+    def item_ratings(self):
+        queryset = super().get_queryset()
+        user_related_name = queryset.user.related.name
+        queryset = queryset.select_related(
+            user_related_name,
+        )
+        queryset = queryset.order_by("-updated")
+
+        return queryset
+
+
 class Rating(django.db.models.Model):
     SCORE_CHOICES = [
         (1, "1 - Ненависть"),
@@ -27,6 +39,12 @@ class Rating(django.db.models.Model):
     )
     score = django.db.models.PositiveSmallIntegerField(
         choices=SCORE_CHOICES,
+    )
+    updated = django.db.models.DateTimeField(
+        auto_now=True,
+        null=True,
+        blank=True,
+        verbose_name="время изменения оценки",
     )
 
     def __str__(self):
