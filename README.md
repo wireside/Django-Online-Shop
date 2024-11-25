@@ -1,5 +1,5 @@
 # Lyceum
-[![CI/CD](https://github.com/wireside/Django-Online-Shop/actions/workflows/github-ci-cd.yml/badge.svg?branch=main)](https://github.com/wireside/Django-Online-Shop/actions/workflows/github-ci-cd.yml)
+[![CI/CD](https://github.com/wireside/Django-Online-Shop/actions/workflows/github-ci-cd.yml/badge.svg?branch=main&nocache=1)](https://github.com/wireside/Django-Online-Shop/actions/workflows/github-ci-cd.yml)
 ## Клонирование проекта
 ```bash
 git clone git@github.com:wireside/Django-Online-Shop.git Lyceum
