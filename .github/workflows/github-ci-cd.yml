@@ -46,12 +46,8 @@ jobs:
         with:
           python-version: 3.13
 
-      - name: Create virtual environment
-        run: python -m venv venv
-
-      - name: Activate virtual environment and install dependencies
+      - name: Install dependencies
         run: |
-          source venv/bin/activate
           pip install --upgrade pip
           pip install -r requirements/test.txt
 
