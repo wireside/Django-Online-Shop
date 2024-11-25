@@ -1,14 +1,14 @@
 # Lyceum
 [![CI/CD](https://github.com/wireside/Django-Online-Shop/actions/workflows/github-ci-cd.yml/badge.svg?branch=main)](https://github.com/wireside/Django-Online-Shop/actions/workflows/github-ci-cd.yml))
+## Клонирование проекта
+```bash
+git clone git@github.com:wireside/Django-Online-Shop.git Lyceum
+cd Lyceum
+```
 ## Установите и активируйте виртуальное окружение
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-```
-## Клонирование проекта
-```bash
-git clone git@gitlab.crja72.ru:django/2024/autumn/course/students/248227-bogdansalaeff-course-1187.git Lyceum
-cd Lyceum
 ```
 ## Включение переводов
 ```bash
@@ -35,15 +35,12 @@ pip3 install -r requirements/test.txt
 ```bash
 cp config.env .env
 ```
-Так же, если `AWS_QUERYSTRING_AUTH=True`, для запуска в продакшене
- нужно иметь при себе идентификатор и ключ доступа
- от сервисного аккаунта S3 хранилища Yandex.Cloud.
 ### Дополнительно необходимо выполнить мигрции базы данных
 ```bash
 cd lyceum
 python3 manage.py migrate
 ```
-Также для тестов желательно создать фикстуры
+Также для запусков тестов желательно создать фикстуры
 ```bash
 cd lyceum
 python3 -Xutf8 manage.py dumpdata --indent 2 --exclude contenttypes > fixtures/data.json
