@@ -112,7 +112,7 @@ DATABASES = {
 }
 
 
-AWS_S3_REGION_NAME = "ru-central1"
+AWS_S3_REGION_NAME = os.getenv("AWS_S3_REGION_NAME", "ru-central1")
 AWS_S3_ENDPOINT_URL = "https://storage.yandexcloud.net"
 AWS_S3_ACCESS_KEY_ID = os.getenv("AWS_S3_ACCESS_KEY_ID")
 AWS_S3_SECRET_ACCESS_KEY = os.getenv("AWS_S3_SECRET_ACCESS_KEY")
