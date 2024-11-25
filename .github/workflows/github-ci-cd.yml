@@ -1,0 +1,42 @@
+stages:
+  - Linting
+  - Test
+
+test:
+    stage: Test
+    image: python:3.11.1
+    before_script:
+        - python3 -m venv venv
+        - source venv/bin/activate
+        - pip install --upgrade pip
+        - pip install -r requirements/test.txt
+    script:
+        - cd lyceum
+        - python3 manage.py migrate
+        - python3 manage.py test
+    only:
+        - main
+
+flake8:
+    stage: Linting
+    before_script:
+        - python3 -m venv venv
+        - source venv/bin/activate
+        - pip install --upgrade pip
+        - pip install -r requirements/dev.txt
+    script:
+        - flake8 --verbose .
+    only:
+        - main
+
+black:
+    stage: Linting
+    before_script:
+        - python3 -m venv venv
+        - source venv/bin/activate
+        - pip install --upgrade pip
+        - pip install -r requirements/dev.txt
+    script:
+        - black --check --verbose -l 79 .
+    only:
+        - main
