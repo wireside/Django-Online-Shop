@@ -1,5 +1,5 @@
 # Lyceum
-![pipeline](https://gitlab.com/wireside/django-online-shop/badges/main/pipeline.svg)
+[![CI/CD](https://github.com/wireside/Django-Online-Shop/actions/workflows/github-ci-cd.yml/badge.svg?branch=main)](https://github.com/wireside/Django-Online-Shop/actions/workflows/github-ci-cd.yml))
 ## Установите и активируйте виртуальное окружение
 ```bash
 python3 -m venv venv
