@@ -10,7 +10,7 @@ on:
 
 jobs:
   lint:
-    name: Linting
+    name: Lint
     runs-on: ubuntu-latest
 
     steps:
@@ -56,3 +56,28 @@ jobs:
 
       - name: Run Django tests
         run: python lyceum/manage.py test
+
+  build:
+      name: Build
+      runs-on: ubuntu-latest
+
+      steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.13
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements/prod.txt
+
+      - name: Collect static files
+        run: |
+          python lyceum/manage.py collectstatic --noinput
+
+      - name: Check for missing migrations
+        run: python lyceum/manage.py makemigrations --check --dry-run
