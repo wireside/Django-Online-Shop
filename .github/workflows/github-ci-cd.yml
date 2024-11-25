@@ -79,7 +79,7 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_QUERYSTRING_AUTH: "True"
+          AWS_QUERYSTRING_AUTH: "False"
         run: |
           python lyceum/manage.py collectstatic --noinput
 
