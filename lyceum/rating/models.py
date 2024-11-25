@@ -13,9 +13,8 @@ class RatingManager(django.db.models.Manager):
         queryset = queryset.select_related(
             user_related_name,
         )
-        queryset = queryset.order_by("-updated")
 
-        return queryset
+        return queryset.order_by("-updated")
 
 
 class Rating(django.db.models.Model):

@@ -21,26 +21,6 @@
   </head>
   <body>
     {% include 'includes/header.html' %}
-    <div class="container">
-      <div class="alert alert-info birthday-banner mt-3">
-        <h5 class="alert-heading">Сегодня день рождения у:</h5>
-        <ul class="list-unstyled mb-0">
-          {% for user in birthday_users %}
-            <li class="d-flex align-items-center">
-              <i class="bi bi-gift-fill text-primary me-2"></i>
-              <span class="fw-bold">🎁{{ user.username }}</span>
-              <span class="ms-auto">
-                <a href="mailto:{{ user.email }}" class="text-decoration-none">
-                  <i class="bi bi-envelope-fill text-secondary"></i> {{ user.email }}
-                </a>
-              </span>
-            </li>
-          {% empty %}
-              <li>Сегодня именинников нет!</li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
     <main class="mt-5">
       {% block content %}Контент не подвезли:({% endblock %}
     </main>
