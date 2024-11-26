@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-19 20:41+0300\n"
+"POT-Creation-Date: 2024-11-26 19:32+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,42 +26,46 @@ msgstr ""
 msgid "Russian"
 msgstr ""
 
-#: .\templates\catalog\item.html:18 .\templates\catalog\item.html:27
+#: .\templates\catalog\item.html:19 .\templates\catalog\item.html:29
 msgid "Download image"
 msgstr ""
 
-#: .\templates\includes\header.html:16
+#: .\templates\includes\header.html:13
+msgid "Menu"
+msgstr ""
+
+#: .\templates\includes\header.html:29 .\templates\includes\header.html:92
 msgid "Main"
 msgstr ""
 
-#: .\templates\includes\header.html:21
+#: .\templates\includes\header.html:34 .\templates\includes\header.html:97
 msgid "Catalog"
 msgstr ""
 
-#: .\templates\includes\header.html:26
+#: .\templates\includes\header.html:39 .\templates\includes\header.html:102
 msgid "Feedback"
 msgstr ""
 
-#: .\templates\includes\header.html:31
+#: .\templates\includes\header.html:44 .\templates\includes\header.html:107
 msgid "About"
 msgstr ""
 
-#: .\templates\includes\header.html:37
+#: .\templates\includes\header.html:49 .\templates\includes\header.html:112
 msgid "Profile"
 msgstr ""
 
-#: .\templates\includes\header.html:44
+#: .\templates\includes\header.html:55 .\templates\includes\header.html:118
 msgid "Login"
 msgstr ""
 
-#: .\templates\includes\header.html:51
+#: .\templates\includes\header.html:62 .\templates\includes\header.html:125
 msgid "Signup"
 msgstr ""
 
-#: .\templates\includes\header.html:58
+#: .\templates\includes\header.html:69 .\templates\includes\header.html:132
 msgid "Logout"
 msgstr ""
 
-#: .\templates\includes\header.html:64
+#: .\templates\includes\header.html:75 .\templates\includes\header.html:138
 msgid "Admin"
 msgstr ""

@@ -14,3 +14,12 @@
 .header-logo-label {
   margin-left: 20px;
 }
+
+.menu-icon {
+  margin-top: -5px;
+}
+
+.menu-button:hover .menu-icon {
+  fill: white;
+  transition: fill .15s ease-in-out;
+}
