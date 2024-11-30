@@ -2,7 +2,7 @@
   <div class="card h-100 bg-white shadow">
     <img src="{{ item.main_image.get_image_300x300.url }}" class="img-fluid rounded-start" alt="{{ item.name }}">
     <div class="card-body">
-      <h5 class="card-title">{{ item.name }}</h5>
+      <h5 class="card-title d-flex justify-content-between gap-2"><span>{{ item.name }}</span><span class="text-nowrap">{{ item.price }} &#8381</span></h5>
       <span class="badge bg-secondary text-capitalize">{{ item.category.name }}</span><br/>
       {% for tag in item.tags.all %}
         <span class="badge bg-light text-dark">{{ tag.name }}</span>

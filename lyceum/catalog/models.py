@@ -126,6 +126,13 @@ class Item(django.db.models.Model):
         null=True,
         blank=True,
     )
+    price = django.db.models.DecimalField(
+        verbose_name="цена",
+        decimal_places=2,
+        max_digits=9,
+        default=100_000.00,
+        help_text="Укажите стоимость товара в рублях",
+    )
 
     class Meta:
         ordering = ("-is_published",)

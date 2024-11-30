@@ -13,7 +13,7 @@
         <h3 class="h3 text-start text-capitalize pt-5 mb-5 mt-5 border-top border-5 border-dark-subtle {% if forloop.first %}border-top-0{% endif %}">
           {{ category.name }}
         </h3>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">       
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
           {% for item in items %}
             {% if item.category.name == category.name %}
               {% include 'includes/item_card.html' %}

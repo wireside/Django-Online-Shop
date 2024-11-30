@@ -14,7 +14,11 @@
     </ul>
     {% for user in users %}
     	<ul class="list-group list-group-horizontal w-100">
-        <li class="list-group-item w-100">{{ user.username }}</li>
+        <li class="list-group-item w-100">
+          <a href="{% if request.user.is_superuser %}{% url 'users:user_detail' user.id %}{% else %}#{% endif %}" class="link-underline-dark disabled link-dark link-offset-1-hover">
+            {{ user.username }}
+          </a>
+        </li>
         <li class="list-group-item w-100">{{ user.profile.birthday.day }} {{ user.profile.birthday | date:"F" }}</li>
         <li class="list-group-item w-100"><img src="{% if user.profile.image %}{{ user.profile.get_image_50x50.url }}{% endif %}" alt="нет фотографии"></li>
       </ul>

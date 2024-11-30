@@ -44,7 +44,7 @@
         </div>
         <div class="col-md-7">
           <div class="card-body">
-            <h4 class="card-title">{{ item.name }}</h4>
+            <h4 class="card-title d-flex justify-content-between gap-2"><span>{{ item.name }}</span><span class="text-nowrap">{{ item.price }} &#8381</span></h4>
             <p class="card-subtitle"><span class="badge bg-secondary text-capitalize">{{ item.category.name }}</span></p>
             <p class="card-subtitle">
               {% for tag in item.tags.all %}

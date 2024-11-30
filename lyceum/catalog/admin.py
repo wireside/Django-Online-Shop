@@ -25,6 +25,7 @@ class ItemAdmin(django.contrib.admin.ModelAdmin):
         catalog.models.Item.is_published.field.name,
         catalog.models.Item.is_on_main.field.name,
         catalog.models.Item.name.field.name,
+        catalog.models.Item.price.field.name,
         catalog.models.Item.image_tmb,
         catalog.models.Item.created.field.name,
         catalog.models.Item.updated.field.name,

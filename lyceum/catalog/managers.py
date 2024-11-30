@@ -34,6 +34,7 @@ class ItemManager(django.db.models.Manager):
             queryset=catalog.models.Tag.objects.only(tag_name_field),
         )
 
+        price_field = catalog.models.Item.price.field.name
         item_name_field = catalog.models.Item.name.field.name
         item_text_field = catalog.models.Item.text.field.name
         main_image_field = catalog.models.Item.main_image.related.name
@@ -53,6 +54,7 @@ class ItemManager(django.db.models.Manager):
             main_image_field,
             category_name_field,
             tag_field,
+            price_field,
         ]
 
         order_by_fields = [
