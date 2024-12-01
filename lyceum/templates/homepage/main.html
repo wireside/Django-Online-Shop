@@ -6,11 +6,10 @@
 {% endblock %}
 {% block content %}
 	<div class="container d-flex justify-content-center flex-column">
-		<h1 class="mb-5 text-center">Это главная страница</h1>
-		<h2 class="h2 mb-5 mt-5 text-center">
+		<h2 class="h2 mb-5 mt-3">
 			Мы рекомендуем
 		</h2>
-		<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify-content-xl-center">
+		<div class="row row-cols-2 row-cols-lg-3 row-cols-xl-4 g-1">
 			{% for item in items %}
 				{% include 'includes/item_card.html' %}
 			{% empty %}

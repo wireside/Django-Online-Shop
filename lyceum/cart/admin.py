@@ -5,7 +5,19 @@ import cart.models
 
 __all__ = []
 
-django.contrib.admin.site.register(cart.models.CartItem)
+
+@django.contrib.admin.register(cart.models.CartItem)
+class CartItemAdmin(django.contrib.admin.ModelAdmin):
+    list_display = (
+        cart.models.CartItem.item.field.name,
+        cart.models.CartItem.cart.field.name,
+        cart.models.CartItem.quantity.field.name,
+        cart.models.CartItem.show_price,
+    )
+    list_display_links = (
+        cart.models.CartItem.item.field.name,
+        cart.models.CartItem.cart.field.name,
+    )
 
 
 class CartItem(django.contrib.admin.TabularInline):
@@ -13,7 +25,6 @@ class CartItem(django.contrib.admin.TabularInline):
     fields = (
         cart.models.CartItem.item.field.name,
         cart.models.CartItem.quantity.field.name,
-        cart.models.CartItem.full_price.field.name,
     )
 
 

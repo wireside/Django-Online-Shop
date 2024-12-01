@@ -73,7 +73,7 @@ class ActiveView(django.views.generic.View):
             user.is_active = True
             user.save()
 
-        return django.shortcuts.redirect(django.urls.reverse("homepage:home"))
+        return django.shortcuts.redirect(django.urls.reverse("users:login"))
 
 
 class ReactiveView(django.views.generic.View):

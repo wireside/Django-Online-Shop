@@ -1,4 +1,5 @@
 import django.db.models
+from django.utils.safestring import mark_safe
 
 import catalog.models
 import users.models
@@ -57,11 +58,6 @@ class CartItem(django.db.models.Model):
         verbose_name="количество",
         default=1,
     )
-    full_price = django.db.models.PositiveIntegerField(
-        verbose_name="стоимость",
-        blank=True,
-        null=True,
-    )
 
     class Meta:
         verbose_name = "Товар корзины"
@@ -76,12 +72,10 @@ class CartItem(django.db.models.Model):
     def get_price(self):
         return self.item.price * self.quantity
 
-    def _generate_full_price(self):
-        self.full_price = self.get_price()
+    def show_price(self):
+        return mark_safe(
+            f"<p>{self.get_price()}</p>",
+        )
 
-    def save(self, *args, **kwargs):
-        self._generate_full_price()
-        super().save(*args, **kwargs)
-
-    def clean(self):
-        self.full_price = self.get_price()
+    show_price.short_description = "Полная стоимость"
+    show_price.allow_tags = True

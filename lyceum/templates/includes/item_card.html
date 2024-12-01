@@ -1,13 +1,15 @@
 <div class="col">
   <div class="card h-100 bg-white shadow">
     <img src="{{ item.main_image.get_image_300x300.url }}" class="img-fluid rounded-start" alt="{{ item.name }}">
-    <div class="card-body">
-      <h5 class="card-title d-flex justify-content-between gap-2"><span>{{ item.name }}</span><span class="text-nowrap">{{ item.price }} &#8381</span></h5>
-      <span class="badge bg-secondary text-capitalize">{{ item.category.name }}</span><br/>
-      {% for tag in item.tags.all %}
-        <span class="badge bg-light text-dark">{{ tag.name }}</span>
-      {% endfor %}
-      <p class="card-text mt-1">{{ item.text | truncatewords_html:10 | safe }}</p>
+    <div class="card-body d-flex flex-column justify-content-between">
+      <h5 class="card-title d-flex justify-content-between gap-2 flex-wrap"><span>{{ item.name }}</span><span class="text-nowrap">{{ item.price }} &#8381</span></h5>
+      <span class="badge bg-secondary text-capitalize align-self-start h-auto">{{ item.category.name }}</span>
+      <div class="d-none d-md-block">
+        {% for tag in item.tags.all %}
+          <span class="badge bg-light text-dark">{{ tag.name }}</span>
+        {% endfor %}
+      </div>
+      <div class="card-text text-nowrap overflow-hidden text-fade mt-2 mt-md-2">{{ item.text | safe | truncatewords_html:5 }}</div>
       <a href="{% url 'catalog:item_detail' item.id %}" class="btn btn-primary shadow">Подробнее</a>
     </div>
   </div>
