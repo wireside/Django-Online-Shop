@@ -8,14 +8,14 @@
 	<div class="container">
     <div class="card mb-3 shadow-lg">
       <div class="row g-0">
-        <div class="col-md-5">
+        <div class="col-lg-5">
           <div id="carouselImages" class="carousel slide img-fluid rounded-start" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active pb-3">
                 <div class="d-flex flex-column gap-3" data-bs-slide-to="0">
-                  <img src="{{ item.main_image.get_image_600x600.url }}" class="d-block w-100" alt="..."/>
+                  <img src="{{ item.main_image.get_image_600x600.url }}" class="d-block w-100 rounded-start" alt="..."/>
                   {% if item.main_image %}
-                    <a href="{% url 'download:file' item.main_image.image %}"  class="d-block w-50 btn btn-outline-dark align-self-center">
+                    <a href="{% url 'download:file' item.main_image.image %}"  class="d-none d-lg-block w-50 btn btn-outline-dark align-self-center">
                       {% translate "Download image" %}
                     </a>
                   {% endif %}
@@ -24,8 +24,8 @@
               {% for image in item.images.all %}
               <div class="carousel-item pb-3">
                 <div class="d-flex flex-column gap-3" data-bs-slide-to="{{ forloop.counter }}">
-                  <img src="{{ image.get_image_600x600.url }}" class="d-block w-100" alt="...">
-                  <a href="{% url 'download:file' image.image %}"  class="d-block w-50 btn btn-outline-dark align-self-center">
+                  <img src="{{ image.get_image_600x600.url }}" class="d-block w-100 rounded-start" alt="...">
+                  <a href="{% url 'download:file' image.image %}"  class="d-none d-lg-block w-50 btn btn-outline-dark align-self-center">
                       {% translate "Download image" %}
                   </a>
                 </div>
@@ -42,16 +42,59 @@
             </button>
           </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-lg-7">
           <div class="card-body">
-            <h4 class="card-title d-flex justify-content-between gap-2"><span>{{ item.name }}</span><span class="text-nowrap">{{ item.price }} &#8381</span></h4>
-            <p class="card-subtitle"><span class="badge bg-secondary text-capitalize">{{ item.category.name }}</span></p>
-            <p class="card-subtitle">
+            <h3 class="card-title d-flex justify-content-between gap-2"><span>{{ item.name }}</span><span class="text-nowrap">{{ item.price }} &#8381</span></h3>
+            <h5 class="card-subtitle h5 mx-1"><span class="badge bg-secondary text-capitalize mt-2 mb-2">{{ item.category.name }}</span></h5>
+            <p class="card-subtitle mx-1 mb-3 d-none d-sm-block">
               {% for tag in item.tags.all %}
-                <span class="badge bg-light text-dark">{{ tag.name }}</span>
+                <span class="badge bg-light border border-dark-subtle text-dark">{{ tag.name }}</span>
               {% endfor %}
             </p>
-            <p class="card-text">{{ item.text | safe }}</p>
+            {% if not cart_item %}
+              <form action="{% url 'cart:add' item.id %}" method="post">
+                {% csrf_token %}
+                <button class="btn btn-primary mt-4 mb-2 w-auto d-flex align-items-start justify-content-evenly gap-2" type="submit">
+                  <svg width="28" height="28" viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2_3773)">
+                    <path d="M14.857 28.896L9.923 40H20H32H40V36H16.078L18.3 31H38.441L44.53 12.735L40.735 11.47L35.559 27H18.441L11.441 6H4V10H8.559L14.857 28.896Z"/>
+                    <path d="M20 44C21.1046 44 22 43.1046 22 42C22 40.8954 21.1046 40 20 40C18.8954 40 18 40.8954 18 42C18 43.1046 18.8954 44 20 44Z"/>
+                    <path d="M32 44C33.1046 44 34 43.1046 34 42C34 40.8954 33.1046 40 32 40C30.8954 40 30 40.8954 30 42C30 43.1046 30.8954 44 32 44Z"/>
+                    <path d="M29 20V14H35V10H29V4H25V10H19V14H25V20H29Z"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_2_3773">
+                    <rect width="48" height="48" fill="white"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="text-nowrap mb-0" style="font-size: 1.1rem;">Добавить в корзину</p>
+                </button>
+              </form>
+            {% else %}
+              <a href="{% url 'cart:cart' %}" class="d-block h5 mt-4 mb-3 px-1 link link-primary link-offset-1 text">В корзине:</a>
+              <div class="d-flex mb-2 justify-content-between align-items-center gap-3 w-25 p-1 rounded-3">
+                <form action="{% url 'cart:delete' item.id %}" method="post">
+                  {% csrf_token %}
+                  <button class="btn btn-secondary text-center" type="submit">
+                    <svg width="12" height="12" viewBox="0 0 26 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="26" height="4" rx="1" fill="white"/>
+                    </svg>
+                  </button>
+                </form>
+                <p class="h5 text-center align-text-bottom pt-1">{{ cart_item.quantity }}</p>
+                <form action="{% url 'cart:add' item.id %}" method="post">
+                  {% csrf_token %}
+                  <button class="btn btn-primary pb-2" type="submit">
+                    <svg width="12" height="12" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="11" width="26" height="4" rx="1" fill="white"/>
+                      <rect x="15" width="26" height="4" rx="1" transform="rotate(90 15 0)" fill="white"/>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            {% endif %}
+            <div class="card-text mt-4">{{ item.text | safe }}</div>
             <div class="border-dark-subtle border-bottom"></div>
             <h4 class="h4 text-center mt-3">Оценка товара</h4>
             <div class="d-flex gap-3 mt-3 mb-2 align-items-stretch">

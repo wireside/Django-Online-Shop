@@ -97,6 +97,13 @@
             {% translate "Catalog" %}
           </a>
         </li>
+        {% if request.user.is_authenticated %}
+          <li class="nav-item">
+            <a class="nav-link {% if view_name == 'cart:cart' %}active disabled{% endif %}" href="{% url 'cart:cart' %}">
+              {% translate "Cart" %}
+            </a>
+          </li>
+        {% endif %}
         <li class="nav-item">
           <a class="nav-link {% if view_name == 'feedback:feedback' %}active disabled{% endif %}" href="{% url 'feedback:feedback' %}">
             {% translate "Feedback" %}

@@ -2,6 +2,12 @@ body {
     padding-top: 80px;
 }
 
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 25px;
+  }
+}
+
 .text-fade {
   position: relative;
   width: 100%;
@@ -21,3 +27,12 @@ body {
   height: 100%;
   background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
 }
+
+.btn-buy {
+  background-color: #FE9900;
+}
+
+.btn-buy:hover{
+  background-color: #ea8b00;
+}
+

@@ -75,6 +75,14 @@ class ImageBaseModel(django.db.models.Model):
         storage=MediaStorage(),
     )
 
+    def get_image_150x150(self):
+        return sorl.thumbnail.get_thumbnail(
+            self.image,
+            "150x150",
+            crop="center",
+            quality=51,
+        )
+
     def get_image_300x300(self):
         return sorl.thumbnail.get_thumbnail(
             self.image,

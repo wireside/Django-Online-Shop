@@ -7,6 +7,7 @@ from django.views import static
 urlpatterns = [
     path("", include("homepage.urls")),
     path("catalog/", include("catalog.urls")),
+    path("cart/", include("cart.urls")),
     path("about/", include("about.urls")),
     path("download/", include("download.urls")),
     path("feedback/", include("feedback.urls")),

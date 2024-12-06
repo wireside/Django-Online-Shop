@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-26 19:32+0300\n"
+"POT-Creation-Date: 2024-12-05 23:39+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,11 +20,11 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\lyceum\settings.py:166
+#: .\lyceum\settings.py:167
 msgid "English"
 msgstr "Английский"
 
-#: .\lyceum\settings.py:167
+#: .\lyceum\settings.py:168
 msgid "Russian"
 msgstr "Русский"
 
@@ -44,30 +44,34 @@ msgstr "Главная"
 msgid "Catalog"
 msgstr "Список товаров"
 
-#: .\templates\includes\header.html:39 .\templates\includes\header.html:102
+#: .\templates\includes\header.html:39 .\templates\includes\header.html:109
 msgid "Feedback"
 msgstr "Обратная связь"
 
-#: .\templates\includes\header.html:44 .\templates\includes\header.html:107
+#: .\templates\includes\header.html:44 .\templates\includes\header.html:114
 msgid "About"
 msgstr "О проекте"
 
-#: .\templates\includes\header.html:49 .\templates\includes\header.html:112
+#: .\templates\includes\header.html:49 .\templates\includes\header.html:119
 msgid "Profile"
 msgstr "Профиль"
 
-#: .\templates\includes\header.html:55 .\templates\includes\header.html:118
+#: .\templates\includes\header.html:55 .\templates\includes\header.html:125
 msgid "Login"
 msgstr "Войти"
 
-#: .\templates\includes\header.html:62 .\templates\includes\header.html:125
+#: .\templates\includes\header.html:62 .\templates\includes\header.html:132
 msgid "Signup"
 msgstr "Регистрация"
 
-#: .\templates\includes\header.html:69 .\templates\includes\header.html:132
+#: .\templates\includes\header.html:69 .\templates\includes\header.html:139
 msgid "Logout"
 msgstr "Выйти"
 
-#: .\templates\includes\header.html:75 .\templates\includes\header.html:138
+#: .\templates\includes\header.html:75 .\templates\includes\header.html:145
 msgid "Admin"
 msgstr "Админка"
+
+#: .\templates\includes\header.html:103
+msgid "Cart"
+msgstr "Корзина"

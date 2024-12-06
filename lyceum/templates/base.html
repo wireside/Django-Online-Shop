@@ -21,7 +21,8 @@
   </head>
   <body>
     {% include 'includes/header.html' %}
-    <main class="mt-5">
+    {% include 'includes/cart_nav_link.html' %}
+    <main>
       {% block content %}Контент не подвезли:({% endblock %}
     </main>
     {% include 'includes/footer.html' %}

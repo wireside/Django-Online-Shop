@@ -9,6 +9,7 @@ import django.urls
 import django.utils.timezone
 import django.views.generic
 
+import cart.models
 import catalog.models
 import rating.forms
 import rating.models
@@ -146,11 +147,20 @@ class ItemDetailView(
             except rating.models.Rating.DoesNotExist:
                 user_rating = None
 
+        try:
+            cart_item = cart.models.CartItem.objects.only("quantity").get(
+                cart=self.request.user.cart,
+                item=item,
+            )
+        except Exception:
+            cart_item = None
+
         context.update(
             {
                 "rating_form": rating_form,
                 "ratings_stats": ratings_stats,
                 "user_rating": user_rating,
+                "cart_item": cart_item,
             },
         )
 
