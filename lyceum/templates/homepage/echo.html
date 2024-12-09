@@ -7,7 +7,7 @@
 {% block content %}
   <section>
     <div class="container">
-      <h1 class="h1 mb-4">Эхо форма</h1>
+      <h1 class="h1 mt-3 mb-4">Эхо форма</h1>
       <form method="post" action="{% url 'homepage:echo_submit' %}">
         {% csrf_token %}
         {% with form=echo_form %}

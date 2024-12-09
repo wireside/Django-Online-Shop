@@ -1,27 +1,85 @@
 {% extends 'base.html' %}
 
 {% block title %}
-	О проекте
+О проекте
 {% endblock %}
 
 {% block content %}
-	<section class="container">
-		<div class="row justify-content-center">
-			<header class="mb-5 col-12 text-center pb-5">
-				<h1 class="h1">О проекте Lyceum</h1>
-			</header>
-			<h2 class="col-12 text-center text-dark-emphasis mb-5 pb-5">Lorem ipsum dolor sit amet</h2>
-			<ul class="row col-12 justify-content-center list-group-horizontal">
-				<li class="col-lg-3 col-sm-10">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur debitis dolores eaque est ex illo in ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam asperiores deserunt esse fuga harum quo sint? A atque dolor doloribus, dolorum ipsa modi, nobis optio pariatur quae ut voluptate?</p>
-				</li>
-				<li class="col-lg-3 col-sm-10">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur debitis dolores eaque est ex illo in ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto illum ipsum laudantium nulla odio officia, officiis pariatur qui saepe? Aspernatur assumenda dolor, dolores fugit incidunt omnis quis quod. Repellendus!</p>
-				</li>
-				<li class="col-lg-3 col-sm-10">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur debitis dolores eaque est ex illo in ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, fugit iure laudantium odio quos sed. Ad assumenda at culpa deserunt, eius eos exercitationem iure laboriosam minus, molestias sequi sit suscipit?</p>
-				</li>
-			</ul>
-		</div>
-	</section>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="mb-4">О проекте "Lyceum"</h1>
+      <p class="lead">
+        <strong>Lyceum</strong> — это учебный проект интернет-магазина, разработанный на фреймворке Django.
+        Цель проекта — показать возможности современного веб-разработки и создать функциональную платформу
+        для демонстрации электронных продаж.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="mb-3">Цели проекта</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Создать удобный и функциональный интернет-магазин.</li>
+        <li class="list-group-item">Применить современные подходы к разработке (CI/CD, адаптивный дизайн).</li>
+        <li class="list-group-item">Научиться работать с базами данных, моделями и пользователями.</li>
+      </ul>
+    </div>
+    <div class="col-lg-6">
+      <h2 class="mb-3">Функционал</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Каталог товаров с фильтрацией по категориям и тегам.</li>
+        <li class="list-group-item">Корзина покупок с сохранением между сессиями.</li>
+        <li class="list-group-item">Регистрация и авторизация пользователей.</li>
+        <li class="list-group-item">Интеграция с админ-панелью для управления данными.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-lg-12">
+      <h2 class="mb-3">Технологии</h2>
+      <p>
+        Проект построен с использованием следующих технологий:
+      </p>
+      <ul>
+        <li><strong>Backend:</strong> Python, Django</li>
+        <li><strong>Frontend:</strong> HTML, CSS, Bootstrap</li>
+        <li><strong>База данных:</strong> SQLite</li>
+        <li><strong>Автоматизация:</strong> GitHub Actions</li>
+        <li><strong>Контроль версий:</strong> Git</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-lg-12">
+      <h2 class="mb-3">Будущие улучшения</h2>
+      <p>
+        В будущем планируется добавить:
+      </p>
+      <ul>
+        <li>Интеграцию с платёжными системами (например, Stripe или PayPal).</li>
+        <li>Систему отзывов и рейтингов для товаров.</li>
+        <li>Поддержку личного кабинета пользователя с историей заказов.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-lg-12 text-center">
+      <h2 class="mb-3">Контакты</h2>
+      <p>Вы можете связаться со мной или узнать больше о проекте:</p>
+      <div class="d-inline-flex gap-3">
+        <a href="https://vk.com/wireside" target="_blank" class="btn btn-primary">
+          <i class="bi bi-vk"></i> ВКонтакте
+        </a>
+        <a href="https://github.com/wireside/Django-Online-Shop" target="_blank" class="btn btn-dark">
+          <i class="bi bi-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

@@ -16,7 +16,7 @@
           </ul>
         </div>
       {% endif %}
-      <h1 class="h1 mb-4">Фидбек</h1>
+      <h1 class="h1 mt-3 mb-4">Фидбек</h1>
       <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {% with form=feedback_author %}

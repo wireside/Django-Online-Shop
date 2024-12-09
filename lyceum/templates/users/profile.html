@@ -7,7 +7,7 @@
 {% block content %}
 	<div class="container">
     {% if messages %}
-      <div class="text-bg-success p-2 mb-3 rounded-1">
+      <div class="text-bg-success p-2 mb-3 mt-3 rounded-1">
         <ul class="messages">
           {% for message in messages %}
             <h2 {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </h2>
@@ -15,7 +15,7 @@
         </ul>
       </div>
     {% endif %}
-    <h2 class="h2 text-center mb-5">Профиль пользователя</h2>
+    <h2 class="h2 text-center mb-5 mt-3">Профиль пользователя</h2>
     <form method="post" enctype="multipart/form-data">
       {% csrf_token %}
       <div class="mb-5">
